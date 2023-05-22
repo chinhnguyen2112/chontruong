@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<?xml-stylesheet type="text/xsl" href="https://phunuplus.vn/assets/css/css_sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://chontruong.edu.vn/assets/css/css_sitemap.xsl"?>
 
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <sitemap>
 
-    <loc>https://phunuplus.vn/page.xml</loc>
+    <loc>https://chontruong.edu.vn/page.xml</loc>
 
     <lastmod>2022-03-28T17:28:31+07:00</lastmod>
 
@@ -14,7 +14,7 @@
 
   <sitemap>
 
-    <loc>https://phunuplus.vn/blog.xml</loc>
+    <loc>https://chontruong.edu.vn/blog.xml</loc>
 
     <lastmod>2022-03-28T17:28:31+07:00</lastmod>
 
