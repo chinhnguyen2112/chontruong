@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /*.js$
+Allow: /*.css$
+Disallow: /admin/
+Sitemap: https://chontruong.edu.vn/sitemap.xml
