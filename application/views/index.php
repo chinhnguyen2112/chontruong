@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="vi">
 
 <head>
 
@@ -51,6 +51,7 @@
 
     gtag('config', 'G-ZN81P7Z9SM');
   </script>
+  <?php include("schema/schema_home.php") ?>
 </head>
 
 <body>
