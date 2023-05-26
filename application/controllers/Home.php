@@ -55,7 +55,11 @@ class Home extends CI_Controller
         $alias = trim($alias);
         $data['canonical'] = base_url() . $alias . '/';
         $chuyenmuc = $this->Madmin->get_by(['alias' => $alias], 'category');
-        $blog = $this->Madmin->query_sql_row("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as img_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE blogs.alias = '$alias' ");
+        if ($alias == 'gioi-thieu' || $alias == 'lien-he') {
+            $blog = $this->Madmin->query_sql_row("SELECT * FROM blogs WHERE alias = '$alias' ");
+        } else {
+            $blog = $this->Madmin->query_sql_row("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as img_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE blogs.alias = '$alias' ");
+        }
         if ($chuyenmuc != null) { //chuyenmuc
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
                 redirect('/' . $alias . '/');
@@ -93,26 +97,23 @@ class Home extends CI_Controller
             ];
         } else if ($blog != null) { // blog
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
-                echo 1;
-                die;
                 redirect('/' . $alias . '/');
             }
             if (!admin() && $blog['time_post'] > $time) {
-                echo 2;
-                die;
                 redirect('/');
             }
             $data['blog_same'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE chuyenmuc = {$blog['chuyenmuc']} AND type = 0 AND time_post <= $time AND id != {$blog['id']}  ORDER BY updated_at DESC LIMIT 3");
             $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE  id != {$blog['id']} AND type = 0 AND time_post <= $time  ORDER BY id DESC LIMIT 5");
             $cate = $this->Madmin->query_sql_row("SELECT *  FROM category  WHERE id = {$blog['chuyenmuc']} ");
-            $title_page = $cate['name'];
-            $cate_alias = $cate['alias'];
-            if ($cate['parent'] > 0) {
-                $cate_parent = $this->Madmin->query_sql_row("SELECT *  FROM category  WHERE id = {$cate['parent']} ");
-                $title_page = $cate_parent['name'] . ' - ' . $cate['name'];
+            $title_page = '';
+            if ($cate != null) {
+                $title_page = $cate['name'];
+                if ($cate['parent'] > 0) {
+                    $cate_parent = $this->Madmin->query_sql_row("SELECT *  FROM category  WHERE id = {$cate['parent']} ");
+                    $title_page = $cate_parent['name'] . ' - ' . $cate['name'];
+                }
             }
             $data['breadcrumb'] = $title_page;
-            $data['cate_alias'] = $cate_alias;
             $data['blog'] = $blog;
             $data['content'] = 'detail_blog';
             $data['list_js'] = [

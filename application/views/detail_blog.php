@@ -5,8 +5,10 @@
                 <div class="breadcrumb">
                     <a href="/">Trang chủ</a>
                     <span> / </span>
-                    <a class="link_breadcrumb" href="/<?= $cate_alias ?>"><?= $breadcrumb ?></a>
-                    <span> / </span>
+                    <?php if (isset($breadcrumb) && $breadcrumb != '') { ?>
+                        <a class="link_breadcrumb" href="#"><?= $breadcrumb ?></a>
+                        <span> / </span>
+                    <?php } ?>
                     <span class="this_breadcrumb"><?= $blog['title'] ?></span>
                 </div>
                 <div class="box_data_blog">
