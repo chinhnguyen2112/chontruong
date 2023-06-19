@@ -249,6 +249,12 @@
                         }, function() {
                             window.location.reload();
                         });
+                    } else if (response.status == 2) {
+                        swal({
+                            title: "Thất bại",
+                            type: "error",
+                            text: "Chuyên mục đã tồn tại"
+                        });
                     } else {
                         swal({
                             title: "Thất bại",

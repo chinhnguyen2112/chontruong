@@ -52,6 +52,8 @@
     gtag('config', 'G-ZN81P7Z9SM');
   </script>
   <?php include("schema/schema_home.php") ?>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8909964658809892" crossorigin="anonymous"></script>
+
 </head>
 
 <body>

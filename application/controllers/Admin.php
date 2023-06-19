@@ -181,29 +181,38 @@
             $data['meta_des'] = $this->input->post('meta_des');
             $data['level'] = 0;
             $data['parent'] = 0;
-            if ($cate > 0) {
-                $data['parent'] = $cate;
-                $this->Madmin->update(['id' => $cate], ['level' => 1], 'category');
-            }
-            if ($id > 0) {
-                $insert_chuyenmuc = 0;
-                $update_chuyenmuc = $this->Madmin->update(['id' => $id], $data, 'category');
-                if ($update_chuyenmuc) {
-                    $insert_chuyenmuc = $id;
+            $where_check = ['alias' => $alias];
+            $check = $this->Madmin->get_by($where_check, 'category');
+            if ($check != null) {
+                $response = [
+                    'status' => 2,
+                    'msg' => 'đã tồn tại'
+                ];
+            } else {
+                if ($cate > 0) {
+                    $data['parent'] = $cate;
+                    $this->Madmin->update(['id' => $cate], ['level' => 1], 'category');
                 }
-            } else {
-                $insert_chuyenmuc = $this->Madmin->insert($data, 'category');
-            }
-            if ($insert_chuyenmuc > 0) {
-                $response = [
-                    'status' => 1,
-                    'msg' => 'Thành công'
-                ];
-            } else {
-                $response = [
-                    'status' => 0,
-                    'msg' => 'Thất bại'
-                ];
+                if ($id > 0) {
+                    $insert_chuyenmuc = 0;
+                    $update_chuyenmuc = $this->Madmin->update(['id' => $id], $data, 'category');
+                    if ($update_chuyenmuc) {
+                        $insert_chuyenmuc = $id;
+                    }
+                } else {
+                    $insert_chuyenmuc = $this->Madmin->insert($data, 'category');
+                }
+                if ($insert_chuyenmuc > 0) {
+                    $response = [
+                        'status' => 1,
+                        'msg' => 'Thành công'
+                    ];
+                } else {
+                    $response = [
+                        'status' => 0,
+                        'msg' => 'Thất bại'
+                    ];
+                }
             }
             echo json_encode($response);
         }

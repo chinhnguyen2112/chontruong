@@ -168,7 +168,8 @@
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">H1 (50 > 70 kí tự)</label>
-        <input type="text" name="title" value="<?= (isset($blog)) ? $blog['title'] : ''; ?>" class="form-control" />
+        <input type="text" id="h1" name="title" value="<?= (isset($blog)) ? $blog['title'] : ''; ?>" class="form-control" />
+        <p style="float: left;margin-left: 10px">Ký tự:<span id="count_h1"></span></p>
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Keyword</label>
@@ -196,11 +197,13 @@
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Meta Title (50 > 60 kí tụ)</label>
-        <input type="text" name="meta_title" value="<?= (isset($blog)) ? $blog['meta_title'] : ''; ?>" class="form-control">
+        <input type="text" id="meta_title" name="meta_title" value="<?= (isset($blog)) ? $blog['meta_title'] : ''; ?>" class="form-control">
+        <p style="float: left;margin-left: 10px">Ký tự:<span id="count_title"></span></p>
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Meta Description</label>
         <textarea style=" height:150px" name="meta_des" id="meta_des" class="form-control"><?= (isset($blog) && $blog['meta_des'] != '') ? $blog['meta_des'] : '' ?></textarea>
+        <p style="float: left;margin-left: 10px">Ký tự:<span id="count_des"></span></p>
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Sapo</label>
@@ -234,6 +237,30 @@
     CKEDITOR.replace('sapo');
 </script>
 <script>
+    $(function() {
+        var h1 = $('#h1').val().length;
+        var t = $('#meta_title').val().length;
+        var d = $('#meta_des').val().length;
+        var s = $('#sapo').val().length;
+
+        $('#count_h1').text(h1);
+        $('#count_title').text(t);
+        $('#count_des').text(d);
+        $('#count_sapo').text(s);
+    });
+    $('#h1').keyup(function() {
+        var length = $('#h1').val().length;
+        $('#count_h1').text(length);
+    });
+    $('#meta_title').keyup(function() {
+        var length = $('#meta_title').val().length;
+        $('#count_title').text(length);
+    });
+    $('#meta_des').keyup(function() {
+        var length = $('#meta_des').val().length;
+        $('#count_des').text(length);
+    });
+
     function get_alias(str) {
         str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
         str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
