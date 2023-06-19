@@ -33,7 +33,7 @@ class Home extends CI_Controller
         $data['canonical'] = base_url();
         $time = time();
         $data['blog'] = $this->Madmin->get_limit("time_post <= $time", 'blogs', 0, 20);
-        $data['meta_title'] = 'Phụ Nữ Plus: Web Tin Mới Dành Cho Phụ Nữ Online';
+        $data['meta_title'] = 'Web Review Trường Đại Học - Cao Đẳng - Trung Cấp';
         $data['content'] = 'home';
         $data['list_js'] = [
             'slick.min.js',

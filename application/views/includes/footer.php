@@ -5,41 +5,115 @@ if (count($menu_cate_parent) > 2) {
 } ?>
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="footer-widgets body_width">
-        <div class="box_logo_ft">
-            <img class="logo_ft" src="/images/logo.png">
-        </div>
         <div class="content_footer">
-            <div class="list_footer bg_mb ">
-                <div id="text-1" class="widget widget--footer widget_text">
-                    <p class="address_ft">Phụ Nữ Plus là trang web chia sẻ kiến thức và kinh nghiệm hữu ích cho phụ nữ về nhiều lĩnh vực đời sống như tình yêu, làm đẹp, váo bếp, sức khỏe, du lịch,…</p>
-                    <p class="address_ft">Các bài viết chia sẻ bí quyết và cẩm nang giúp phụ nữ cải thiện cuộc sống và sức khỏe. Phụ nữ Plus mong muốn trở thành người bạn đồng hành đáng tin cậy và thông tin hữu ích cho phụ nữ.</p>
+            <div class="list_footer icon_footer">
+                <div class="item_icon_ft">
+                    <img class="icon" src="/images/icons/school-2.webp" />
+                    <p>300+ Review đại học, cao đẳng</p>
+                </div>
+                <div class="item_icon_ft">
+                    <img class="icon" src="/images/icons/user-heart-line.png" />
+                    <p>100.000+ Sinh viên đánh giá</p>
+                </div>
+                <div class="item_icon_ft">
+                    <img class="icon" src="/images/icons/favourite.webp" />
+                    <p>Cộng đồng phi lợi nhuận</p>
+                </div>
+                <div class="item_icon_ft">
+                    <img class="icon" src="/images/icons/secure-payment-line.png" />
+                    <p>Bảo mật thông tin</p>
                 </div>
             </div>
 
-            <div class="list_footer pd_mb list_footer_50">
-                <div class="contact">
-                    <label>Liên hệ</label>
-                    <ul>
-                        <li>Email: cs.phunuplus@gmail.com</li>
-                        <li>Hỗ trợ & CSKH: cs.phunuplus@gmail.com</li>
-                        <li>Địa Chỉ: Số 111 Mễ Trì, Nam Từ Liêm, Hà Nội</li>
-                        <li>Điện thoại: 0328395635</li>
-                    </ul>
+            <div class="list_footer pd_mb list_footer_50 content">
+                <div class="content_about">
+                    <p class="title_about">Về chọn trường</p>
+                    <div class="about">
+                        <p>
+                            <a href="/">Chọn Trường</a>
+                            là nền tảng cung cấp thông tin chi tiết về các Trường Đại học, Cao đẳng và các Trung tâm đào
+                            tạo chất lượng cao tại Việt Nam. Hỗ trợ học sinh, sinh viên đưa ra quyết định chọn lựa
+                            trường học phù hợp với năng lực và mục tiêu của bản thân.
+                        </p>
+                    </div>
                 </div>
-                <div class="infor">
-                    <label>Thông tin & Chính sách</label>
-                    <ul>
-                        <li><a href="/gioi-thieu-phu-nu-plus/">Giới Thiệu</a></li>
-                        <li><a href="/lien-he/">Liên Hệ</a></li>
-                        <li><a href="/chinh-sach-bao-mat/">Bảo Mật</a></li>
-                    </ul>
+                <div class="content_infor">
+                    <div class="review item_infor">
+                        <label class="title_about">Review trường học</label>
+                        <ul>
+                            <li>
+                                <i class="icon_arrow_ft"></i>
+                                <a href="#">Trường Đại Học</a>
+                            </li>
+                            <li>
+                                <i class="icon_arrow_ft"></i>
+                                <a href="#">Trường Cao Đẳng</a>
+                            </li>
+                            <li>
+                                <i class="icon_arrow_ft"></i>
+                                <a href="#">Trường Trung Cấp</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="infor item_infor">
+                        <label class="title_about">Thông tin tuyển sinh</label>
+                        <ul>
+                            <li>
+                                <i class="icon_arrow_ft"></i>
+                                <a href="#">Trường Đại Học</a>
+                            </li>
+                            <li>
+                                <i class="icon_arrow_ft"></i>
+                                <a href="#">Trường Cao Đẳng</a>
+                            </li>
+                            <li>
+                                <i class="icon_arrow_ft"></i>
+                                <a href="#">Trường Trung Cấp</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact item_infor">
+                        <label class="title_about">Thông tin & Chính sách</label>
+                        <ul>
+                            <li>
+                                <i class="icon_arrow_ft"></i>
+                                <a href="/gioi-thieu-phu-nu-plus/">Giới Thiệu</a>
+                            </li>
+                            <li>
+                                <i class="icon_arrow_ft"></i>
+                                <a href="/lien-he/">Liên Hệ</a>
+                            </li>
+                            <li>
+                                <i class="icon_arrow_ft"></i>
+                                <a href="/chinh-sach-bao-mat/">Chính Sách Bảo Mật</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+
+            <div class="list_footer mxh">
+                <a class="item_mxh icon_fb" href="#">
+                    <img class="icon_mxh" src="/images/icons/icons8-facebook-24.png" />
+                </a>
+                <a class="item_mxh icon_tw" href="#">
+                    <img class="icon_mxh " src="/images/icons/icons8-twitter-30.png" />
+                </a>
+                <a class="item_mxh icon_mail" href="#">
+                    <img class="icon_mxh " src="/images/icons/icons8-mail-30.png" />
+                </a>
+                <a class="item_mxh icon_pin" href="#">
+                    <img class="icon_mxh " src="/images/icons/icons8-pinterest-30.png" />
+                </a>
+                <a class="item_mxh icon_yt" href="#">
+                    <img class="icon_mxh " src="/images/icons/icons8-youtube-30.png" />
+                </a>
             </div>
         </div>
     </div>
     <div class="copyright">
         <div class=" body_width">
-            <div class="site-info">Phụ nữ plus © Copyright 2022. All rights reserved.</div>
+            <div class="site-info">Copyright 2023 © ChonTruong.Edu.Vn – Đánh Giá Chất Lượng Giáo Dục Việt Nam</div>
         </div>
     </div>
 </footer>

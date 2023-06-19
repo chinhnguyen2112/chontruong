@@ -91,7 +91,7 @@ class Ajax extends CI_Controller
             foreach ($blog_cate as $val) {
                 $html .= '
                 <div class="this_train">
-                    <a href="/' . $val['alias'] . ' /">
+                    <a href="/' . $val['alias'] . '/">
                         <img src="/' . $val['image'] . '" alt="' . $val['title'] . '">
                         <div class="box_right_data">
                             <p class="title_blog">' . $val['title'] . '</p>
