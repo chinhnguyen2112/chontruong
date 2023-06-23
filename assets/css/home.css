@@ -22,15 +22,19 @@
 
 .top_blog {
     width: 100%;
-    display: grid;
-    gap: 30px;
     grid-template-columns: auto 300px;
+    margin: 0 -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 15px;
 }
 
 .top_left {
     display: flex;
     flex-direction: column;
     gap: 18px;
+    width: calc(100% - 32%);
 }
 
 .list_blog_top {

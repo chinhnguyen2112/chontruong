@@ -3,12 +3,13 @@
 }
 
 .container_widget_about {
-    padding: 20px 70px 0 70px;
+    padding: 0px 70px 0 70px;
 }
 
 .breadcrumb {
     padding: 0;
     gap: 10px;
+    align-items: center;
 }
 
 .this_breadcrumb {
@@ -35,7 +36,6 @@
 
 .right_detail {
     margin-bottom: 20px;
-    width: max-content;
     background: #FBFDFF;
     box-shadow: 0px 0px 20px rgba(19, 23, 54, 0.1);
     border-radius: 8px;
@@ -75,8 +75,8 @@ h6 p {
 
 .link_breadcrumb {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 13px;
+    line-height: 16px;
     text-align: center;
     color: #59606A;
 }
@@ -181,10 +181,13 @@ figcaption {
 
 .mucluc_blog {
     padding: 10px 15px;
-    border: 1px solid #aaa;
-    border-radius: 4px;
+    background: #dbf0ff;
 }
-
+.box_title_ml {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .title_mucluc {
     margin-bottom: 0;
     font-weight: 700;
@@ -212,24 +215,30 @@ figcaption {
 }
 
 .list_mucluc {
+    padding-top: 10px;
     display: none;
     margin-bottom: 8px;
+    transition: 0.5s;
 }
-
+.img_show_ml {
+    transition: 0.5s;
+}
 .list_mucluc a {
-    font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     text-align: center;
     color: #131736;
 }
+.H2abc {
+    font-weight: 600;
+}
 
 .content_blog h2,
 .content_blog h2 span {
     font-weight: 700 !IMPORTANT;
-    font-size: 25px !important;
+    font-size: 23px !important;
     line-height: 32px !important;
-    color: #0040ff !important;
+    color: #000 !important;
     text-align: left !important;
     margin: 12px 0 !important;
 }
@@ -253,11 +262,10 @@ figcaption {
 .name_cate {
     position: relative;
     margin-right: 8px;
-    color: #ffc600;
+    color: #39acfd;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
-    font-family: Montserrat, sans-serif;
 }
 
 .name_cate::after {
@@ -276,20 +284,25 @@ figcaption {
     font-size: 12px;
     line-height: 12px;
     margin-left: 5px;
-    color: #868686;
-    font-family: Montserrat, sans-serif;
+    color: transparent;
+    background: linear-gradient(90deg, #0348cc 0, #0066ea 0, #a9a5bf 100%);
+    -webkit-background-clip: text;
 }
 
 .title_handbook {
+    text-align: left;
     font-weight: 600;
-    color: #454545;
+    color: #333333;
     font-size: 20px;
     line-height: 24px;
-    font-family: Montserrat, sans-serif;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
 .title_handbook:hover {
-    color: #ffc600;
+    color: #39acfd;
 }
 
 .this_des_handbook {
