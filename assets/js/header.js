@@ -34,12 +34,13 @@ window.onclick = function(event) {
 	}
   }
 
+  var width = $(window).width();
   function show_submenu(e, type) {
-	if (type == 1) {
-		$('.nav_menu').css('transform', 'translateX(-100%)');
+	if (type == 1 && width < 1024) {
+		$('.list_menu').css('transform', 'translateX(-100%)');
 		$(e).next('.menu_con').css('transform', 'translateX(100%)');
 	} else {
-		$('.nav_menu').css('transform', 'translateX(0)');
+		$('.list_menu').css('transform', 'translateX(0)');
 		$(e).next('.menu_con').css('transform', 'translateX(-150%)');
 		$('.menu_con').css('transform', 'translateX(-150%)');
 	}
