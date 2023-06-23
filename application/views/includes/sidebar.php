@@ -22,8 +22,7 @@
                         </div>
                     </div>
                     <div class="content_mail_nonpc">
-                        <p>Xu hướng thịnh hành, bí quyết xịn xò và ưu đãi hấp dẫn đã sẵn sàng gửi đến
-                            bạn</p>
+                        <p>Tư vấn chọn trường và định hướng ngành nghề giúp bạn có quyết định sáng suốt nhất.</p>
                     </div>
                 </div>
                 <div class="mail_bot">
@@ -42,49 +41,47 @@
             <ul>
                 <li class="item_content_sidebar">
                     <img class="icon_li" src="/images/icons8-star-30 (1).png" />
-                    Game Bắn Súng
+                    Tư Vấn Chọn
                     <strong>
-                        <a href="#">CSGO</a>
+                        <a href="/truong-dai-hoc/">Trường Đại Học</a>
                     </strong>
                 </li>
                 <li class="item_content_sidebar">
                     <img class="icon_li" src="/images/icons8-star-30 (1).png" />
-                    Khám Phá
+                    Tư Vấn Chọn
                     <strong>
-                        <a href="/pubg/">PUBG</a>
-                    </strong>
-                    Phiên Bản Mới
-                </li>
-                <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30 (1).png" />
-                    Bóng Đá
-                    <strong>
-                        <a href="/fifa-online-4/">Fifa Online 4</a>
-                    </strong>
-                    Đỉnh Cao
-                </li>
-                <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30 (1).png" />
-                    Garena
-                    <strong>
-                        <a href="/lien-quan-mobile/">Liên Quân Mobile</a>
+                        <a href="/truong-cao-dang/">Trường Cao Đẳng</a>
                     </strong>
                 </li>
                 <li class="item_content_sidebar">
                     <img class="icon_li" src="/images/icons8-star-30 (1).png" />
-                    Khám Phá
+                    Cẩm Nang
                     <strong>
-                        <a href="/lien-minh-huyen-thoai/">LMHT</a>
+                        <a href="/phat-trien-ban-than/">Phát Triển</a>
                     </strong>
-                    Việt Nam
+                    Bản Thân
                 </li>
                 <li class="item_content_sidebar">
                     <img class="icon_li" src="/images/icons8-star-30 (1).png" />
-                    News
+                    Cẩm Nang
                     <strong>
-                        <a href="/valorant/">Valorant</a>
+                        <a href="/phat-trien-su-nghiep/">Phát Triển</a>
                     </strong>
-                    Riot Games
+                    Sự Nghiệp
+                </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30 (1).png" />
+                    Ngoại Ngữ
+                    <strong>
+                        <a href="/hoc-tieng-phap/">Tiếng Pháp</a>
+                    </strong>
+                </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30 (1).png" />
+                    Ngoại Ngữ
+                    <strong>
+                        <a href="/hoc-tieng-nga/">Tiếng Nga</a>
+                    </strong>
                 </li>
             </ul>
         </div>
