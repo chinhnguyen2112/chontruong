@@ -35,7 +35,8 @@
                         <div class="menu_con">
                             <ul>
                                 <li class="li_back">
-                                    <img class="icon_back" src="/images/icons8-forward-30 (2).png" alt="icon forward" onclick="show_submenu(this,2)">
+                                    <img class="icon_back" src="/images/icons8-forward-30 (2).png" alt="icon forward"
+                                        onclick="show_submenu(this,2)">
                                     <p class="cate_subname"><?= $val['name'] ?></p>
                                 </li>
                                 <?php foreach ($menu_cate as $val1) { ?>
@@ -50,24 +51,25 @@
                         <img class="icon_search" src="/images/icons8-search-30.png" alt="icon search"
                             onclick="show_search(this,1)">
                     </li>
+                    <div class="list_contact">
+                        <a href="#">
+                            <img src="/images/facebook.png" alt="icon facebook">
+                        </a>
+                        <a href="#">
+                            <img class="tiktok" src="/images/tiktok (1).png" alt="icon facebook">
+                        </a>
+                        <a href="#">
+                            <img src="/images/mail.png" alt="icon facebook">
+                        </a>
+                        <a href="#">
+                            <img src="/images/icons8-phone-30 (1).png" alt="icon facebook">
+                        </a>
+                        <a href="#">
+                            <img src="/images/icons8-youtube-30 (1).png" alt="icon facebook">
+                        </a>
+                    </div>
                 </ul>
-                <div class="list_contact">
-                    <a href="#">
-                        <img src="/images/facebook.png" alt="icon facebook">
-                    </a>
-                    <a href="#">
-                        <img class="tiktok" src="/images/tiktok (1).png" alt="icon facebook">
-                    </a>
-                    <a href="#">
-                        <img src="/images/mail.png" alt="icon facebook">
-                    </a>
-                    <a href="#">
-                        <img src="/images/icons8-phone-30 (1).png" alt="icon facebook">
-                    </a>
-                    <a href="#">
-                        <img src="/images/icons8-youtube-30 (1).png" alt="icon facebook">
-                    </a>
-                </div>
+
             </nav>
         </section>
 
