@@ -93,7 +93,7 @@
                 Tin Mới Nóng
             </a>
         </div>
-        <div class="box_content_sidebar">
+        <div class="box_content">
             <ul>
                 <?php foreach ($blog_new as $key => $val) { ?>
                 <li class="item_hot_news">
