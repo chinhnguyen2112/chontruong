@@ -6,7 +6,7 @@ if (count($menu_cate_parent) > 2) {
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="footer-widgets body_width">
         <div class="box_logo_ft">
-            <img class="logo_ft" src="/images/logo.png">
+            <img class="logo_ft" src="/images/logo.png" alt="logo">
         </div>
         <div class="list_footer bg_mb ">
             <!-- <p class="title_ft">Giới thiệu</p> -->
