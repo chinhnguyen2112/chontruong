@@ -398,6 +398,7 @@ li.page_item.page-item-59.page_item_has_children {
 
 @media only screen and (max-width: 540px) {
     .box_logo_ft {
+        max-width: 250px;
         margin: auto;
     }
     .logo_ft {
