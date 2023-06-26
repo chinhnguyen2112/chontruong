@@ -74,13 +74,13 @@ if (mucluc != null && input1 != null) {
 	}
 }
 var check_click = 0;
-$(".show_ml").click(function () {
+$(".box_title_ml").click(function () {
 	if (check_click % 2 == 0) {
-		$(".list_mucluc").show(100);
-		$(".right_detail").css("width", "100%");
+		$(".list_mucluc").show(200);
+		$(".img_show_ml").css("rotate", "90deg");
 	} else {
-		$(".list_mucluc").hide(100);
-		$(".right_detail").css("width", "max-content");
+		$(".list_mucluc").hide(200);
+		$(".img_show_ml").css("rotate", "unset");
 	}
 	++check_click;
 });
