@@ -5,19 +5,19 @@
             <div class="content_mail">
                 <div class="mail_top">
                     <div class="logo_mail_box">
-                        <img src="/images/logo_2.png">
+                        <img src="/images/logo_2.png" alt="logo">
                     </div>
                     <div class="content_mail_box">
                         <div class="item_cont">
-                            <img src="/images/icon_01.png">
+                            <img src="/images/icon_01.png" alt="cẩm nang chọn trường">
                             <p class="text_item_mail">Cẩm Nang Chọn Trường A-Z</p>
                         </div>
                         <div class="item_cont">
-                            <img src="/images/icon_02.png">
+                            <img src="/images/icon_02.png" alt="mã ưu đãi">
                             <p class="text_item_mail">100+ Mã Ưu Đãi Độc Quyền</p>
                         </div>
                         <div class="item_cont">
-                            <img src="/images/icon_03.png">
+                            <img src="/images/icon_03.png" alt="xu hướng chọn trường">
                             <p class="text_item_mail">Xu Hướng Chọn Trường 2023</p>
                         </div>
                     </div>
@@ -40,21 +40,21 @@
         <div class="box_content_sidebar">
             <ul>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30 (1).png" />
+                    <img class="icon_li" src="/images/icons8-star-30 (1).png" alt="icon star" />
                     Tư Vấn Chọn
                     <strong>
                         <a href="/truong-dai-hoc/">Trường Đại Học</a>
                     </strong>
                 </li>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30 (1).png" />
+                    <img class="icon_li" src="/images/icons8-star-30 (1).png" alt="icon star" />
                     Tư Vấn Chọn
                     <strong>
                         <a href="/truong-cao-dang/">Trường Cao Đẳng</a>
                     </strong>
                 </li>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30 (1).png" />
+                    <img class="icon_li" src="/images/icons8-star-30 (1).png" alt="icon star" />
                     Cẩm Nang
                     <strong>
                         <a href="/phat-trien-ban-than/">Phát Triển</a>
@@ -62,7 +62,7 @@
                     Bản Thân
                 </li>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30 (1).png" />
+                    <img class="icon_li" src="/images/icons8-star-30 (1).png" alt="icon star" />
                     Cẩm Nang
                     <strong>
                         <a href="/phat-trien-su-nghiep/">Phát Triển</a>
@@ -70,14 +70,14 @@
                     Sự Nghiệp
                 </li>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30 (1).png" />
+                    <img class="icon_li" src="/images/icons8-star-30 (1).png" alt="icon star" />
                     Ngoại Ngữ
                     <strong>
                         <a href="/hoc-tieng-phap/">Tiếng Pháp</a>
                     </strong>
                 </li>
                 <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30 (1).png" />
+                    <img class="icon_li" src="/images/icons8-star-30 (1).png" alt="icon star" />
                     Ngoại Ngữ
                     <strong>
                         <a href="/hoc-tieng-nga/">Tiếng Nga</a>
@@ -89,7 +89,7 @@
     <div class="hot_news">
         <div class="box_heading">
             <a href="#">
-                <img src="/images/icons8-fire-30.png" />
+                <img src="/images/icons8-fire-30.png" alt="icon fire" />
                 Tin Mới Nóng
             </a>
         </div>
