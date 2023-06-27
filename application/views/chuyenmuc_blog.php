@@ -39,8 +39,11 @@
                     </div>
                     <div class="list_blog">
                         <?php foreach ($blog as $key => $val) {
-                            if ($key > 4) { ?>
+                            if ($key > 0) { ?>
                         <div class="this_train">
+                            <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                <p class="title_blog only_mobile"><?= $val['title'] ?></p>
+                            </a>
                             <a href="/<?= $val['alias'] ?>/">
                                 <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
                                 <div class="box_right_data">
@@ -51,17 +54,19 @@
                                         <span class="dot_item"></span>
                                         <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p>
                                     </div>
-                                    <div class="des_blog"><?= $val['sapo'] ?></div>
+                                    <div class="des_blog"><?= $val['sapo'] ?>
+
+                                    </div>
                                 </div>
                             </a>
                         </div>
                         <?php }
                         } ?>
                         <div class="load_more">
-                            <div class="div_bgr_load">
+                            <button class="btn_see_more">
                                 <span>Hiển thị thêm tin</span>
-                                <img src="/images/arrow_loadmore.svg" alt="xem thêm">
-                            </div>
+                                <i class="icon_arrow_down"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
