@@ -300,19 +300,43 @@
 }
 
 .load_more {
-	width: max-content;
+	max-width: 170px;
 	position: relative;
-	background: linear-gradient(90deg, #0348cc 0, #0066ea 0, #a9a5bf 100%);
+	background: linear-gradient(90deg, #a9a5bf 0, #0066ea 0, #0348cc 100%);
 	padding: 1px;
 	border-radius: 35px;
-	margin: 20px auto 0;
+	margin: 20px auto;
 	transition: 0.5s;
 }
 .load_more:hover {
 	background: #39acfd;
 	background: linear-gradient(90deg, #a9a5bf 0, #0066ea 0, #0348cc 100%);
 }
-
+.btn_see_more {
+	background: #fff;
+	padding: 6px 15px 7px 10px;
+	border-radius: 35px;
+	color: #333;
+	display: block;
+	width: 100%;
+	border: none;
+	cursor: pointer;
+	position: relative;
+}
+.btn_see_more span {
+    color: #533c94;
+    font-weight: 500;
+    font-size: 14px;
+}
+.icon_arrow_down {
+	position: absolute;
+	background-image: url(/images/arrow-down.png);
+	width: 9px;
+	height: 5px;
+	right: 12px;
+	top: 16px;
+	background-repeat: no-repeat;
+}
 .div_bgr_load {
 	background: #fff;
 	padding: 6px 15px 7px 10px;
@@ -475,9 +499,10 @@
 		margin-bottom: 10px;
 		margin-top: 0;
 	}
-    .sapo_blog p, .sapo_blog span {
-        color: #000 !important;
-    }
+	.sapo_blog p,
+	.sapo_blog span {
+		color: #000 !important;
+	}
 
 	.blog_top p {
 		padding: 0 10px;
