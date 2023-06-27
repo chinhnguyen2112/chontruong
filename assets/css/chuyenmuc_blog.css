@@ -176,6 +176,17 @@
 .blog_top:hover .title_blog_top {
 	opacity: 0.7;
 }
+.sapo_blog {
+    padding: 0 !important;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.sapo_blog p {
+    padding: 0 15px;
+}
 .sapo_blog p, .sapo_blog span {
     color: #fff !important;
     text-align: left !important;
