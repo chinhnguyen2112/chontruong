@@ -56,6 +56,14 @@ function admin()
 		return false;
 	}
 }
+function admin_vip()
+{
+	if (isset($_SESSION['admin']) && $_SESSION['admin']['id'] > 0 && $_SESSION['admin']['vip'] == 1) {
+		return true;
+	} else {
+		return false;
+	}
+}
 function chuyen_muc($cate = null)
 {
 	$CI = &get_instance();

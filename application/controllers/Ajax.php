@@ -127,4 +127,44 @@ class Ajax extends CI_Controller
             redirect('/');
         }
     }
+    public function load_more_author()
+    {
+        $time =  time();
+        $page = $this->input->post('page');
+        $id_author = $this->input->post('id_author');
+        $page = 20 * ($page - 1);
+        $blog_cate_sql = "SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as image_cate FROM blogs INNER JOIN category ON blogs.chuyenmuc = category.id WHERE time_post <= $time AND blogs.author_id = $id_author ORDER BY blogs.id DESC LIMIT $page,  20";
+        $blog_cate = $this->Madmin->query_sql($blog_cate_sql);
+        $html = '';
+        if ($blog_cate != null) {
+            foreach ($blog_cate as $val) {
+                $html .= '
+                <div class="this_train">
+                    <a href="/' . $val['alias'] . '/">
+                        <img src="/' . $val['image'] . '" alt="' . $val['title'] . '">
+                        <div class="box_right_data">
+                            <p class="title_blog">' . $val['title'] . '</p>
+                            <p class="date_post"><span>' . date('d-m-Y', $val['created_at']) . '</span></p>
+                            <div class="des_blog">' . $val['sapo'] . '</div>
+                        </div>
+                    </a>
+                </div>
+                ';
+            }
+            $next = 0;
+            if (count($blog_cate) == 20) {
+                $next = 1;
+            }
+            $response = [
+                'status' => 1,
+                'html' => $html,
+                'next' => $next
+            ];
+        } else {
+            $response = [
+                'status' => 0,
+            ];
+        }
+        echo json_encode($response);
+    }
 }

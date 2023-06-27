@@ -87,6 +87,7 @@
             $data['type'] = $this->input->post('type');
             $data['created_at'] = $time_post;
             $data['updated_at'] = $time;
+            $data['author_id'] = $_SESSION['admin']['id'];
             $cate = chuyen_muc(['id' => $chuyenmuc]);
             if ($cate[0]['parent'] > 0) {
                 $data['cate_parent'] = $cate[0]['parent'];
@@ -347,6 +348,112 @@
                 $this->load->view('admin/index', $data);
             } else {
                 redirect('/admin/login/');
+            }
+        }
+        public function info()
+        {
+            if (admin()) {
+                if ($this->input->get('id') > 0) {
+                    $data['id'] = $id = $this->input->get('id');
+                    if (!admin_vip() && $id != $_SESSION['admin']['id']) {
+                        redirect('/admin/info?id=' . $_SESSION['admin']['id']);
+                    } else {
+                        $author = $this->Madmin->get_by(['id' => $id], 'admin');
+                        if ($author != null) {
+                            $data['admin'] = $author;
+                        } else {
+                            redirect('/admin/info?id=' . $_SESSION['admin']['id']);
+                        }
+                    }
+                }
+                $data['content'] = '/admin/info';
+                $this->load->view('admin/index', $data);
+            } else {
+                redirect('/admin/login/');
+            }
+        }
+        public function ajax_author()
+        {
+            if (admin()) {
+                $data['name'] = $this->input->post('name');
+                $alias = trim($this->input->post('alias'));
+                $data['content'] = $this->input->post('content');
+                $id = $_SESSION['admin']['id'];
+                if (admin_vip()) {
+                    $id = $this->input->post('id');
+                    $data['alias'] = $alias;
+                    $data['vip'] = $this->input->post('vip');
+                    $password = trim($this->input->post('password'));
+                    if ($password != '') {
+                        $data['password'] = md5($password);
+                    }
+                }
+                $where_check['alias'] = $alias;
+                if ($id > 0) {
+                    $where_check['id !='] = $id;
+                }
+                $check = $this->Madmin->get_by($where_check, 'admin');
+                if ($check != null) {
+                    $response = [
+                        'status' => 2,
+                        'msg' => 'đã tồn tại'
+                    ];
+                } else {
+                    if (admin_vip() && $id == '') {
+                        $data['created_at'] = time();
+                        $data['username'] = $this->input->post('username');
+                        $id = $this->Madmin->insert($data, 'admin');
+                    }
+                    if (isset($_FILES['image']) && $_FILES['image']['name'] !== "") {
+                        if (!is_dir('upload/author/')) {
+                            mkdir('upload/author/', 0755, TRUE);
+                        }
+                        $filedata         = $_FILES['image']['tmp_name'];
+                        $thumb_path        = 'upload/author/' . $id . '.jpg';
+                        $imguser = $id . '.jpg';
+                        $config['file_name'] = $imguser;
+                        $config['upload_path'] = 'upload/author';
+                        $config['allowed_types'] = 'jpg|png';
+                        $this->load->library('upload', $config);
+                        $this->upload->initialize($config);
+                        if (!$this->upload->do_upload('image')) {
+                            $error = array('error' => $this->upload->display_errors());
+                        } else {
+                            $imageThumb = new Image($filedata);
+                            $imageThumb->resize(300, 300, 'crop');
+                            $imageThumb->save($id, $config['upload_path'], 'jpg');
+                            $data['image'] = $thumb_path;
+                        }
+                    }
+                    $update = $this->Madmin->update(['id' => $id], $data, 'admin');
+                    if ($update) {
+                        $response = [
+                            'status' => 1,
+                            'msg' => 'cập nhật thành công !'
+                        ];
+                    } else {
+                        $response = [
+                            'status' => 0,
+                            'msg' => 'Thất bại'
+                        ];
+                    }
+                }
+            } else {
+                $response = [
+                    'status' => 0,
+                    'msg' => 'Hết phiên đăng nhập !'
+                ];
+            }
+            echo json_encode($response);
+        }
+        public function list_author()
+        {
+            if (admin_vip()) {
+                $data['list'] = $this->Madmin->get_list(['id !=' => $_SESSION['admin']['id']], 'admin');
+                $data['content'] = '/admin/list_author';
+                $this->load->view('admin/index', $data);
+            } else {
+                redirect('/admin/');
             }
         }
         public function sitemap()
