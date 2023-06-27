@@ -592,6 +592,9 @@ td:first-child {
         margin-top: 0;
         width: 100%;
     }
+    .sidebar_content {
+        width: 100% !important;
+    }
 }
 
 @media only screen and (max-width: 540px) {
@@ -666,13 +669,13 @@ td:first-child {
     .this_des_handbook p,
     .this_des_handbook span {
         margin: 0 !important;
-        font-size: 11px !important;
+        font-size: 13px !important;
         line-height: 15px !important;
     }
 
     .title_handbook {
         margin-bottom: 0;
-        font-size: 13px;
+        font-size: 15px;
         line-height: 15px;
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -691,7 +694,7 @@ td:first-child {
     }
 
     .date_post span {
-        font-size: 11px;
+        font-size: 12px;
         margin: 0;
     }
 

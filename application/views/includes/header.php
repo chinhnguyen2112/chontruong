@@ -1,6 +1,6 @@
 <div class="main_header ">
     <a class="logo_nonpc" href="/">
-        <img src="/images/logo.png" alt="logo" class="img_logo_bot_header">
+        <img src="/images/logo.webp" alt="logo" class="img_logo_bot_header">
     </a>
     <div class="dialog_search" id="dialog">
         <div class="btn_cancel" onclick="show_search(this,2)">
@@ -15,7 +15,7 @@
     <div class="header_bot body_width" id="header_bot">
         <section class="header_left">
             <a class="logo_pc" href="/">
-                <img src="/images/logo_2.png" alt="logo" class="img_logo_bot_header">
+                <img src="/images/logo_2.webp" alt="logo" class="img_logo_bot_header">
             </a>
             <nav class="nav_menu">
 

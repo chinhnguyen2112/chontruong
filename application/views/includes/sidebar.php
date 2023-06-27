@@ -5,7 +5,7 @@
             <div class="content_mail">
                 <div class="mail_top">
                     <div class="logo_mail_box">
-                        <img src="/images/logo_2.png" alt="logo">
+                        <img src="/images/logo_2.webp" alt="logo">
                     </div>
                     <div class="content_mail_box">
                         <div class="item_cont">
