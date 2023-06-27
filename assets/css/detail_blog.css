@@ -100,7 +100,6 @@ h6 p {
     align-items: center;
     gap: 8px;
     margin-bottom: 18px;
-    flex-direction: row-reverse;
     justify-content: left;
 }
 .box_date {

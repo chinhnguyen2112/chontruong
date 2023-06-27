@@ -359,7 +359,6 @@
 }
 @media only screen and (max-width: 1024px) {
 	.content_about {
-		margin-top: 20px;
 		padding: 20px 15px;
 		padding-top: 0;
 	}
@@ -449,7 +448,7 @@
 
 @media only screen and (max-width: 540px) {
 	.content_about {
-		padding: 15px;
+		padding: 0 15px;
 	}
 
 	.breadcrumb p,
@@ -505,7 +504,7 @@
 	}
 
 	.blog_top p {
-		padding: 0 10px;
+		padding: 0;
 	}
 	.box_right_data {
 		padding-left: 15px;
