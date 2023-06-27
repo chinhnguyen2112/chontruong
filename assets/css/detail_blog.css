@@ -47,7 +47,7 @@ h3,
     line-height: 32px !important;
     font-weight: 600 !important;
     margin-bottom: 12px !important;
-    color: #0040ff !important;
+    color: #000 !important;
     text-align: left !important;
 }
 
@@ -95,14 +95,14 @@ h6 p {
     color: #131736;
     margin-bottom: 10px;
 }
-
 .box_author {
     display: flex;
     align-items: center;
     gap: 8px;
     margin-bottom: 18px;
+    flex-direction: row-reverse;
+    justify-content: left;
 }
-
 .box_date {
     display: flex;
     align-items: center;
@@ -135,7 +135,6 @@ h6 p {
     line-height: 26px;
     color: #000000;
 }
-
 .date_blog {
     font-weight: 400;
     font-size: 12px;
