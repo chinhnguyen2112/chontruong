@@ -36,21 +36,21 @@
 }
 
 .train_content {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .top_blog {
 	width: 100%;
-    grid-template-columns: auto 300px;
-    margin: 0 -10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0 15px;
+	grid-template-columns: auto 300px;
+	margin: 0 -10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 0 15px;
 }
 
 .top_left {
@@ -96,7 +96,7 @@
 	transition: 0.5s;
 }
 .only_mobile {
-    display: none !important;
+	display: none !important;
 }
 
 .title_blog a {
@@ -117,7 +117,6 @@
 	font-size: 14px !important;
 	line-height: 21px !important;
 }
-
 
 .des_blog p {
 	text-align: justify;
@@ -262,9 +261,9 @@
 }
 
 .this_train a {
-    display: flex;
-    align-items: flex-start;
-    color: unset;
+	display: flex;
+	align-items: flex-start;
+	color: unset;
 }
 
 .box_right_data {
@@ -336,9 +335,9 @@
 }
 @media only screen and (max-width: 1024px) {
 	.content_about {
-        margin-top: 20px;
-        padding: 20px 15px;
-        padding-top: 0;
+		margin-top: 20px;
+		padding: 20px 15px;
+		padding-top: 0;
 	}
 
 	.left_about {
@@ -356,42 +355,40 @@
 }
 
 @media only screen and (max-width: 768px) {
-
-
 	.top_blog {
-        gap: 0;
-        display: flex;
-        padding: 0;
-        margin: 0;
+		gap: 0;
+		display: flex;
+		padding: 0;
+		margin: 0;
 	}
-    .top_left {
-        flex-direction: column;
-        width: calc(100% - 28%);
-        margin-bottom: 10px;
-    }
+	.top_left {
+		flex-direction: column;
+		width: calc(100% - 28%);
+		margin-bottom: 10px;
+	}
 	.left_blog {
 		width: 100%;
 	}
-    .blog_top_left {
-        width: 65%;
-        height: 250px;
-    }
-    .blog_top img {
-        height: 100%;
-    }
-    .blog_top_right {
-        width: 35%;
-        height: 250px;
-    }
+	.blog_top_left {
+		width: 65%;
+		height: 250px;
+	}
+	.blog_top img {
+		height: 100%;
+	}
+	.blog_top_right {
+		width: 35%;
+		height: 250px;
+	}
 	.list_blog_top {
 		display: flex;
 		flex-direction: column;
 		gap: unset;
 	}
 	.title_blog_top {
-        padding: 30px 15px 0px 15px;
-        overflow: hidden;
-        font-size: 15px;
+		padding: 30px 15px 0px 15px;
+		overflow: hidden;
+		font-size: 15px;
 	}
 
 	.title_blog {
@@ -407,9 +404,9 @@
 	.date_post span {
 		font-size: 11px;
 	}
-    .box_right_data {
-        width: -webkit-fill-available;
-    }
+	.box_right_data {
+		width: -webkit-fill-available;
+	}
 	.box_right_data .des_blog p {
 		font-size: 11px !important;
 		line-height: 15px !important;
@@ -474,14 +471,21 @@
 		color: #000 !important;
 		font-size: 25px;
 	}
+	.sapo_blog {
+		margin-bottom: 10px;
+		margin-top: 0;
+	}
+    .sapo_blog p, .sapo_blog span {
+        color: #000 !important;
+    }
 
 	.blog_top p {
 		padding: 0 10px;
 	}
 	.box_right_data {
 		padding-left: 15px;
-    display: flex;
-    flex-direction: column;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.this_train_right:last-child {
@@ -508,26 +512,26 @@
 	.this_train a img {
 		min-height: 113px;
 	}
-    .only_mobile {
-        display: block !important;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 26px;
-    color: #333;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-    margin-bottom: 15px;
-    }
+	.only_mobile {
+		display: block !important;
+		font-size: 21px;
+		font-weight: bold;
+		line-height: 26px;
+		color: #333;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+		margin-bottom: 15px;
+	}
 	.this_train .title_blog {
 		display: none;
 	}
 
 	.list_blog .des_blog {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 4;
-        overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 4;
+		overflow: hidden;
 	}
 }
