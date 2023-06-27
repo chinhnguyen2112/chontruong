@@ -47,7 +47,7 @@ h3,
     line-height: 32px !important;
     font-weight: 600 !important;
     margin-bottom: 12px !important;
-    color: #0040ff !important;
+    color: #000 !important;
     text-align: left !important;
 }
 
@@ -95,19 +95,28 @@ h6 p {
     color: #131736;
     margin-bottom: 10px;
 }
-
-.box_author img {
-    width: 20px;
-}
-
 .box_author {
     display: flex;
     align-items: center;
     gap: 8px;
     margin-bottom: 18px;
+    flex-direction: row-reverse;
+    justify-content: left;
 }
-
-.date_blog {
+.text_author a {
+    color: 
+}
+.text_author img {
+    width: 30px;
+}
+.box_date {
+    display: flex;
+}
+.box_date img {
+    width: 25px;
+    height: 25px;
+}
+.date_blog, .name_author {
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
