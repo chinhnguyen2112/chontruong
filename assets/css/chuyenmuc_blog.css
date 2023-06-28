@@ -389,9 +389,6 @@
 		width: calc(100% - 28%);
 		margin-bottom: 10px;
 	}
-	.left_blog {
-		width: 100%;
-	}
 	.blog_top_left {
 		width: 65%;
 		height: 250px;
@@ -470,10 +467,6 @@
 
 	.top_blog {
 		flex-direction: column;
-	}
-
-	.left_blog {
-		width: 100%;
 	}
 	.linl_all_detail {
 		display: flex;

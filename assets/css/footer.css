@@ -205,8 +205,6 @@ li.page_item.page-item-59.page_item_has_children {
     font-size: 15px;
     overflow: hidden;
     display: -webkit-box;
-    /* -webkit-box-orient: vertical; */
-    /* -webkit-line-clamp: 1; */
     margin-bottom: 10px;
     text-align: justify;
 }
@@ -218,11 +216,6 @@ li.page_item.page-item-59.page_item_has_children {
     margin-top: 5px;
     background-color: #ddd;
 }
-
-.widget_text {
-    /* padding-top: 10px; */
-}
-
 .address_ft a {
     padding: 0;
 }

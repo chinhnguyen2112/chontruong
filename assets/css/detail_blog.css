@@ -551,9 +551,6 @@ td:first-child {
         margin-top: 0px;
         padding-bottom: 20px;
     }
-
-    .list_blog_same {}
-
     .date_post span {
         font-size: 14px;
         line-height: 16px;
@@ -596,21 +593,6 @@ td:first-child {
 }
 
 @media only screen and (max-width: 540px) {
-    .main_content_blog {
-        display: flex;
-        flex-direction: column;
-        padding-top: 0;
-    }
-
-    .blog_content {
-        width: 100%;
-        margin-top: 0;
-    }
-
-    .breadcrumb p,
-    .breadcrumb span {
-        margin-bottom: 0;
-    }
 
     .container_widget_about {
         padding: 0 20px;
