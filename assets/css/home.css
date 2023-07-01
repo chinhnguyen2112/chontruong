@@ -347,17 +347,9 @@
         margin-top: 20px;
         padding: 0;
     }
-
-    .top_blog {
-        flex-direction: column;
-    }
-
-    .left_blog {
-        width: 100%;
-    }
-
     .title_blog_top {
         font-size: 22px;
+        margin-bottom: 10px;
     }
 
     .blog_top p {
@@ -372,11 +364,6 @@
     .this_train a {
         gap: 10px;
     }
-
-    .list_blog {
-        width: 100%;
-    }
-
     .box_right_data {
         width: 100%;
     }
@@ -402,12 +389,6 @@
         display: flex;
         flex-direction: column;
     }
-
-    .title_blog_top {
-        font-size: 15px !important;
-        margin-bottom: 10px;
-    }
-
     .title_blog {
         font-size: 15px !important;
         margin-bottom: 5px !important;

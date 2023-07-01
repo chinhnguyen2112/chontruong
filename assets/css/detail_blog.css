@@ -47,7 +47,7 @@ h3,
     line-height: 32px !important;
     font-weight: 600 !important;
     margin-bottom: 12px !important;
-    color: #0040ff !important;
+    color: #000 !important;
     text-align: left !important;
 }
 
@@ -95,14 +95,13 @@ h6 p {
     color: #131736;
     margin-bottom: 10px;
 }
-
 .box_author {
     display: flex;
     align-items: center;
     gap: 8px;
     margin-bottom: 18px;
+    justify-content: left;
 }
-
 .box_date {
     display: flex;
     align-items: center;
@@ -135,7 +134,6 @@ h6 p {
     line-height: 26px;
     color: #000000;
 }
-
 .date_blog {
     font-weight: 400;
     font-size: 12px;
@@ -553,9 +551,6 @@ td:first-child {
         margin-top: 0px;
         padding-bottom: 20px;
     }
-
-    .list_blog_same {}
-
     .date_post span {
         font-size: 14px;
         line-height: 16px;
@@ -598,21 +593,6 @@ td:first-child {
 }
 
 @media only screen and (max-width: 540px) {
-    .main_content_blog {
-        display: flex;
-        flex-direction: column;
-        padding-top: 0;
-    }
-
-    .blog_content {
-        width: 100%;
-        margin-top: 0;
-    }
-
-    .breadcrumb p,
-    .breadcrumb span {
-        margin-bottom: 0;
-    }
 
     .container_widget_about {
         padding: 0 20px;
