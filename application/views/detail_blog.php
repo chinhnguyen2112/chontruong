@@ -29,7 +29,7 @@
                             <?php if (isset($author) && $author != null) { ?>
                                 <div class="text_author">
                                     <img src="/<?= ($author['image'] != null) ? $author['image'] : 'images/avt.png' ?>" alt="Tác giả">
-                                    <a class="name_author" href="/tac-gia/<?= $author['alias'] ?>/"><?= $author['name'] ?></a>
+                                    <a class="name_author" href="/<?= $author['alias'] ?>/"><?= $author['name'] ?></a>
                                 </div>
                             <?php } ?>
                             <div class="box_date">

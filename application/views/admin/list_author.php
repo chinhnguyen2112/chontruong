@@ -171,7 +171,7 @@
                                             <td class="text-center"><?= $val['id']; ?></td>
                                             <td><?= $val['username'] ?></td>
                                             <td><?= $val['name'] ?></td>
-                                            <td><a href="/tac-gia/<?= $val['alias'] ?>/" target="_blank" rel="noopener noreferrer">https://chontruong.edu.vn/tac-gia/<?= $val['alias'] ?>/</a></td>
+                                            <td><a href="/<?= $val['alias'] ?>/" target="_blank" rel="noopener noreferrer">https://chontruong.edu.vn/<?= $val['alias'] ?>/</a></td>
                                             <td class="text-center"><?= ($val['vip'] == 1) ? 'Quản lý' : 'Biên tập' ?></td>
                                             <td class="text-center">
                                                 <div class="btn-group">

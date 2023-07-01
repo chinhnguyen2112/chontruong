@@ -83,7 +83,6 @@ $route['load_more_author'] = 'Ajax/load_more_author';
 $route['search'] = 'Ajax/search';
 $route['search/(:num)'] = 'Ajax/search/$1';
 
-$route['tac-gia/(:any)'] = 'Home/author/$1 ';
 $route['(:any)'] = 'Home/chuyenmuc/$1 ';
 $route['(:any)/(:num)'] = 'Home/chuyenmuc/$1 ';
 // $route['(:any)/(:any)'] = 'Home/tag/$1/$2 ';
