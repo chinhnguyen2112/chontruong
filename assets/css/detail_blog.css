@@ -593,7 +593,7 @@ td:first-child {
 }
 
 @media only screen and (max-width: 540px) {
-    .sidebar_content {
+    .sidebar_bot, .sidebar_box, .hot_news{
         display: none !important;
     }
 
