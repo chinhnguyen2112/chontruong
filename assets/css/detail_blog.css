@@ -152,7 +152,7 @@ h6 p {
 .blog_content {
     flex-direction: column;
     display: flex;
-    width: 775px;
+    width: calc(100% - 370px);
 }
 
 .content_blog p,
@@ -505,6 +505,12 @@ td:first-child {
     text-align: center !important;
     font-weight: 700;
 }
+.sidebar_mid {
+    display: none;
+}
+.sidebar_bot {
+    width: 30.1%;
+}
 
 @media only screen and (max-width: 1024px) {
     .container_widget_about {
@@ -533,6 +539,7 @@ td:first-child {
 
     .blog_content {
         margin-top: 30px;
+        width: calc(100% - 320px);
     }
 
     .right_detail {
@@ -577,6 +584,9 @@ td:first-child {
 }
 
 @media only screen and (max-width: 768px) {
+    .sidebar_bot {
+        width: 100%;
+    }
     .main_content_blog {
         display: flex;
         flex-direction: column;
@@ -595,6 +605,9 @@ td:first-child {
 @media only screen and (max-width: 540px) {
     .sidebar_bot, .sidebar_box, .hot_news{
         display: none !important;
+    }
+    .sidebar_mid {
+        display: block;
     }
 
     .container_widget_about {
