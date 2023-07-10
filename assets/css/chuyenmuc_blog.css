@@ -445,6 +445,9 @@
 }
 
 @media only screen and (max-width: 540px) {
+	.sidebar_content {
+        display: none !important;
+    }
 	.content_about {
 		padding: 0 15px;
 	}
