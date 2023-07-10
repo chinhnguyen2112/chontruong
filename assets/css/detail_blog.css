@@ -593,6 +593,9 @@ td:first-child {
 }
 
 @media only screen and (max-width: 540px) {
+    .sidebar_content {
+        display: none !important;
+    }
 
     .container_widget_about {
         padding: 0 20px;
