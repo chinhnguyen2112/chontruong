@@ -181,7 +181,8 @@
 	margin-top: 20px;
 }
 .sapo_blog p {
-	padding: 0 15px;
+	padding: 0 15px !important;
+	background: none !important;
 }
 .sapo_blog p,
 .sapo_blog span {
