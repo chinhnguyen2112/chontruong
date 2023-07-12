@@ -112,7 +112,7 @@ class Home extends CI_Controller
             $cate = $this->Madmin->query_sql_row("SELECT *  FROM category  WHERE id = {$blog['chuyenmuc']} ");
             $cate = $this->Madmin->query_sql_row("SELECT id,name,alias,parent  FROM category  WHERE id = {$blog['chuyenmuc']} ");
             $data['cate'] = $cate;
-            if ($cate['parent'] > 0) {
+            if ($cate != null && $cate['parent'] > 0) {
                 $cate_parent = $this->Madmin->query_sql_row("SELECT id,alias,name,parent  FROM category  WHERE id = {$cate['parent']} ");
                 $data['cate_1'] = $cate_parent;
             }
