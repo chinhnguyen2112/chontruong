@@ -95,6 +95,7 @@ h6 p {
     color: #131736;
     margin-bottom: 10px;
 }
+
 .box_author {
     display: flex;
     align-items: center;
@@ -102,6 +103,7 @@ h6 p {
     margin-bottom: 18px;
     justify-content: left;
 }
+
 .box_date {
     display: flex;
     align-items: center;
@@ -134,6 +136,7 @@ h6 p {
     line-height: 26px;
     color: #000000;
 }
+
 .date_blog {
     font-weight: 400;
     font-size: 12px;
@@ -152,7 +155,7 @@ h6 p {
 .blog_content {
     flex-direction: column;
     display: flex;
-    width: 775px;
+    width: calc(100% - 370px);
 }
 
 .content_blog p,
@@ -175,6 +178,7 @@ h6 p {
 
 .content_blog ol {
     padding-left: 30px;
+    display: list-item;
     list-style: auto;
 }
 
@@ -506,6 +510,14 @@ td:first-child {
     font-weight: 700;
 }
 
+.sidebar_mid {
+    display: none;
+}
+
+.sidebar_bot {
+    width: 30.1%;
+}
+
 @media only screen and (max-width: 1024px) {
     .container_widget_about {
         padding: 20px;
@@ -533,6 +545,7 @@ td:first-child {
 
     .blog_content {
         margin-top: 30px;
+        width: calc(100% - 320px);
     }
 
     .right_detail {
@@ -551,6 +564,7 @@ td:first-child {
         margin-top: 0px;
         padding-bottom: 20px;
     }
+
     .date_post span {
         font-size: 14px;
         line-height: 16px;
@@ -577,6 +591,10 @@ td:first-child {
 }
 
 @media only screen and (max-width: 768px) {
+    .sidebar_bot {
+        width: 100%;
+    }
+
     .main_content_blog {
         display: flex;
         flex-direction: column;
@@ -587,12 +605,23 @@ td:first-child {
         margin-top: 0;
         width: 100%;
     }
+
     .sidebar_content {
         width: 100% !important;
     }
 }
 
 @media only screen and (max-width: 540px) {
+
+    .sidebar_bot,
+    .sidebar_box,
+    .hot_news {
+        display: none !important;
+    }
+
+    .sidebar_mid {
+        display: block;
+    }
 
     .container_widget_about {
         padding: 0 20px;
@@ -612,6 +641,15 @@ td:first-child {
     .title_h1 {
         font-size: 24px;
         line-height: 34px;
+    }
+
+    .box_author {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .box_date::before {
+        display: none;
     }
 
     .date_blog {
