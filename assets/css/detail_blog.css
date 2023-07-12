@@ -178,7 +178,7 @@ h6 p {
 
 .content_blog ol {
     padding-left: 30px;
-    list-style: auto;
+    list-style: decimal;
 }
 
 figcaption {
@@ -412,6 +412,7 @@ a.H4abc {
 .content_blog ol li {
     line-height: 1.5 !important;
     white-space: unset !important;
+    display: list-item;
 }
 
 .box_tag {
