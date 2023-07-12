@@ -20,6 +20,8 @@
                     if (isset($cate) && $cate != null) { ?>
                         <a class="link_breadcrumb" href="/<?= $cate['alias'] ?>/"><?= $cate['name'] ?></a>
 
+                    <?php } else { ?>
+                        <span class="this_breadcrumb"><?= $blog['title'] ?></span>
                     <?php } ?>
                 </div>
                 <div class="box_data_blog">
