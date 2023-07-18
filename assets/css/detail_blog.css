@@ -518,6 +518,19 @@ td:first-child {
     width: 30.1%;
 }
 
+.follow_ggnew {
+    background: #f1f2f2;
+    border-radius: 16px;
+    padding: 2px 10px;
+    font-size: 14px;
+    color: #7f7f80;
+    font-weight: 500;
+}
+
+.follow_ggnew img {
+    width: 47px;
+}
+
 @media only screen and (max-width: 1024px) {
     .container_widget_about {
         padding: 20px;
