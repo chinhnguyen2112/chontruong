@@ -183,6 +183,9 @@
             $data['level'] = 0;
             $data['parent'] = 0;
             $where_check = ['alias' => $alias];
+            if ($id > 0) {
+                $where_check['id !='] = $id;
+            }
             $check = $this->Madmin->get_by($where_check, 'category');
             if ($check != null) {
                 $response = [
@@ -201,9 +204,11 @@
                         $insert_chuyenmuc = $id;
                     }
                 } else {
+                    $data['created_at'] = time();
                     $insert_chuyenmuc = $this->Madmin->insert($data, 'category');
                 }
                 if ($insert_chuyenmuc > 0) {
+                    $this->sitemap_page();
                     $response = [
                         'status' => 1,
                         'msg' => 'Thành công'
@@ -311,6 +316,7 @@
                 $insert_tag = $this->Madmin->insert($data, 'tags');
             }
             if ($insert_tag > 0) {
+                $this->sitemap_page();
                 $response = [
                     'status' => 1,
                     'msg' => 'Thành công'
@@ -531,5 +537,51 @@
                 }
                 $doc->save($name_file);
             }
+        }
+        public function sitemap_page()
+        {
+            $sql = "SELECT id,alias,created_at FROM category ORDER BY id ASC";
+            $cate = $this->Madmin->query_sql($sql);
+            $tag = $this->Madmin->query_sql("SELECT id,alias,created_at FROM tags ORDER by id");
+            $arr = array_merge($cate, $tag);
+            $doc = new DOMDocument("1.0", "utf-8");
+            $doc->formatOutput = true;
+            $r = $doc->createElement("urlset");
+            $r->setAttribute("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
+            $doc->appendChild($r);
+            //sitemap trang chủ
+            $url = $doc->createElement("url");
+            $name = $doc->createElement("loc");
+            $name->appendChild($doc->createTextNode('https://chontruong.edu.vn/'));
+            $url->appendChild($name);
+            $lastmod = $doc->createElement("lastmod");
+            $lastmod->appendChild($doc->createTextNode('2023-03-02'));
+            $url->appendChild($lastmod);
+            $changefreq = $doc->createElement("changefreq");
+            $changefreq->appendChild($doc->createTextNode('daily'));
+            $url->appendChild($changefreq);
+            $priority = $doc->createElement("priority");
+            $priority->appendChild($doc->createTextNode('1'));
+            $url->appendChild($priority);
+            $r->appendChild($url);
+            foreach ($arr as $val) {
+                $url = $doc->createElement("url");
+                $name = $doc->createElement("loc");
+                $name->appendChild($doc->createTextNode('https://chontruong.edu.vn/' . $val['alias'] . '/'));
+                $url->appendChild($name);
+                $lastmod = $doc->createElement("lastmod");
+                $lastmod->appendChild($doc->createTextNode(date('Y-m-d', $val['created_at'])));
+                $url->appendChild($lastmod);
+                $changefreq = $doc->createElement("changefreq");
+                $changefreq->appendChild($doc->createTextNode('daily'));
+                $url->appendChild($changefreq);
+                $priority = $doc->createElement("priority");
+                $priority->appendChild($doc->createTextNode('0.9'));
+                $url->appendChild($priority);
+                $r->appendChild($url);
+            }
+            $name_file = "page.xml";
+            $date = date('Y-m-d', time());
+            $doc->save($name_file);
         }
     }
