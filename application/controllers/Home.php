@@ -32,7 +32,7 @@ class Home extends CI_Controller
     {
         $time = time();
         $data['canonical'] = base_url();
-        $data['blog'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time", 'blogs', 0, 20);
+        $data['blog'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE type = 0 AND time_post <= $time ORDER BY created_at DESC LIMIT 20");
         $data['blog_new'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time", 'blogs', 0, 5);
         $data['meta_title'] = 'Web Review Trường Đại Học - Cao Đẳng - Trung Cấp';
         $data['meta_des'] = 'Nền tảng Web Review Trường ở thời điểm hiện tại và trong tương lai sẽ là một trong những nền tảng giúp cho Học sinh và sinh viên lựa chọn được ngành nghề phù hợp...';
