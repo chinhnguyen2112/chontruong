@@ -23,7 +23,7 @@
                     <li class="this_menu">
                         <a class="home_header" href="/">Trang Chủ</a>
                     </li>
-                    <?php $menu_cate_parent = chuyen_muc(['parent = 0 AND id != 14']);
+                    <?php $menu_cate_parent = chuyen_muc('parent = 0 AND id != 14');
                 foreach ($menu_cate_parent as $val) {
                     $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
                     <li class="this_menu">
