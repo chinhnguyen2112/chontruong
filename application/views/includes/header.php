@@ -19,16 +19,16 @@
             </a>
             <nav class="nav_menu">
 
-                <ul class="list_menu">
+                <ul class="list_menu" id="list_menu">
                     <li class="this_menu">
-                        <a class="home_header" href="/">Trang Chủ</a>
+                        <a class="home_header active" href="/">Trang Chủ</a>
                     </li>
                     <?php $menu_cate_parent = chuyen_muc('parent = 0 AND id != 14');
                 foreach ($menu_cate_parent as $val) {
                     $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
                     <li class="this_menu">
                         <div class="item_menu" onclick="show_submenu(this,1)">
-                            <a href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
+                            <a class="text_item_menu" data-id="<?= $val['id'] ?>" href="/<?= $val['alias'] ?>/"><?= $val['name'] ?></a>
                             <img class="icon_forward" src="/images/icons8-forward-30 (2).png" alt="icon forward">
                         </div>
                         <?php if ($menu_cate != null) { ?>

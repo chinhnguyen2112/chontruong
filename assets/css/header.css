@@ -91,7 +91,7 @@ img.img_logo_bot_header {
 }
 
 .this_menu .home_header {
-    color: #39acfd;
+    color: #000;
     font-size: 16px;
     font-weight: 600;
 }
@@ -119,8 +119,14 @@ img.img_logo_bot_header {
     line-height: 18px;
     color: #000;
     font-weight: 600;
+    transition: 0.5s;
 }
-
+.this_menu .item_menu a:hover { 
+    color: #39acfd;
+}
+.active {
+    color: #39acfd !important;
+}
 .this_menu .icon_forward {
     width: 10px;
     height: 10px;

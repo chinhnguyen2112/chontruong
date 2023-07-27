@@ -74,6 +74,7 @@ class Home extends CI_Controller
             $count_or['chuyenmuc'] = $chuyenmuc['id'];
             if ($chuyenmuc['parent'] == 0) {
                 $count_or['cate_parent'] = $chuyenmuc['id'];
+                $data['cate_to'] = $chuyenmuc;
             }
             $count = $this->Madmin->num_rows_or("type = 0 AND time_post <= $time", $count_or, 'blogs');
             pagination('/' . $chuyenmuc['alias'], $count, $limit);
