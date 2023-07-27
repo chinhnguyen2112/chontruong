@@ -34,14 +34,18 @@ window.onclick = function(event) {
 	}
   }
 
-  var width = $(window).width();
+  var width = screen.width;
+  if (width < 1025) {
+	$(".list_menu").addClass("list_menu_nonpc");
+	$(".menu_con").addClass("menu_con_nonpc");
+  }
   function show_submenu(e, type) {
-	if (type == 1 && width < 1024) {
-		$('.list_menu').css('transform', 'translateX(-100%)');
-		$(e).next('.menu_con').css('transform', 'translateX(100%)');
+	if (type == 1) {
+		$('.list_menu_nonpc').css('transform', 'translateX(-100%)');
+		$(e).next('.menu_con_nonpc').css('transform', 'translateX(100%)');
 	} else {
-		$('.list_menu').css('transform', 'translateX(0)');
-		$(e).next('.menu_con').css('transform', 'translateX(-150%)');
-		$('.menu_con').css('transform', 'translateX(-150%)');
+		$('.list_menu_nonpc').css('transform', 'translateX(0)');
+		$(e).next('.menu_con_nonpc').css('transform', 'translateX(-150%)');
+		$('.menu_con_nonpc').css('transform', 'translateX(-150%)');
 	}
   }
