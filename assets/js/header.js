@@ -49,3 +49,13 @@ window.onclick = function(event) {
 		$('.menu_con_nonpc').css('transform', 'translateX(-150%)');
 	}
   }
+
+// $(document).ready(function() {
+// 	var current_path = window.location.pathname;
+// 	console.log(current_path);
+// 	$(".text_item_menu").each(function() {
+// 		var href = jQuery(this).attr("href");
+// 		console.log(href);
+// 	});
+// });
+

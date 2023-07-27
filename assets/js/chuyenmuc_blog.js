@@ -147,3 +147,15 @@ $(".hide_show_content").click(function () {
 	}
 	++check_click;
 });
+
+var id_chuyenmuc = $("#chuyen_muc").val();
+var id_cm = $(".text_item_menu").data("id");
+console.log(id_cm);
+console.log(id_chuyenmuc);
+$(".text_item_menu").each(function() {
+	if ($(this).data("id") == id_chuyenmuc) {
+		$(".home_header").removeClass("active");
+		$(this).addClass("active");
+		console.log("hi");
+	}
+});
