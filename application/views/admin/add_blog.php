@@ -177,7 +177,7 @@
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Đường dẫn thân thiện</label>
-        <input type="text" name="alias" value="<?= (isset($blog)) ? $blog['alias'] : ''; ?>" id="alias" class="form-control">
+        <input type="text" name="alias" value="<?= (isset($blog)) ? $blog['alias'] : ''; ?>" oninput="show_alias(this.value)" id="alias" class="form-control">
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Chuyên mục</label>

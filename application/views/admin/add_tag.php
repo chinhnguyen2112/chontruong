@@ -161,7 +161,7 @@
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Đường dẫn thân thiện (không chứa dấu "/")</label>
-        <input type="text" name="alias" value="<?= (isset($tag)) ? $tag['alias'] : ''; ?>" id="alias" class="form-control">
+        <input type="text" name="alias" value="<?= (isset($tag)) ? $tag['alias'] : ''; ?>" oninput="show_alias(this.value)" id="alias" class="form-control">
     </div>
     <div class="form-group mb-3">
         <label class="label" for="name">Tag cha</label>
@@ -224,10 +224,10 @@
         return str;
     }
 
-    // function show_alias(str) {
-    //     var alias = get_alias(str);
-    //     $("#alias").val(alias);
-    // }
+    function show_alias(str) {
+        var alias = get_alias(str);
+        $("#alias").val(alias);
+    }
     $("#form").validate({
         onclick: false,
         rules: {
