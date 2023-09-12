@@ -36,7 +36,8 @@ body {
 }
 
 .list_contact {
-    height: 0;
+    height: 0 !important;
+    display: none !important;
 }
 
 .li_back {
