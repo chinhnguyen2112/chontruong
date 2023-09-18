@@ -105,8 +105,6 @@ class Home extends CI_Controller
                 'chuyenmuc_blog.css',
             ];
         } else if (isset($blog) && $blog != null) { // blog
-            $this->Madmin->add_view(['alias' => $alias]);
-            //*/
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
                 redirect('/' . $alias . '/', 'location', 301);
             }
