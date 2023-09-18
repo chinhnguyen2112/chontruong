@@ -91,7 +91,7 @@ h6 p {
 .title_h1 {
     font-weight: 700;
     font-size: 26px;
-    line-height: 30px;
+    line-height: 34px;
     color: #131736;
     margin-bottom: 10px;
 }
@@ -120,16 +120,6 @@ h6 p {
     border-radius: 50%;
 }
 
-.box_date::before {
-    content: "";
-    width: 6px;
-    height: 6px;
-    display: block;
-    border-radius: 50%;
-    background: #000;
-    margin: 0 8px 0 0;
-}
-
 .name_author {
     font-weight: 700;
     font-size: 14px;
@@ -143,7 +133,7 @@ h6 p {
     line-height: 24px;
     color: #808EA1;
     margin-bottom: 0;
-    margin-top: 4px;
+    margin-left: 5px;
 }
 
 .main_content_blog {
@@ -172,7 +162,7 @@ h6 p {
 }
 
 .content_blog ul {
-    padding-left: 30px;
+    padding-left: 20px !important;
     list-style: disc;
 }
 

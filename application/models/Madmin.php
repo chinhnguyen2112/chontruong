@@ -175,4 +175,11 @@ class Madmin extends CI_Model
         return $this->db->get($table)->result_array();
         // echo $this->db->last_query();
     }
+    function add_view($where)
+    {
+        $this->db->set('view', 'view+1', FALSE);
+        $this->db->where($where);
+        return $this->db->update('blogs');
+        // echo $this->db->last_query();
+    }
 }

@@ -64,6 +64,28 @@ function admin_vip()
 		return false;
 	}
 }
+function check_admin()
+{
+	if (isset($_SESSION['admin']) && $_SESSION['admin']['id'] > 0 && $_SESSION['admin']['type'] == 1) {
+		return 1; // admin
+	} else if (isset($_SESSION['admin']) && $_SESSION['admin']['id'] > 0 && $_SESSION['admin']['type'] == 2) {
+		return 2; // biên tập
+	} else if (isset($_SESSION['admin']) && $_SESSION['admin']['id'] > 0 && $_SESSION['admin']['type'] == 3) {
+		return 3; // cộng tác viên
+	}
+}
+function author($id = NULL)
+{
+	$CI = &get_instance();
+	$CI->load->database();
+
+	$CI->db->select('*');
+	if ($id != null) {
+		$CI->db->where($id);
+	}
+	$array  = $CI->db->get('admin')->result_array();
+	return $array;
+}
 function chuyen_muc($cate = null)
 {
 	$CI = &get_instance();
