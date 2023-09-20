@@ -250,7 +250,7 @@
             var data = new FormData($("#form")[0]);
             data.append("content", CKEDITOR.instances.editor.getData());
             $.ajax({
-                url: '/ajax_add_tag',
+                url: '/admin/ajax_add_tag',
                 type: "POST",
                 cache: false,
                 contentType: false,
