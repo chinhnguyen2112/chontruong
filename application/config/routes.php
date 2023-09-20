@@ -90,7 +90,6 @@ $route['register_mail'] = 'Ajax/register_mail';
 $route['send_mail'] = 'Admin/send_mail';
 
 
-$route['(:any)-b(:num)'] = 'Home/detail_blog/$2';
 $route['(:any)'] = 'Home/chuyenmuc/$1 ';
 $route['(:any)/(:num)'] = 'Home/chuyenmuc/$1 ';
 // $route['(:any)/(:any)'] = 'Home/tg/$1/$2 ';

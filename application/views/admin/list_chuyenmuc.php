@@ -169,7 +169,7 @@
                                             <td class="text-center"><?= $key; ?></td>
                                             <td class="text-center"><?= $val['id']; ?></td>
                                             <td><?= $val['name'] ?></td>
-                                            <td><a href="/<?= $val['alias'] ?>" target="_blank" rel="noopener noreferrer"><?= $val['alias'] ?></a></td>
+                                            <td><a href="/<?= $val['alias'] ?>/" target="_blank" rel="noopener noreferrer"><?= $val['alias'] ?></a></td>
                                             <td><?php $cate_parent = chuyen_muc(['id' => $val['parent']]);
                                                 echo $cate_parent[0]['name']; ?></td>
                                             <td class="text-center">
