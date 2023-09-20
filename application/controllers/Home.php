@@ -34,8 +34,8 @@ class Home extends CI_Controller
         $time = time();
         $data['blog'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE index_blog = 1 AND type = 0 AND time_post <= $time ORDER BY created_at DESC LIMIT 20");
         $data['blog_new'] = $this->Madmin->get_limit("index_blog = 1 AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
-        $data['meta_title'] = 'Góc nhìn đa chiều của Phụ Nữ trưởng thành - Phụ Nữ Số';
-        $data['meta_des'] = 'Phụ Nữ Số là trang web chia sẻ kiến thức và kinh nghiệm hữu ích dành cho phụ nữ hiện đại. Đây như một cuốn cẩm nang giúp chị em có thêm nhiều bí kíp về tình yêu, sức khỏe, làm đẹp, chuyện vào bếp hay đi du lịch,… Phụ Nữ Số hứa hẹn sẽ mang đến những thông tin chính xác, hữu ích nhất cho cuộc sống của chị em!';
+        $data['meta_title'] = 'Web Review Trường Đại Học - Cao Đẳng - Trung Cấp';
+        $data['meta_des'] = 'Nền tảng Web Review Trường ở thời điểm hiện tại và trong tương lai sẽ là một trong những nền tảng giúp cho Học sinh và sinh viên lựa chọn được ngành nghề phù hợp...';
         $data['content'] = 'home';
         $data['list_js'] = [
             'home.js',
@@ -50,9 +50,6 @@ class Home extends CI_Controller
     {
         $time = time();
         $alias = trim($alias);
-        if ($alias == 'nguoi-tieu-dung-thong-minh') {
-            $alias = 'tieu-dung-thong-minh';
-        }
         $data['canonical'] = base_url() . $alias . '/';
         $author = $this->Madmin->get_by(['alias' => $alias], 'admin');
         if ($author == null) {
@@ -179,13 +176,13 @@ class Home extends CI_Controller
     {
         $time = time();
         $blog = $this->Madmin->query_sql_row("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as img_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE blogs.id = $id ");
-        if ($_SERVER['REQUEST_URI'] != '/' . $blog['alias'] . '-b' . $blog['id'] . '/') {
-            redirect('/' . $blog['alias'] . '-b' . $blog['id'] . '/', 'location', 301);
+        if ($_SERVER['REQUEST_URI'] != '/' . $blog['alias'] . '/') {
+            redirect('/' . $blog['alias'] . '/', 'location', 301);
         }
         if ((!admin() && $blog['time_post'] > $time) || (!admin() && $blog['index_blog'] != 1)) {
             redirect('/');
         }
-        $data['canonical'] = base_url() . $blog['alias'] . '-b' . $blog['id'] . '/';
+        $data['canonical'] = base_url() . $blog['alias'] . '/';
         $data['blog_same'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE chuyenmuc = {$blog['chuyenmuc']} AND index_blog = 1 AND type = 0 AND time_post <= $time AND id != {$blog['id']}  ORDER BY updated_at DESC LIMIT 6");
         $data['blog_new'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE  id != {$blog['id']} AND index_blog = 1 AND type = 0 AND time_post <= $time  ORDER BY id DESC LIMIT 5");
         $cate = $this->Madmin->query_sql_row("SELECT name,alias,parent FROM category  WHERE id = {$blog['chuyenmuc']} ");
@@ -339,7 +336,7 @@ class Home extends CI_Controller
         $blog = $this->Madmin->query_sql("SELECT id,alias FROM blogs ");
         foreach ($blog as $val) {
             $alias = '/' . $val['alias'] . '/';
-            $alias_new = '/' . $val['alias'] . '-b' . $val['id'] . '/';
+            $alias_new = '/' . $val['alias'] . '/';
             $blog_2 = $this->Madmin->query_sql("SELECT id,content FROM blogs WHERE `content` LIKE '%$alias%' ");
             foreach ($blog_2 as $val_2) {
                 echo 1;

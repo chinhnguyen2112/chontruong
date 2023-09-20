@@ -189,14 +189,14 @@
                                             <td class="text-center"><?= $key; ?></td>
                                             <td class="text-center"><?= $val['id']; ?></td>
                                             <td><?= $val['title'] ?></td>
-                                            <td><a href="/<?= $val['alias'] ?>" target="_blank">Xem tin</a></td>
+                                            <td><a href="/<?= $val['alias'] ?>/" target="_blank">Xem tin</a></td>
                                             <td>
 
                                                 <?php
                                                 $chuyenmuc = chuyen_muc();
                                                 foreach ($chuyenmuc as $val1) {
                                                     if ($val1['id'] == $val['chuyenmuc']) {
-                                                        echo '<a href="/' . $val1['alias'] . '" target="_blank">' . $val1['name'] . '</a>';
+                                                        echo '<a href="/' . $val1['alias'] . ' / " target="_blank">' . $val1['name'] . '</a>';
                                                     }
                                                 }
                                                 ?>
