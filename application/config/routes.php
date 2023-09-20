@@ -54,26 +54,28 @@ $route['default_controller'] = 'Home/home';
 //admin
 $route['admin'] = 'Admin/admin';
 $route['admin/login'] = 'Admin/view_login';
-$route['login_admin'] = 'Admin/login_admin';
-$route['login_admin'] = 'Admin/login_admin';
-$route['add_blog'] = 'Admin/view_add_blog';
-$route['ajax_add_blog'] = 'Admin/ajax_add_blog';
-$route['list_blog'] = 'Admin/list_blog';
-$route['list_blog/(:num)'] = 'Admin/list_blog';
-$route['add_chuyenmuc'] = 'Admin/view_add_chuyenmuc';
-$route['ajax_add_chuyenmuc'] = 'Admin/ajax_add_chuyenmuc';
-$route['list_chuyenmuc'] = 'Admin/list_chuyenmuc';
-$route['list_chuyenmuc/(:num)'] = 'Admin/list_chuyenmuc';
+$route['admin/login_admin'] = 'Admin/login_admin';
+$route['admin/add_blog'] = 'Admin/view_add_blog';
+$route['admin/ajax_add_blog'] = 'Admin/ajax_add_blog';
+$route['admin/list_blog'] = 'Admin/list_blog';
+$route['admin/list_blog/(:num)'] = 'Admin/list_blog';
+$route['admin/add_chuyenmuc'] = 'Admin/view_add_chuyenmuc';
+$route['admin/ajax_add_chuyenmuc'] = 'Admin/ajax_add_chuyenmuc';
+$route['admin/list_chuyenmuc'] = 'Admin/list_chuyenmuc';
+$route['admin/list_chuyenmuc/(:num)'] = 'Admin/list_chuyenmuc';
+$route['admin/add_page'] = 'Admin/add_page';
+$route['admin/list_page'] = 'Admin/list_page';
 
-$route['add_tag'] = 'Admin/view_add_tag';
-$route['ajax_add_tag'] = 'Admin/ajax_add_tag';
-$route['list_tag'] = 'Admin/list_tag';
-$route['list_tag/(:num)'] = 'Admin/list_tag';
+
+$route['admin/add_tag'] = 'Admin/view_add_tag';
+$route['admin/ajax_add_tag'] = 'Admin/ajax_add_tag';
+$route['admin/list_tag'] = 'Admin/list_tag';
+$route['admin/list_tag/(:num)'] = 'Admin/list_tag';
 $route['admin/info'] = 'Admin/info';
 $route['admin/ajax_author'] = 'Admin/ajax_author';
 $route['admin/list_author'] = 'Admin/list_author';
-$route['add_page'] = 'Admin/add_page';
-$route['list_page'] = 'Admin/list_page';
+$route['admin/add_page'] = 'Admin/add_page';
+$route['admin/list_page'] = 'Admin/list_page';
 
 
 $route['bang-xep-hang'] = 'Home/bxh';
@@ -84,8 +86,12 @@ $route['load_more_cate'] = 'Ajax/load_more_cate';
 $route['load_more_author'] = 'Ajax/load_more_author';
 $route['search'] = 'Ajax/search';
 $route['search/(:num)'] = 'Ajax/search/$1';
+$route['register_mail'] = 'Ajax/register_mail';
+$route['send_mail'] = 'Admin/send_mail';
 
+
+$route['(:any)-b(:num)'] = 'Home/detail_blog/$2';
 $route['(:any)'] = 'Home/chuyenmuc/$1 ';
 $route['(:any)/(:num)'] = 'Home/chuyenmuc/$1 ';
-// $route['(:any)/(:any)'] = 'Home/tag/$1/$2 ';
+// $route['(:any)/(:any)'] = 'Home/tg/$1/$2 ';
 // $route['(:any)/(:any)/(:num)'] = 'Home/tag/$1/$2/$3 ';

@@ -1,7 +1,9 @@
-<div class="container">
-    <div class="container_width">
-        <div class="content_page" id="content_page">
-            <?= $page['content'] ?>
+<div class="widget_home">
+    <div class="container_widget_about body_width">
+        <div class="left_detail">
+            <div class="content_blog" id="content_blog">
+                <?= $page['content'] ?>
+            </div>
         </div>
     </div>
 </div>

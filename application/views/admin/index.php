@@ -69,10 +69,10 @@
                             </a>
                             <div class="collapse" id="ui-user">
                                 <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"><a class="nav-link" href="/info?id=<?= $_SESSION['admin']['id'] ?>">Hồ sơ</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/admin/info?id=<?= $_SESSION['admin']['id'] ?>">Hồ sơ</a></li>
 
-                                    <li class="nav-item"><a class="nav-link" href="/info">Thêm thành viên</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/list_author">Danh sách thành viên</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/admin/info">Thêm thành viên</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/admin/list_author">Danh sách thành viên</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -85,13 +85,13 @@
                         </a>
                         <div class="collapse" id="ui-basicss">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"><a class="nav-link" href="/add_blog">Bài viết mới</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/list_blog">Danh sách bài viết</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/admin/add_blog">Bài viết mới</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/admin/list_blog">Danh sách bài viết</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/list_page">
+                        <a class="nav-link" href="/admin/list_page">
                             <i class="typcn typcn-document-text menu-icon"></i>
                             <span class="menu-title">Page</span>
                         </a>
@@ -105,9 +105,9 @@
                         <div class="collapses" id="ui-basicsss">
                             <ul class="nav flex-column sub-menu">
                                 <?php if (check_admin() != 3) { ?>
-                                    <li class="nav-item"><a class="nav-link" href="/add_chuyenmuc">Thêm chuyên mục</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/admin/add_chuyenmuc">Thêm chuyên mục</a></li>
                                 <?php } ?>
-                                <li class="nav-item"><a class="nav-link" href="/list_chuyenmuc">Danh sách chuyên mục</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/admin/list_chuyenmuc">Danh sách chuyên mục</a></li>
                             </ul>
                         </div>
                     </li>
@@ -119,13 +119,13 @@
                         </a>
                         <div class="collapse" id="ui-tag">
                             <ul class=" nav flex-column sub-menu">
-                                <li class="nav-item"><a class="nav-link" href="/add_tag">Thêm tags</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/list_tag">Danh sách tags</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/admin/add_tag">Thêm tags</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/admin/list_tag">Danh sách tags</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/logout">
+                        <a class="nav-link" href="/admin/logout">
                             <i class="typcn typcn-mortar-board menu-icon"></i>
                             <span class="menu-title">Đăng xuất</span>
                         </a>
