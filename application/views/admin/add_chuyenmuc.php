@@ -1,154 +1,154 @@
-<style>
-    .form_change_pass {
-        width: 800px;
-        margin: auto;
-    }
+<style></style>
+.form_change_pass {
+width: 800px;
+margin: auto;
+}
 
-    .error {
-        font-size: 14px;
-        color: red;
-    }
+.error {
+font-size: 14px;
+color: red;
+}
 
-    .label,
-    .name_flex {
-        width: 100%;
-    }
+.label,
+.name_flex {
+width: 100%;
+}
 
-    .flex_input {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+.flex_input {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
 
-    .input_fl {
-        width: 49%;
-    }
+.input_fl {
+width: 49%;
+}
 
-    .box_flex {
-        display: flex;
-        justify-content: space-between;
-    }
+.box_flex {
+display: flex;
+justify-content: space-between;
+}
 
-    .box_vip {
-        padding: 10px;
-        background: #e4e4e4;
-    }
+.box_vip {
+padding: 10px;
+background: #e4e4e4;
+}
 
-    .add_hv {
-        color: #2758dd;
-        cursor: pointer;
-        font-weight: 600;
-    }
+.add_hv {
+color: #2758dd;
+cursor: pointer;
+font-weight: 600;
+}
 
-    .name_gr {
-        font-size: 18px;
-        font-weight: 600;
-    }
+.name_gr {
+font-size: 18px;
+font-weight: 600;
+}
 
-    .box_relative {
-        position: relative;
-        margin-bottom: 30px !important;
-    }
+.box_relative {
+position: relative;
+margin-bottom: 30px !important;
+}
 
-    .nav_list_skill {
-        position: absolute;
-        display: none;
-        max-height: 200px;
-        max-width: 320px;
-        right: calc(50% - 160px);
-        z-index: 1;
-    }
+.nav_list_skill {
+position: absolute;
+display: none;
+max-height: 200px;
+max-width: 320px;
+right: calc(50% - 160px);
+z-index: 1;
+}
 
-    .sl_skill {
-        display: none;
-    }
+.sl_skill {
+display: none;
+}
 
-    .box_add_skill {
-        display: flex;
-        justify-content: space-between;
-        gap: 0 20px;
-        flex-wrap: wrap;
-    }
+.box_add_skill {
+display: flex;
+justify-content: space-between;
+gap: 0 20px;
+flex-wrap: wrap;
+}
 
-    .sweet-alert {
-        box-shadow: 0px 12px 22px rgb(0 0 0 / 44%);
-    }
+.sweet-alert {
+box-shadow: 0px 12px 22px rgb(0 0 0 / 44%);
+}
 
-    .list_show_skill {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 10px 16px;
-    }
+.list_show_skill {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 10px 16px;
+}
 
-    .this_skill {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        width: calc(50% - 8px);
-        align-items: center;
-        border: 1px solid #ccc;
-        padding-left: 3px;
-        flex-wrap: wrap;
-        height: 42px;
-    }
+.this_skill {
+display: flex;
+justify-content: space-between;
+position: relative;
+width: calc(50% - 8px);
+align-items: center;
+border: 1px solid #ccc;
+padding-left: 3px;
+flex-wrap: wrap;
+height: 42px;
+}
 
-    .this_skill label {
-        width: 100%;
-    }
+.this_skill label {
+width: 100%;
+}
 
-    .this_skill img {
-        position: absolute;
-        background: red;
-        right: -7px;
-        border-radius: 50%;
-        top: -7px;
-        cursor: pointer;
-        width: 17px;
-    }
+.this_skill img {
+position: absolute;
+background: red;
+right: -7px;
+border-radius: 50%;
+top: -7px;
+cursor: pointer;
+width: 17px;
+}
 
-    .this_skill p {
-        margin: 0;
-    }
+.this_skill p {
+margin: 0;
+}
 
-    .nav_p_input {
-        position: absolute;
-        right: 5px;
-        font-size: 16px;
-        top: calc(50% - 11px);
-    }
+.nav_p_input {
+position: absolute;
+right: 5px;
+font-size: 16px;
+top: calc(50% - 11px);
+}
 
-    .this_skill input {
-        padding: 10px 35px 10px 10px;
-        padding-right: 35px;
-        font-size: 16px;
-        height: auto;
-        text-align: right;
-    }
+.this_skill input {
+padding: 10px 35px 10px 10px;
+padding-right: 35px;
+font-size: 16px;
+height: auto;
+text-align: right;
+}
 
-    .close {
-        font-size: 14px;
-        background: red;
-        padding: 5px;
-        color: #fff;
-        font-weight: 600;
-        opacity: 1;
-        cursor: pointer;
-        text-shadow: unset;
-    }
+.close {
+font-size: 14px;
+background: red;
+padding: 5px;
+color: #fff;
+font-weight: 600;
+opacity: 1;
+cursor: pointer;
+text-shadow: unset;
+}
 
-    .this_hv,
-    .this_kn {
-        padding: 5px;
-        border: 5px solid #fff;
-        margin-bottom: 10px;
-    }
+.this_hv,
+.this_kn {
+padding: 5px;
+border: 5px solid #fff;
+margin-bottom: 10px;
+}
 
-    @media only screen and (max-width: 1024px) {
-        .form_change_pass {
-            width: 100%;
-        }
-    }
+@media only screen and (max-width: 1024px) {
+.form_change_pass {
+width: 100%;
+}
+}
 </style>
 <link rel="stylesheet" href="/assets/css/sweetalert.css">
 <form id="form" class="form_change_pass">
