@@ -8,7 +8,7 @@
     <meta name="robots" content="noindex,nofollow" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Tobet88 Admin</title>
+    <title>Chọn Trường Admin</title>
     <link rel="stylesheet" href="/assets/css/admin/vendors/typicons/typicons.css">
     <link rel="stylesheet" href="/assets/css/admin/vendors/css/vendor.bundle.base.css">
     <link rel="stylesheet" href="/assets/css/admin/vertical-layout-light/style.css">
@@ -26,10 +26,10 @@
 
 <body>
     <style>
-        .error {
-            color: red;
-            font-size: 14px;
-        }
+    .error {
+        color: red;
+        font-size: 14px;
+    }
     </style>
     <div class="container-scroller">
         <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -37,13 +37,15 @@
                 <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
                     <a class="navbar-brand brand-logo" href="/"><img src="/images/logo.png" alt="logo" /></a>
                     <a class="navbar-brand brand-logo-mini" href="/"><img src="/images/logo.png" alt="logo" /></a>
-                    <button class="navbar-toggler navbar-toggler align-self-center btn_menu" type="button" data-toggle="minimize">
+                    <button class="navbar-toggler navbar-toggler align-self-center btn_menu" type="button"
+                        data-toggle="minimize">
                         <span class="typcn typcn-th-menu"></span>
                     </button>
                 </div>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-toggle="offcanvas">
                     <span class="typcn typcn-th-menu"></span>
                 </button>
             </div>
@@ -60,25 +62,9 @@
                             <span class="menu-title">Trang chủ</span>
                         </a>
                     </li>
-                    <?php if (check_admin() == 1) { ?>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="collapse" href="#ui-user" aria-expanded="false" aria-controls="ui-user">
-                                <i class="typcn typcn-user menu-icon"></i>
-                                <span class="menu-title">Thành viên</span>
-                                <i class="menu-arrow"></i>
-                            </a>
-                            <div class="collapse" id="ui-user">
-                                <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"><a class="nav-link" href="/admin/info?id=<?= $_SESSION['admin']['id'] ?>">Hồ sơ</a></li>
-
-                                    <li class="nav-item"><a class="nav-link" href="/admin/info">Thêm thành viên</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/admin/list_author">Danh sách thành viên</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    <?php } ?>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#ui-basicss" aria-expanded="false" aria-controls="ui-basicss">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basicss" aria-expanded="false"
+                            aria-controls="ui-basicss">
                             <i class="typcn typcn-document-text menu-icon"></i>
                             <span class="menu-title">Bài viết</span>
                             <i class="menu-arrow"></i>
@@ -86,7 +72,8 @@
                         <div class="collapse" id="ui-basicss">
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"><a class="nav-link" href="/admin/add_blog">Bài viết mới</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/admin/list_blog">Danh sách bài viết</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/admin/list_blog">Danh sách bài viết</a>
+                                </li>
                             </ul>
                         </div>
                     </li>
@@ -97,30 +84,18 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#ui-basicsss" aria-expanded="false" aria-controls="ui-basicsss">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basicsss" aria-expanded="false"
+                            aria-controls="ui-basicsss">
                             <i class="typcn typcn-document-text menu-icon"></i>
                             <span class="menu-title">Chuyên mục</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div class="collapses" id="ui-basicsss">
                             <ul class="nav flex-column sub-menu">
-                                <?php if (check_admin() != 3) { ?>
-                                    <li class="nav-item"><a class="nav-link" href="/admin/add_chuyenmuc">Thêm chuyên mục</a></li>
-                                <?php } ?>
-                                <li class="nav-item"><a class="nav-link" href="/admin/list_chuyenmuc">Danh sách chuyên mục</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#ui-tag" aria-expanded=" false" aria-controls="ui-tag">
-                            <i class=" typcn typcn-document-text menu-icon"></i>
-                            <span class="menu-title">Tags</span>
-                            <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="ui-tag">
-                            <ul class=" nav flex-column sub-menu">
-                                <li class="nav-item"><a class="nav-link" href="/admin/add_tag">Thêm tags</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/admin/list_tag">Danh sách tags</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/admin/add_chuyenmuc">Thêm chuyên mục</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="/admin/list_chuyenmuc">Danh sách chuyên
+                                        mục</a></li>
                             </ul>
                         </div>
                     </li>
@@ -144,8 +119,12 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2020 <a href="https://www.bootstrapdash.com/" class="text-muted" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
-                                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center text-muted">Free <a href="https://www.bootstrapdash.com/" class="text-muted" target="_blank">Bootstrap dashboard</a> templates from Bootstrapdash.com</span>
+                                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright ©
+                                    2020 <a href="https://www.bootstrapdash.com/" class="text-muted"
+                                        target="_blank">Bootstrapdash</a>. All rights reserved.</span>
+                                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center text-muted">Free
+                                    <a href="https://www.bootstrapdash.com/" class="text-muted"
+                                        target="_blank">Bootstrap dashboard</a> templates from Bootstrapdash.com</span>
                             </div>
                         </div>
                     </div>

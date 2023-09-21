@@ -1,4 +1,4 @@
-<style></style>
+<style>
 .form_change_pass {
 width: 800px;
 margin: auto;
