@@ -56,12 +56,13 @@ class Home extends CI_Controller
         $data['canonical'] = base_url() . $alias . '/';
         $author = $this->Madmin->get_by(['alias' => $alias], 'admin');
         $chuyenmuc = $this->Madmin->get_by(['alias' => $alias], 'category');
-        if ($alias == 'gioi-thieu' || $alias == 'lien-he') {
-            $blog = $this->Madmin->query_sql_row("SELECT * FROM blogs WHERE alias = '$alias' ");
-        } else {
-            $blog = $this->Madmin->query_sql_row("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as img_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE blogs.alias = '$alias' ");
+        if ($chuyenmuc == null) {
+            $page = $this->Madmin->query_sql_row("SELECT * FROM blogs WHERE type = 1 AND alias = '$alias' ");
+            if ($page == null) {
+                $blog = $this->Madmin->query_sql_row("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as img_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE blogs.alias = '$alias' ");
+            }
         }
-        if ($chuyenmuc != null) { //chuyenmuc
+        if (isset($chuyenmuc) && $chuyenmuc != null) { //chuyenmuc
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
                 redirect('/' . $alias . '/');
             }
@@ -101,7 +102,7 @@ class Home extends CI_Controller
             $data['list_css'] = [
                 'chuyenmuc_blog.css',
             ];
-        } else if ($blog != null) { // blog
+        } else if (isset($blog) && $blog != null) { // blog
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
                 redirect('/' . $alias . '/');
             }
@@ -131,8 +132,10 @@ class Home extends CI_Controller
             $data['meta_des'] = $blog['meta_des'];
             $data['meta_key'] = $blog['meta_key'];
             $data['meta_img'] = $blog['image'];
-        } elseif ($author != null) {
+        } else if (isset($author) && $author != null) {
             return $this->author($alias);
+        } else if (isset($page) && $page != null) {
+            return $this->page($page);
         } else {
             redirect('/');
         }
@@ -202,6 +205,22 @@ class Home extends CI_Controller
             $data['content'] = 'author';
             $this->load->view('index', $data);
         }
+    }
+    function page($page) {
+        if ($_SERVER['REQUEST_URI'] != '/' . $page['alias'] . '/') {
+            redirect('/' . $page['alias'] . '/', 'location', 301);
+        }
+        $data['page'] = $page;
+        $data['content'] = 'page';
+        $data['list_css'] = [
+            'page.css'
+        ];
+        $data['meta_title'] = $page['meta_title'];
+        $data['meta_des'] = $page['meta_des'];
+        $data['meta_key'] = $page['meta_key'];
+        $data['meta_img'] = $page['image'];
+        $data['index'] = 1;
+        $this->load->view('index', $data);
     }
     public function import_file()
     {
