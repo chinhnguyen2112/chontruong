@@ -26,8 +26,7 @@
                     </div>
                 </div>
                 <div class="mail_bot">
-                    <input class="input_mail" name="input_mail" id="input_mail" type="email"
-                        placeholder="Nhập Email của bạn" />
+                    <input class="input_mail" name="input_mail" id="input_mail" type="email" placeholder="Nhập Email của bạn" />
                     <button class="submit_mail">Đăng Ký Ngay</button>
                 </div>
             </div>
@@ -83,6 +82,12 @@
                         <a href="/hoc-tieng-nga/">Tiếng Nga</a>
                     </strong>
                 </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30 (1).png" alt="icon star" />
+                    <strong>
+                        <a rel="dofollow" target="_blank" href="https://ketquabongda.io/">xem kqbd</a>
+                    </strong>
+                </li>
             </ul>
         </div>
     </div>
@@ -96,9 +101,9 @@
         <div class="box_content">
             <ul>
                 <?php foreach ($blog_new as $key => $val) { ?>
-                <li class="item_hot_news">
-                    <a href="/<?= $val['alias'] ?>"><?= $val['title'] ?></a>
-                </li>
+                    <li class="item_hot_news">
+                        <a href="/<?= $val['alias'] ?>"><?= $val['title'] ?></a>
+                    </li>
                 <?php } ?>
             </ul>
             <div class="see_more_news">
