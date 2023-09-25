@@ -84,8 +84,9 @@
                 </li>
                 <li class="item_content_sidebar">
                     <img class="icon_li" src="/images/icons8-star-30 (1).png" alt="icon star" />
+                    xem
                     <strong>
-                        <a rel="dofollow" target="_blank" href="https://ketquabongda.io/">xem kqbd</a>
+                        <a rel="dofollow" target="_blank" href="https://ketquabongda.io/">kqbd</a>
                     </strong>
                 </li>
             </ul>
