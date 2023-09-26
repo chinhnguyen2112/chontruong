@@ -2,7 +2,7 @@
     <div class="container_widget_about body_width">
         <div class="main_content_blog">
             <div class="blog_content">
-                
+
                 <div class="box_data_blog">
                     <div class="left_blog">
                         <h1 class="title_h1"><?= $blog['title'] ?></h1>
@@ -10,7 +10,7 @@
                             <div class="box_date">
                                 <p class="date_blog">Đăng ngày: <?= date('d-m-Y', $blog['created_at']) ?></p>
                             </div>
-                            <a rel="nofollow" class="follow_ggnew" target="_blank" href="https://news.google.com/publications/CAAqBwgKMLGv0Asw8MrnAw?hl=vi&gl=VN&ceid=VN:vi">Theo dõi Chontruong trên <img src="/images/googlelogo.svg" alt=""> News</a>
+                            <a rel="nofollow" class="follow_ggnew" target="_blank" href="https://news.google.com/publications/CAAqBwgKMLGv0Asw8MrnAw?hl=vi&gl=VN&ceid=VN:vi">Theo dõi Chontruong.Edu.vn trên <img src="/images/googlelogo.svg" alt=""> News</a>
                         </div>
                     </div>
                 </div>
