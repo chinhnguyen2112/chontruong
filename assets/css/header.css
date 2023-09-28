@@ -1,6 +1,8 @@
 * {
-    font-family: Montserrat, sans-serif !important;
+    font-family: 'Mulish', sans-serif !important;
+
 }
+
 
 body {
     /* background: #101115; */
@@ -122,12 +124,15 @@ img.img_logo_bot_header {
     font-weight: 600;
     transition: 0.5s;
 }
-.this_menu .item_menu a:hover { 
+
+.this_menu .item_menu a:hover {
     color: #39acfd;
 }
+
 .active {
     color: #39acfd !important;
 }
+
 .this_menu .icon_forward {
     width: 10px;
     height: 10px;

@@ -64,7 +64,7 @@ class Home extends CI_Controller
         }
         if (isset($chuyenmuc) && $chuyenmuc != null) { //chuyenmuc
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
-                redirect('/' . $alias . '/');
+                redirect('/' . $alias . '/', 'location', 301);
             }
             $page = $this->uri->segment(3);
             if ($page < 1 || $page == '') {
@@ -104,7 +104,7 @@ class Home extends CI_Controller
             ];
         } else if (isset($blog) && $blog != null) { // blog
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
-                redirect('/' . $alias . '/');
+                redirect('/' . $alias . '/', 'location', 301);
             }
             if (!admin() && $blog['time_post'] > $time) {
                 redirect('/');
@@ -137,7 +137,8 @@ class Home extends CI_Controller
         } else if (isset($page) && $page != null) {
             return $this->page($page);
         } else {
-            redirect('/');
+            set_status_header(404);
+            return $this->load->view('errors/html/error_404');
         }
         $data['index'] = 1;
         $this->load->view('index', $data);
@@ -172,14 +173,15 @@ class Home extends CI_Controller
             $data['meta_img'] = $blog['image'];
             $this->load->view('index', $data);
         } else {
-            redirect('/');
+            set_status_header(404);
+            return $this->load->view('errors/html/error_404');
         }
     }
     public function author($alias)
     {
         $author = $this->Madmin->get_by(['alias' => $alias], 'admin');
         if ($author == null) {
-            set_status_header(301);
+            set_status_header(404);
             return $this->load->view('errors/html/error_404');
         } else {
             $time = time();
@@ -206,7 +208,8 @@ class Home extends CI_Controller
             $this->load->view('index', $data);
         }
     }
-    function page($page) {
+    function page($page)
+    {
         if ($_SERVER['REQUEST_URI'] != '/' . $page['alias'] . '/') {
             redirect('/' . $page['alias'] . '/', 'location', 301);
         }
