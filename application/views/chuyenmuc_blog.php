@@ -22,17 +22,17 @@
                         <div class="blog_top">
                             <?php foreach ($blog as $key => $val) {
                                 if ($key == 0) { ?>
-                            <a class="linl_all_detail" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                <div class="blog_top_content blog_top_left">
-                                    <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
-                                </div>
-                                <div class="blog_top_content blog_top_right">
-                                    <p class="title_blog_top"><?= $val['title'] ?></p>
-                                    <div class="sapo_blog"><?= $val['sapo'] ?>
+                                    <a class="linl_all_detail" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <div class="blog_top_content blog_top_left">
+                                            <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        </div>
+                                        <div class="blog_top_content blog_top_right">
+                                            <p class="title_blog_top"><?= $val['title'] ?></p>
+                                            <div class="sapo_blog"><?= $val['sapo'] ?>
 
-                                    </div>
-                                </div>
-                            </a>
+                                            </div>
+                                        </div>
+                                    </a>
                             <?php }
                             } ?>
                         </div>
@@ -40,26 +40,26 @@
                     <div class="list_blog">
                         <?php foreach ($blog as $key => $val) {
                             if ($key > 0) { ?>
-                        <div class="this_train">
-                            <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                <p class="title_blog only_mobile"><?= $val['title'] ?></p>
-                            </a>
-                            <a href="/<?= $val['alias'] ?>/">
-                                <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
-                                <div class="box_right_data">
-                                    <p class="title_blog"><?= $val['title'] ?></p>
-                                    <div class="fl_date">
-                                        <p class="cate_post"><?php $cate = chuyen_muc(['id' => $val['chuyenmuc']]);
+                                <div class="this_train">
+                                    <a title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
+                                        <p class="title_blog only_mobile"><?= $val['title'] ?></p>
+                                    </a>
+                                    <a href="/<?= $val['alias'] ?>/">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <div class="box_right_data">
+                                            <p class="title_blog"><?= $val['title'] ?></p>
+                                            <div class="fl_date">
+                                                <p class="cate_post"><?php $cate = chuyen_muc(['id' => $val['chuyenmuc']]);
                                                                         echo $cate[0]['name']; ?></p>
-                                        <span class="dot_item"></span>
-                                        <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p>
-                                    </div>
-                                    <div class="des_blog"><?= $val['sapo'] ?>
+                                                <span class="dot_item"></span>
+                                                <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p>
+                                            </div>
+                                            <div class="des_blog"><?= $val['sapo'] ?>
 
-                                    </div>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                        </div>
                         <?php }
                         } ?>
                         <div class="load_more">
@@ -75,5 +75,5 @@
         </div>
     </div>
 </div>
-<input id="chuyen_muc" value="<?= isset($chuyenmuc) ? $chuyenmuc : '' ?>" hidden />
-<input id="name_page" value="cate" hidden />
+<input id="chuyen_muc" value="<?= isset($chuyenmuc) ? $chuyenmuc : '' ?>" hidden>
+<input id="name_page" value="cate" hidden>

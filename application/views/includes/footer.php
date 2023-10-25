@@ -1,9 +1,5 @@
-<?php $menu_cate_parent = chuyen_muc(['parent' => 0]);
-$count_line = 0;
-if (count($menu_cate_parent) > 2) {
-    $count_line =  count($menu_cate_parent) - 2;
-} ?>
-<footer id="colophon" class="site-footer" role="contentinfo">
+</div>
+<footer id="colophon" class="site-footer">
     <div class="footer-widgets body_width">
         <div class="content_footer">
             <div class="ft_left">
@@ -13,19 +9,19 @@ if (count($menu_cate_parent) > 2) {
                     <div class="contact_infor">
                         <ul class="list_contact_ft">
                             <li style="width:100%">
-                                <img src="/images/icons/icon_address_ft.png" alt="icon address">
+                                <img src="/images/icons/icon_address_ft.png" alt="Địa chỉ">
                                 <p>Số 111 đường Mễ Trì - Quận Nam Từ Liêm - Hà Nội.</p>
                             </li>
                             <li>
-                                <img src="/images/icons/icon_website_ft.png" alt="icon website">
+                                <img src="/images/icons/icon_website_ft.png" alt="website">
                                 <p>chontruong.vn -</p>
                             </li>
                             <li style="margin-left:3px;width:51%">
-                                <img src="/images/icons/icon_mail_ft.png" alt="icon email">
+                                <img src="/images/icons/icon_mail_ft.png" alt="email">
                                 <p>chontruong@gmail.com</p>
                             </li>
                             <li>
-                                <img src="/images/icons/icon_fb_ft.png" alt="icon facebook">
+                                <img src="/images/icons/icon_fb_ft.png" alt="facebook">
                                 <p>fb.com/chontruong.vn</p>
                             </li>
                         </ul>
@@ -36,22 +32,10 @@ if (count($menu_cate_parent) > 2) {
                 <div class="r_01">
                     <p class="title_r">CHUYÊN MỤC</p>
                     <div class="list_links">
-                        <!-- <?php $menu_cate_parent = chuyen_muc('parent = 0 AND id != 42 AND id != 41');
-                        foreach ($menu_cate_parent as $val) {
-                            $menu_cate = chuyen_muc(['parent' => $val['id']]); ?>
-                            <div class="item_link_ft" id="this_menu">
-                                <span onclick="big_item_menu(this,1)">
-                                    <a href="/<?= $val['alias'] ?>/">
-                                        <img src="/images/icons/icon_arrow_ft.png" alt="icon arrow footer">
-                                        <?= $val['name'] ?>
-                                    </a>
-                                </span>
-                            </div>
-                        <?php } ?> -->
                         <div class="item_link_ft">
                             <span>
                                 <a href="/truong-dai-hoc/">
-                                    <img src="/images/icons/icon_arrow_ft.png" alt="icon arrow footer">
+                                    <img src="/images/icons/icon_arrow_ft.png" alt="Chuyên mục">
                                     Trường Đại Học
                                 </a>
                             </span>
@@ -59,7 +43,7 @@ if (count($menu_cate_parent) > 2) {
                         <div class="item_link_ft">
                             <span>
                                 <a href="/nganh-dao-tao/">
-                                    <img src="/images/icons/icon_arrow_ft.png" alt="icon arrow footer">
+                                    <img src="/images/icons/icon_arrow_ft.png" alt="Chuyên mục">
                                     Ngành Đào Tạo
                                 </a>
                             </span>
@@ -67,7 +51,7 @@ if (count($menu_cate_parent) > 2) {
                         <div class="item_link_ft">
                             <span>
                                 <a href="/truong-cao-dang/">
-                                    <img src="/images/icons/icon_arrow_ft.png" alt="icon arrow footer">
+                                    <img src="/images/icons/icon_arrow_ft.png" alt="Chuyên mục">
                                     Trường Cao Đẳng
                                 </a>
                             </span>
@@ -75,7 +59,7 @@ if (count($menu_cate_parent) > 2) {
                         <div class="item_link_ft">
                             <span>
                                 <a href="#">
-                                    <img src="/images/icons/icon_arrow_ft.png" alt="icon arrow footer">
+                                    <img src="/images/icons/icon_arrow_ft.png" alt="Chuyên mục">
                                     Khối Thi Đại Học
                                 </a>
                             </span>
@@ -83,7 +67,7 @@ if (count($menu_cate_parent) > 2) {
                         <div class="item_link_ft">
                             <span>
                                 <a href="/truong-trung-cap/">
-                                    <img src="/images/icons/icon_arrow_ft.png" alt="icon arrow footer">
+                                    <img src="/images/icons/icon_arrow_ft.png" alt="Chuyên mục">
                                     Trường Trung Cấp
                                 </a>
                             </span>
@@ -91,7 +75,7 @@ if (count($menu_cate_parent) > 2) {
                         <div class="item_link_ft">
                             <span>
                                 <a href="#">
-                                    <img src="/images/icons/icon_arrow_ft.png" alt="icon arrow footer">
+                                    <img src="/images/icons/icon_arrow_ft.png" alt="Chuyên mục">
                                     Học Phí Đại Học
                                 </a>
                             </span>
@@ -99,7 +83,7 @@ if (count($menu_cate_parent) > 2) {
                         <div class="item_link_ft">
                             <span>
                                 <a href="#">
-                                    <img src="/images/icons/icon_arrow_ft.png" alt="icon arrow footer">
+                                    <img src="/images/icons/icon_arrow_ft.png" alt="Chuyên mục">
                                     Trung Tâm Đào Tạo
                                 </a>
                             </span>

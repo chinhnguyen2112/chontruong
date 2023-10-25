@@ -1,5 +1,3 @@
-
-
 .mail_box {
     margin-bottom: 20px;
 }
@@ -51,10 +49,12 @@
     border: 1px solid #39acfd;
     color: #39acfd;
 }
+
 .item_cont img {
     width: 49px;
     height: 49px;
 }
+
 .text_item_mail {
     font-size: 11px !important;
 }
@@ -177,6 +177,7 @@
     cursor: pointer;
     width: 100%;
     z-index: 1;
+    text-align: center;
 }
 
 .btn_more::before {

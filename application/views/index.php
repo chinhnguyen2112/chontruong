@@ -9,23 +9,23 @@
   <?php } else { ?>
     <meta name="robots" content="noindex,nofollow">
   <?php } ?>
-  <title><?= isset($meta_title) ? $meta_title : '' ?></title>
-  <meta content="<?= isset($meta_des) ? $meta_des : '' ?>" name="description">
-  <meta content="<?= isset($meta_title) ? $meta_title : '' ?>" name="msvalidate.01">
-  <meta name="keywords" content="<?= isset($meta_key) ? $meta_key : '' ?>">
+  <title><?= isset($meta_title) ? $meta_title : 'Chọn trường' ?></title>
+  <meta content="<?= isset($meta_des) ? $meta_des : 'Chọn trường' ?>" name="description">
+  <meta content="<?= isset($meta_title) ? $meta_title : 'Chọn trường' ?>" name="msvalidate.01">
+  <meta name="keywords" content="<?= isset($meta_key) ? $meta_key : 'Chọn trường' ?>">
   <link rel="canonical" href="<?= (isset($canonical)) ? $canonical : "" ?>">
   <meta property="og:locale" content="vi_VN">
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?= (isset($canonical)) ? $canonical : "" ?>">
-  <meta property="og:title" content="<?= isset($meta_title) ? $meta_title : '' ?>">
+  <meta property="og:title" content="<?= isset($meta_title) ? $meta_title : 'Chọn trường' ?>">
   <meta property="og:site_name" content="Chọn trường">
-  <meta property="og:description" content="<?= isset($meta_des) ? $meta_des : '' ?>">
+  <meta property="og:description" content="<?= isset($meta_des) ? $meta_des : 'Chọn trường' ?>">
   <meta property="og:image:secure_url" content="<?= base_url() ?><?= (isset($meta_img) ? $meta_img : 'images/logo.png') ?>">
   <meta property="og:image" content="<?= base_url() ?><?= (isset($meta_img) ? $meta_img : 'images/logo.png') ?>">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:description" content="<?= isset($meta_des) ? $meta_des : '' ?>">
-  <meta name="twitter:title" content="<?= isset($meta_title) ? $meta_title : '' ?>">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="twitter:description" content="<?= isset($meta_des) ? $meta_des : 'Chọn trường' ?>">
+  <meta name="twitter:title" content="<?= isset($meta_title) ? $meta_title : 'Chọn trường' ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <link rel="shortcut icon" href="<?= base_url() ?>images/favicon.png">
   <link data-n-head="ssr" rel="icon" type="image/x-icon" href="<?= base_url() ?>images/favicon.png">
   <link rel="stylesheet" href="/assets/css/font.css">

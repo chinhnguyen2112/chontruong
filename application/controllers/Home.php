@@ -359,4 +359,14 @@ class Home extends CI_Controller
             }
         }
     }
+    public function replace_blog()
+    {
+        $blog =  $this->Madmin->get_list('', 'blogs');
+        $search = [' white-space-collapse: preserve;', ' background-color: transparent;', 'font-size: 11pt;', 'font-family: Arial, sans-serif;', 'color: rgb(0, 0, 0);', 'font-variant-position: normal;', 'text-align: justify;', 'font-variant-position: normal;', 'font-variant-alternates: normal;', 'font-variant-east-asian: normal;', 'font-variant-numeric: normal;', 'vertical-align: baseline;', ' font-family: Arial;', 'white-space: pre-wrap;', 'line-height:1.7999999999999998;', 'margin-top:10pt;', 'margin-bottom:10pt;', 'text-align:center;', 'line-height: 1.8;', 'margin-top: 10pt;', 'margin-bottom: 10pt;', 'text-align:center', 'list-style-type: disc;', 'white-space: pre;', 'style=""'];
+        $replace   = '';
+        foreach ($blog as $val) {
+            $result = str_replace($search, '', $val);
+            $update = $this->Madmin->update(['id' => $val['id']], $result, 'blogs');
+        }
+    }
 }
