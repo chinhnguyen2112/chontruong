@@ -196,7 +196,7 @@
                                                 $chuyenmuc = chuyen_muc();
                                                 foreach ($chuyenmuc as $val1) {
                                                     if ($val1['id'] == $val['chuyenmuc']) {
-                                                        echo '<a href="/' . $val1['alias'] . ' / " target="_blank">' . $val1['name'] . '</a>';
+                                                        echo '<a href="/' . $val1['alias'] . ' /" target="_blank">' . $val1['name'] . '</a>';
                                                     }
                                                 }
                                                 ?>

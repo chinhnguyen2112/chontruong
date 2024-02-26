@@ -1,37 +1,5 @@
 <link rel="stylesheet" href="/assets/css/css_sidebar.css">
 <div class="sidebar_content">
-    <div class="mail_box">
-        <div class="form_mail">
-            <div class="content_mail">
-                <div class="mail_top">
-                    <div class="logo_mail_box">
-                        <img src="/images/logo_2.webp" alt="logo">
-                    </div>
-                    <div class="content_mail_box">
-                        <div class="item_cont">
-                            <img src="/images/icon_01.png" alt="cẩm nang chọn trường">
-                            <p class="text_item_mail">Cẩm Nang Chọn Trường A-Z</p>
-                        </div>
-                        <div class="item_cont">
-                            <img src="/images/icon_02.png" alt="mã ưu đãi">
-                            <p class="text_item_mail">100+ Mã Ưu Đãi Độc Quyền</p>
-                        </div>
-                        <div class="item_cont">
-                            <img src="/images/icon_03.png" alt="xu hướng chọn trường">
-                            <p class="text_item_mail">Xu Hướng Chọn Trường 2023</p>
-                        </div>
-                    </div>
-                    <div class="content_mail_nonpc">
-                        <p>Tư vấn chọn trường và định hướng ngành nghề giúp bạn có quyết định sáng suốt nhất.</p>
-                    </div>
-                </div>
-                <div class="mail_bot">
-                    <input class="input_mail" name="input_mail" id="input_mail" type="email" placeholder="Nhập Email của bạn">
-                    <button class="submit_mail">Đăng Ký Ngay</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="sidebar_box">
         <div class="box_heading">
             <a href="#">Liên Kết Hữu Ích</a>
@@ -84,9 +52,99 @@
                 </li>
                 <li class="item_content_sidebar">
                     <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
-                    xem
                     <strong>
-                        <a rel="dofollow" target="_blank" href="https://ketquabongda.io/">kqbd</a>
+                        <a rel="dofollow" target="_blank" href="https://collaboration-world.com/">xoilac tv trực
+                            tiếp</a>
+                    </strong>
+                </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
+                    <strong>
+                        <a rel="dofollow" target="_blank" href="https://phongkhamago.com/">bóng đá trực tuyến</a>
+                    </strong>
+                </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">trực tiếp bóng đá hôm nay
+                    <strong>
+                        <a rel="dofollow" target="_blank" href="https://caheotv.li"> caheo tv</a>
+                    </strong>
+                </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
+                    <strong>
+                        <a rel="dofollow" target="_blank" href="https://appalachiarising.org/">Xoilac </a>
+                    </strong>bóng đá trực tuyến
+                </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">Xem bóng đá
+                    <strong>
+                        <a rel="dofollow" target="_blank" href="https://www.visionwineandspirits.com/"> ra khoi tv </a>
+                    </strong>
+                </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
+                    <strong>
+                        <a rel="dofollow" target="_blank" href="https://sunwin23.in">tải sunwin</a>
+                    </strong>
+                </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
+                    <strong>
+                        <a rel="dofollow" target="_blank" href="https://game.sunwin.gives/">sunwin</a>
+                    </strong>
+                </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
+                    <strong>
+                        <a rel="dofollow" target="_blank" href="https://new888k.com/">new88</a>
+                    </strong>
+                </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
+                    <strong>
+                        <a rel="dofollow" target="_blank" href="https://www.2id.org/" >truc tiep bong da</a>
+                    </strong>
+                </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
+                    <strong>
+                        <a rel="dofollow" target="_blank" href="https://xoilac-tv.us/" >xem bóng đá xoilac tv</a>
+                    </strong>
+                </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
+                    <strong>
+                        <a rel="dofollow" target="_blank" href="https://mitomtv.bz/" >mì tôm tv</a>
+                    </strong>
+                </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
+                    <strong>
+                        <a rel="dofollow" target="_blank" href="https://nohu777.co/" >Nổ hủ đổi thưởng</a>
+                    </strong>
+                </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
+                    <strong>
+                        <a rel="dofollow" target="_blank" href="https://sodocasinoi.com/" >Sodo Casino</a>
+                    </strong>
+                </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
+                    <strong>
+                        <a rel="dofollow" target="_blank" href="https://socolive.art/" >trực tiếp bóng đá socolive</a>
+                    </strong>
+                </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
+                    <strong>
+                        <a rel="dofollow" target="_blank" href="https://TK88.mov" >TK88</a>
+                    </strong>
+                </li>
+                <li class="item_content_sidebar">
+                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
+                    <strong>
+                        <a rel="dofollow" target="_blank" href="https://152.42.176.91/" >Kubet</a>
                     </strong>
                 </li>
             </ul>
@@ -103,7 +161,9 @@
             <ul>
                 <?php foreach ($blog_new as $key => $val) { ?>
                     <li class="item_hot_news">
-                        <a href="/<?= $val['alias'] ?>"><?= $val['title'] ?></a>
+                        <a href="/<?= $val['alias'] ?>/">
+                            <?= $val['title'] ?>
+                        </a>
                     </li>
                 <?php } ?>
             </ul>

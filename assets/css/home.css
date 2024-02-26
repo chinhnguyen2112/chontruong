@@ -1,6 +1,7 @@
 .sidebar_content {
     width: 30.1%;
 }
+
 .content {
     padding-top: 20px;
     background: #fff;
@@ -106,7 +107,6 @@
 .blog_top img {
     width: 100%;
     margin-bottom: 10px;
-    height: 317px;
 }
 
 .title_blog_top {
@@ -327,15 +327,16 @@
 
     .date_post span {
         font-size: 11px;
+        display: none;
     }
 
     .box_right_data .des_blog p {
-        font-size: 11px !important;
+        /* font-size: 11px !important; */
         line-height: 15px !important;
     }
 
     .box_right_data .des_blog span {
-        font-size: 11px !important;
+        /* font-size: 11px !important; */
         line-height: 15px !important;
     }
 }
@@ -350,6 +351,7 @@
         margin-top: 20px;
         padding: 0;
     }
+
     .title_blog_top {
         font-size: 22px;
         margin-bottom: 10px;
@@ -367,6 +369,7 @@
     .this_train a {
         gap: 10px;
     }
+
     .box_right_data {
         width: 100%;
     }
@@ -392,6 +395,7 @@
         display: flex;
         flex-direction: column;
     }
+
     .title_blog {
         font-size: 15px !important;
         margin-bottom: 5px !important;
@@ -413,8 +417,8 @@
 
     .this_train .title_blog {
         margin-bottom: 0 !important;
-        font-size: 13px !important;
-        line-height: 15px !important;
+        font-size: 15px !important;
+        line-height: 1.5;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
@@ -423,5 +427,6 @@
 
     .list_blog .des_blog {
         -webkit-line-clamp: 2;
+        margin-top: 10px;
     }
 }

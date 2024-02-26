@@ -43,9 +43,9 @@
 
 h3,
 .content_blog h3 span {
-    font-size: 23px !important;
-    line-height: 32px !important;
-    font-weight: 600 !important;
+    font-size: 21px !important;
+    line-height: 1.5 !important;
+    font-weight: 700 !important;
     margin-bottom: 12px !important;
     color: #0040ff !important;
     text-align: left !important;
@@ -238,13 +238,13 @@ figcaption {
 
 .list_mucluc {
     padding-top: 10px;
-    display: none;
     margin-bottom: 8px;
     transition: 0.5s;
 }
 
 .img_show_ml {
     transition: 0.5s;
+    rotate: 90deg;
 }
 
 .list_mucluc a {
@@ -365,16 +365,19 @@ figcaption {
 figure {
     margin: auto;
     width: 100% !important;
+    margin-bottom: 10pt;
 }
 
 .content_blog div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
     margin: 10pt 0;
+    overflow: auto;
 }
 
 .content_blog img {
+    width: 100%;
     height: auto;
 }
 
@@ -476,7 +479,8 @@ td {
 }
 
 table {
-    width: 100% !important;
+    width: 100%;
+    overflow: scroll;
     border-spacing: 0px !important;
     border: 1px solid #000 !important;
     border-bottom: none !important;
@@ -498,10 +502,6 @@ td:first-child {
 .content_blog table th p {
     text-align: center !important;
     font-weight: 700;
-}
-
-.sidebar_mid {
-    display: none;
 }
 
 .sidebar_bot {
@@ -616,24 +616,14 @@ td:first-child {
 
 @media only screen and (max-width: 540px) {
 
-    .sidebar_bot,
-    .sidebar_box,
-    .hot_news {
-        display: none !important;
-    }
-
-    .sidebar_mid {
-        display: block;
-    }
-
     .container_widget_about {
-        padding: 0 20px;
+        padding: 0 10px;
         padding-bottom: 20px;
     }
 
     .box_data_blog {
         flex-direction: column-reverse;
-        margin-top: 24px;
+        /* margin-top: 24px; */
         gap: 16px;
     }
 

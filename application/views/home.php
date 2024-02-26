@@ -1,3 +1,5 @@
+<h1 style="display: none;">Thông tin trường học - Chọn Trường</h1>
+
 <div class="content">
     <div class="content_about body_width">
         <div class="train_content">

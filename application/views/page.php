@@ -1,3 +1,5 @@
+<h1 style="display: none;"><?= $meta_title ?></h1>
+
 <div class="widget_home">
     <div class="container_widget_about body_width">
         <div class="left_detail">

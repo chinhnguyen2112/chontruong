@@ -1,14 +1,16 @@
+<h1 style="display: none;"><?= $meta_title ?></h1>
+
 <div class="content">
     <div class="content_about body_width">
         <div class="banner_blog">
             <div class="breadcrumb">
                 <span>
                     <a href="/">
-                        <img src="/images/icons8-home-20.png" alt="icon home small">
+                        <img src="/images/icons8-home-20.png" alt="trang chủ">
                     </a>
                 </span>
                 <span>
-                    <img src="/images/icons8-arrow-right-10.png" alt="icon arrow right">
+                    <img src="/images/icons8-arrow-right-10.png" alt="chuyên mục">
                 </span>
                 <span>
                     <a class="link_breadcrumb" href="/<?= $cate['alias'] ?>/"><?= $cate['name'] ?></a>

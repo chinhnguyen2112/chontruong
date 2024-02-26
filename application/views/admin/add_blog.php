@@ -297,6 +297,7 @@
             },
             "meta_des": {
                 required: true,
+                maxlength: 160
             },
         },
         messages: {
@@ -314,6 +315,7 @@
             },
             "meta_des": {
                 required: "Chưa nhập description",
+                maxlength: "Không được vượt quá 160 ký tự"
             },
         },
         submitHandler: function(form) {

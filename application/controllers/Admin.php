@@ -82,7 +82,7 @@ class Admin extends CI_Controller
         $time = time();
         $data['title'] = $this->input->post('title');
         $data['time_post'] = $time_post =  strtotime($this->input->post('time_post'));
-        $data['alias'] = $alias = $this->input->post('alias');
+        $data['alias'] = $alias = trim($this->input->post('alias'));
         $data['chuyenmuc'] = $chuyenmuc =  $this->input->post('category');
         $sapo =  $this->input->post('sapo');
         $content =  $this->input->post('content');
@@ -97,6 +97,7 @@ class Admin extends CI_Controller
         $data['updated_at'] = $time;
         $data['author_id'] = $_SESSION['admin']['id'];
         $cate = chuyen_muc(['id' => $chuyenmuc]);
+        $data['type'] = 0;
         if ($this->input->post('type') == 1) {
             $data['type'] = 1;
         }
@@ -191,12 +192,13 @@ class Admin extends CI_Controller
     {
         $id = $this->input->post('id');
         $data['name'] = $this->input->post('name');
-        $data['alias'] = $alias = $this->input->post('alias');
+        $data['alias'] = $alias = trim($this->input->post('alias'));
         $cate = $this->input->post('category');
         $data['meta_title'] = $this->input->post('meta_title');
         $data['meta_des'] = $this->input->post('meta_des');
         $data['level'] = 0;
         $data['parent'] = 0;
+        $data['created_at'] = time();
         $where_check = ['alias' => $alias];
         if ($id > 0) {
             $where_check['id !='] = $id;
@@ -310,7 +312,7 @@ class Admin extends CI_Controller
     {
         $id = $this->input->post('id');
         $data['name'] = $this->input->post('name');
-        $data['alias'] = $alias = $this->input->post('alias');
+        $data['alias'] = $alias = trim($this->input->post('alias'));
         $data['meta_key'] = $this->input->post('meta_key');
         $data['meta_title'] = $this->input->post('meta_title');
         $data['meta_des'] = $this->input->post('meta_des');
@@ -513,6 +515,7 @@ class Admin extends CI_Controller
     }
     public function sitemap()
     {
+        $date = date('Y-m-d\TH:i:sP', time());
         $time = time();
         $sql = "SELECT id,alias,updated_at FROM blogs WHERE type = 0 AND index_blog = 1 AND time_post <= $time ORDER BY id ASC";
         $blog = $this->Madmin->query_sql($sql);
@@ -520,83 +523,61 @@ class Admin extends CI_Controller
         $page = ceil($count / 200);
         for ($i = 1; $i <= $page; $i++) {
             $check_page = ($i - 1) * 200;
-            $sql_limit = "SELECT id,alias,updated_at FROM blogs WHERE type = 0 AND index_blog = 1 AND time_post <= $time ORDER BY id ASC LIMIT {$check_page}, 200";
+            $sql_limit = "SELECT id,alias,title,image,updated_at FROM blogs WHERE type = 0 AND index_blog = 1 AND time_post <= $time ORDER BY id ASC LIMIT {$check_page}, 200";
             $blog_limit = $this->Madmin->query_sql($sql_limit);
-            $doc = new DOMDocument("1.0", "utf-8");
+            $doc = new DOMDocument('1.0', 'UTF-8');
             $doc->formatOutput = true;
-            $r = $doc->createElement("urlset");
-            $r->setAttribute("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
-            $doc->appendChild($r);
+
+            // Tạo phần tử gốc <urlset>
+            $urlset = $doc->createElement('urlset');
+            $urlset->setAttribute('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9');
+            $urlset->setAttribute('xmlns:image', 'http://www.google.com/schemas/sitemap-image/1.1');
+            $doc->appendChild($urlset);
             foreach ($blog_limit as $val) {
-                $url = $doc->createElement("url");
-                $name = $doc->createElement("loc");
-                $name->appendChild($doc->createTextNode(base_url() . $val['alias'] . '/'));
-                $url->appendChild($name);
-                $changefreq = $doc->createElement("changefreq");
-                $changefreq->appendChild($doc->createTextNode('daily'));
-                $url->appendChild($changefreq);
-                $lastmod = $doc->createElement("lastmod");
-                $lastmod->appendChild($doc->createTextNode(date('Y-m-d', $val['updated_at']) . 'T07:24:06+00:00'));
+                $url = $doc->createElement('url');
+                $loc = $doc->createElement('loc', htmlspecialchars(base_url() . $val['alias'] . '/'));
+                $url->appendChild($loc);
+                $lastmod = $doc->createElement('lastmod', date('Y-m-d\TH:i:sP', $val['updated_at']));
                 $url->appendChild($lastmod);
-                $priority = $doc->createElement("priority");
-                $priority->appendChild($doc->createTextNode('0.8'));
+                $changefreq = $doc->createElement('changefreq', 'daily');
+                $url->appendChild($changefreq);
+                $priority = $doc->createElement('priority', '0.8');
                 $url->appendChild($priority);
-                $r->appendChild($url);
+                $urlset->appendChild($url);
             }
             $name = ($i == 1) ? '' : $i - 1;
             $name_file = 'blog' . $name . ".xml";
-            $date = date('Y-m-d', time());
-            if ($i >= 2) {
-                $sql_check = "SELECT * FROM sitemap  WHERE name = '$name_file' ";
-                $row = $this->Madmin->query_sql_num($sql_check);
-                if ($row > 0) {
-                    $where_update = [
-                        'name' => $name_file
-                    ];
-                    $data_update = [
-                        'time' => $date
-                    ];
-                    $update = $this->Madmin->update($where_update, $data_update, 'sitemap');
-                } else {
-                    $data_insert = [
-                        'name' => $name_file,
-                        'time' => $date
-                    ];
-                    $insert = $this->Madmin->insert($data_insert, 'sitemap');
-                    //\/\/\/\/\/\/\/\\
-                    $sql = "SELECT * FROM sitemap";
-                    $sitemap = $this->Madmin->query_sql($sql);
-                    $doc = new DOMDocument("1.0", "utf-8");
-                    $doc->formatOutput = true;
-                    $doc->appendChild($doc->createProcessingInstruction('xml-stylesheet', 'type="text/xsl" href="https://chontruong.edu.vn/assets/css/css_sitemap.xsl"'));
-                    $r = $doc->createElement("sitemapindex");
-                    $r->setAttribute("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
-                    $doc->appendChild($r);
-                    foreach ($sitemap as $key => $val) {
-                        $url = $doc->createElement("sitemap");
-                        $name = $doc->createElement("loc");
-                        $name->appendChild($doc->createTextNode(base_url() . $val['name']));
-                        $url->appendChild($name);
-                        $lastmod = $doc->createElement("lastmod");
-                        $lastmod->appendChild($doc->createTextNode($val['time'] . 'T17:28:31+07:00'));
-                        $url->appendChild($lastmod);
-                        $r->appendChild($url);
-                    }
-                    $doc->save("sitemap.xml");
-                }
-            }
             $doc->save($name_file);
+            $sql_check = "SELECT * FROM sitemap  WHERE name = '$name_file' ";
+            $row = $this->Madmin->query_sql_num($sql_check);
+            if ($row > 0) {
+                $where_update = [
+                    'name' => $name_file
+                ];
+                $data_update = [
+                    'time' => $date
+                ];
+                $update = $this->Madmin->update($where_update, $data_update, 'sitemap');
+            } else {
+                $data_insert = [
+                    'name' => $name_file,
+                    'time' => $date
+                ];
+                $insert = $this->Madmin->insert($data_insert, 'sitemap');
+            }
+            $this->main_sitemap();
         }
     }
     public function sitemap_tag()
     {
+        $date = date('Y-m-d\TH:i:sP', time());
         $sql = "SELECT id,alias FROM tags ORDER BY id ASC";
         $tags = $this->Madmin->query_sql($sql);
         $count = count($tags);
         $page = ceil($count / 200);
         for ($i = 1; $i <= $page; $i++) {
             $check_page = ($i - 1) * 200;
-            $sql_limit = "SELECT id,alias FROM tags ORDER BY id ASC LIMIT {$check_page}, 200";
+            $sql_limit = "SELECT id,alias,created_at FROM tags ORDER BY id ASC LIMIT {$check_page}, 200";
             $tag_limit = $this->Madmin->query_sql($sql_limit);
             $doc = new DOMDocument("1.0", "utf-8");
             $doc->formatOutput = true;
@@ -612,17 +593,16 @@ class Admin extends CI_Controller
                 $changefreq->appendChild($doc->createTextNode('daily'));
                 $url->appendChild($changefreq);
                 $lastmod = $doc->createElement("lastmod");
-                $lastmod->appendChild($doc->createTextNode(date('Y-m-d', $val['created_at']) . 'T07:24:06+00:00'));
+                $lastmod->appendChild($doc->createTextNode(date('Y-m-d\TH:i:sP', $val['created_at'])));
                 $url->appendChild($lastmod);
                 $priority = $doc->createElement("priority");
-                $priority->appendChild($doc->createTextNode('0.9'));
+                $priority->appendChild($doc->createTextNode('0.5'));
                 $url->appendChild($priority);
                 $r->appendChild($url);
             }
             $name = ($i == 1) ? '' : $i - 1;
             $name_file = 'tags' . $name . ".xml";
             $doc->save($name_file);
-            $date = date('Y-m-d', time());
             $sql_check = "SELECT * FROM sitemap  WHERE name = '$name_file' ";
             $row = $this->Madmin->query_sql_num($sql_check);
             if ($row == 0) {
@@ -631,31 +611,21 @@ class Admin extends CI_Controller
                     'time' => $date
                 ];
                 $insert = $this->Madmin->insert($data_insert, 'sitemap');
-                //\/\/\/\/\/\/\/\\
-                $sql = "SELECT * FROM sitemap";
-                $sitemap = $this->Madmin->query_sql($sql);
-                $doc = new DOMDocument("1.0", "utf-8");
-                $doc->formatOutput = true;
-                $doc->appendChild($doc->createProcessingInstruction('xml-stylesheet', 'type="text/xsl" href="https://chontruong.edu.vn/assets/css/css_sitemap.xsl"'));
-                $r = $doc->createElement("sitemapindex");
-                $r->setAttribute("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
-                $doc->appendChild($r);
-                foreach ($sitemap as $key => $val) {
-                    $url = $doc->createElement("sitemap");
-                    $name = $doc->createElement("loc");
-                    $name->appendChild($doc->createTextNode(base_url() . $val['name']));
-                    $url->appendChild($name);
-                    $lastmod = $doc->createElement("lastmod");
-                    $lastmod->appendChild($doc->createTextNode($val['time'] . 'T17:28:31+07:00'));
-                    $url->appendChild($lastmod);
-                    $r->appendChild($url);
-                }
-                $doc->save("sitemap.xml");
+            } else {
+                $where_update = [
+                    'name' => $name_file
+                ];
+                $data_update = [
+                    'time' => $date
+                ];
+                $update = $this->Madmin->update($where_update, $data_update, 'sitemap');
             }
+            $this->main_sitemap();
         }
     }
     public function sitemap_cate()
     {
+        $date = date('Y-m-d\TH:i:sP', time());
         $sql = "SELECT id,alias,created_at FROM category ORDER BY id ASC";
         $cate = $this->Madmin->query_sql($sql);
         $count = count($cate);
@@ -678,17 +648,16 @@ class Admin extends CI_Controller
                 $changefreq->appendChild($doc->createTextNode('daily'));
                 $url->appendChild($changefreq);
                 $lastmod = $doc->createElement("lastmod");
-                $lastmod->appendChild($doc->createTextNode(date('Y-m-d', $val['created_at']) . 'T07:24:06+00:00'));
+                $lastmod->appendChild($doc->createTextNode(date('Y-m-d\TH:i:sP', $val['created_at'])));
                 $url->appendChild($lastmod);
                 $priority = $doc->createElement("priority");
-                $priority->appendChild($doc->createTextNode('0.9'));
+                $priority->appendChild($doc->createTextNode('0.8'));
                 $url->appendChild($priority);
                 $r->appendChild($url);
             }
             $name = ($i == 1) ? '' : $i - 1;
             $name_file = 'categories' . $name . ".xml";
             $doc->save($name_file);
-            $date = date('Y-m-d', time());
             $sql_check = "SELECT * FROM sitemap  WHERE name = '$name_file' ";
             $row = $this->Madmin->query_sql_num($sql_check);
             if ($row == 0) {
@@ -697,32 +666,22 @@ class Admin extends CI_Controller
                     'time' => $date
                 ];
                 $insert = $this->Madmin->insert($data_insert, 'sitemap');
-                //\/\/\/\/\/\/\/\\
-                $sql = "SELECT * FROM sitemap";
-                $sitemap = $this->Madmin->query_sql($sql);
-                $doc = new DOMDocument("1.0", "utf-8");
-                $doc->formatOutput = true;
-                $doc->appendChild($doc->createProcessingInstruction('xml-stylesheet', 'type="text/xsl" href="https://chontruong.edu.vn/assets/css/css_sitemap.xsl"'));
-                $r = $doc->createElement("sitemapindex");
-                $r->setAttribute("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
-                $doc->appendChild($r);
-                foreach ($sitemap as $key => $val) {
-                    $url = $doc->createElement("sitemap");
-                    $name = $doc->createElement("loc");
-                    $name->appendChild($doc->createTextNode(base_url() . $val['name']));
-                    $url->appendChild($name);
-                    $lastmod = $doc->createElement("lastmod");
-                    $lastmod->appendChild($doc->createTextNode($val['time'] . 'T17:28:31+07:00'));
-                    $url->appendChild($lastmod);
-                    $r->appendChild($url);
-                }
-                $doc->save("sitemap.xml");
+            } else {
+                $where_update = [
+                    'name' => $name_file
+                ];
+                $data_update = [
+                    'time' => $date
+                ];
+                $update = $this->Madmin->update($where_update, $data_update, 'sitemap');
             }
+            $this->main_sitemap();
         }
     }
     public function sitemap_page()
     {
-        $page = $this->Madmin->query_sql("SELECT id,alias,created_at FROM blogs WHERE type = 1 ORDER by id");
+        $date = date('Y-m-d\TH:i:sP', time());
+        $page = $this->Madmin->query_sql("SELECT id,alias,updated_at FROM blogs WHERE type = 1 ORDER by id");
         $doc = new DOMDocument("1.0", "utf-8");
         $doc->formatOutput = true;
         $r = $doc->createElement("urlset");
@@ -734,7 +693,7 @@ class Admin extends CI_Controller
         $name->appendChild($doc->createTextNode(base_url()));
         $url->appendChild($name);
         $lastmod = $doc->createElement("lastmod");
-        $lastmod->appendChild($doc->createTextNode('2023-03-02'));
+        $lastmod->appendChild($doc->createTextNode('2024-01-05T23:240:31+07:00'));
         $url->appendChild($lastmod);
         $changefreq = $doc->createElement("changefreq");
         $changefreq->appendChild($doc->createTextNode('daily'));
@@ -749,17 +708,40 @@ class Admin extends CI_Controller
             $name->appendChild($doc->createTextNode(base_url() . $val['alias'] . '/'));
             $url->appendChild($name);
             $lastmod = $doc->createElement("lastmod");
-            $lastmod->appendChild($doc->createTextNode(date('Y-m-d', $val['created_at'])));
+            $lastmod->appendChild($doc->createTextNode(date('Y-m-d\TH:i:sP', $val['updated_at'])));
             $url->appendChild($lastmod);
             $changefreq = $doc->createElement("changefreq");
             $changefreq->appendChild($doc->createTextNode('daily'));
             $url->appendChild($changefreq);
             $priority = $doc->createElement("priority");
-            $priority->appendChild($doc->createTextNode('0.9'));
+            $priority->appendChild($doc->createTextNode('0.3'));
             $url->appendChild($priority);
             $r->appendChild($url);
         }
         $name_file = "page.xml";
         $doc->save($name_file);
+    }
+    public function main_sitemap()
+    {
+        $date = date('Y-m-d\TH:i:sP', time());
+        $sql = "SELECT * FROM sitemap";
+        $sitemap = $this->Madmin->query_sql($sql);
+        $doc = new DOMDocument("1.0", "utf-8");
+        $doc->formatOutput = true;
+        $doc->appendChild($doc->createProcessingInstruction('xml-stylesheet', 'type="text/xsl" href="https://chontruong.edu.vn/assets/css/css_sitemap.xsl"'));
+        $r = $doc->createElement("sitemapindex");
+        $r->setAttribute("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
+        $doc->appendChild($r);
+        foreach ($sitemap as $key => $val) {
+            $url = $doc->createElement("sitemap");
+            $name = $doc->createElement("loc");
+            $name->appendChild($doc->createTextNode(base_url() . $val['name']));
+            $url->appendChild($name);
+            $lastmod = $doc->createElement("lastmod");
+            $lastmod->appendChild($doc->createTextNode($val['time'] . 'T00:00:01+07:00'));
+            $url->appendChild($lastmod);
+            $r->appendChild($url);
+        }
+        $doc->save("sitemap.xml");
     }
 }

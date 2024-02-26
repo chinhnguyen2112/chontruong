@@ -182,3 +182,10 @@ function remove_accent($mystring)
 
 	return str_replace($marTViet, $marKoDau, $mystring);
 }
+function alias_301($alias)
+{
+	if ($alias == 'diem-chuan-dai-hoc-can-tho-2023-') {
+		$alias = 'diem-chuan-dai-hoc-can-tho-2023';
+	}
+	return $alias;
+}

@@ -86,7 +86,9 @@ $route['load_more_author'] = 'Ajax/load_more_author';
 $route['search'] = 'Ajax/search';
 $route['search/(:num)'] = 'Ajax/search/$1';
 
-$route['(:any)'] = 'Home/chuyenmuc/$1 ';
-$route['(:any)/(:num)'] = 'Home/chuyenmuc/$1 ';
-// $route['(:any)/(:any)'] = 'Home/tag/$1/$2 ';
-// $route['(:any)/(:any)/(:num)'] = 'Home/tag/$1/$2/$3 ';
+$route['(:any)'] = 'Home/chuyenmuc/$1';
+$route['(:any)/(:num)'] = 'Home/chuyenmuc/$1';
+$route['(:any)/amp'] = 'Home/amp/$1';
+$route['(:any)/amp/(:num)'] = 'Home/amp/$1';
+$route['(:any)/feed'] = 'Home/feed/$1';
+$route['(:any)/feed/(:num)'] = 'Home/feed/$1';

@@ -35,24 +35,38 @@ class Home extends CI_Controller
         $data['blog'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE type = 0 AND time_post <= $time ORDER BY created_at DESC LIMIT 20");
         $data['blog_new'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time", 'blogs', 0, 5);
         $data['meta_title'] = 'Web Review Trường Đại Học - Cao Đẳng - Trung Cấp';
-        $data['meta_des'] = 'Nền tảng Web Review Trường ở thời điểm hiện tại và trong tương lai sẽ là một trong những nền tảng giúp cho Học sinh và sinh viên lựa chọn được ngành nghề phù hợp...';
+        $data['meta_des'] = 'Nền tảng Web Review Trường ở thời điểm hiện tại và trong tương lai là một trong những nền tảng giúp cho Học sinh và sinh viên lựa chọn được ngành nghề phù hợp...';
+        $data['meta_key'] = "Thông tin trường học";
         $data['content'] = 'home';
         $data['list_js'] = [
-            'slick.min.js',
             'home.js',
         ];
         $data['list_css'] = [
-            'slick.css',
-            'slick-theme.css',
             'home.css'
         ];
         $data['index'] = 1;
-        $this->load->view('index', $data);
+        return $this->load->view('index', $data);
+    }
+    public function amp($alias)
+    {
+        redirect('/' . $alias . '/', 'location', 301);
+    }
+    public function feed($alias)
+    {
+        redirect('/' . $alias . '/', 'location', 301);
     }
     public function chuyenmuc($alias)
     {
         $time = time();
         $alias = trim($alias);
+        $alias_new = strtolower($alias);
+        if ($alias != $alias_new) {
+            redirect('/' . $alias_new . '/', 'location', 301);
+        }
+        $alias_new = alias_301($alias);
+        if ($alias != $alias_new) {
+            redirect('/' . $alias_new . '/', 'location', 301);
+        }
         $data['canonical'] = base_url() . $alias . '/';
         $author = $this->Madmin->get_by(['alias' => $alias], 'admin');
         $chuyenmuc = $this->Madmin->get_by(['alias' => $alias], 'category');
@@ -66,19 +80,11 @@ class Home extends CI_Controller
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
                 redirect('/' . $alias . '/', 'location', 301);
             }
-            $page = $this->uri->segment(3);
-            if ($page < 1 || $page == '') {
-                $page = 1;
-            }
-            $limit = 18;
-            $start = $limit * ($page - 1);
             $count_or['chuyenmuc'] = $chuyenmuc['id'];
             if ($chuyenmuc['parent'] == 0) {
                 $count_or['cate_parent'] = $chuyenmuc['id'];
                 $data['cate_to'] = $chuyenmuc;
             }
-            $count = $this->Madmin->num_rows_or("type = 0 AND time_post <= $time", $count_or, 'blogs');
-            pagination('/' . $chuyenmuc['alias'], $count, $limit);
             $chuyenmuc_parent = $this->Madmin->get_by(['id' => $chuyenmuc['parent']], 'category');
             $title_page = $chuyenmuc['name'];
             $data['cate'] = $chuyenmuc;
@@ -88,7 +94,7 @@ class Home extends CI_Controller
                 $data['cate_1'] = $cate_parent;
                 $title_page = $chuyenmuc_parent['name'] . ' - ' . $chuyenmuc['name'];
             }
-            $data['blog'] = $this->Madmin->get_limit_or("time_post <= $time AND type = 0", $count_or, 'blogs', $start, $limit);
+            $data['blog'] = $this->Madmin->get_limit_or("time_post <= $time AND type = 0", $count_or, 'blogs', 0, 18);
             $data['blog_new'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time", 'blogs', 0, 5);
             $data['title_page'] = $title_page;
             $data['chuyenmuc'] = $chuyenmuc['id'];
@@ -102,6 +108,7 @@ class Home extends CI_Controller
             $data['list_css'] = [
                 'chuyenmuc_blog.css',
             ];
+            $data['index'] = 1;
         } else if (isset($blog) && $blog != null) { // blog
             if ($_SERVER['REQUEST_URI'] != '/' . $alias . '/') {
                 redirect('/' . $alias . '/', 'location', 301);
@@ -109,20 +116,12 @@ class Home extends CI_Controller
             if (!admin() && $blog['time_post'] > $time) {
                 redirect('/');
             }
-            $data['blog_same'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE chuyenmuc = {$blog['chuyenmuc']} AND type = 0 AND time_post <= $time AND id != {$blog['id']}  ORDER BY updated_at DESC LIMIT 3");
+            $data['blog_same'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE chuyenmuc = {$blog['chuyenmuc']} AND type = 0 AND time_post <= $time AND id != {$blog['id']}  ORDER BY updated_at DESC LIMIT 6");
             $data['blog_new'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time AND id != {$blog['id']} ", 'blogs', 0, 5);
-            $cate = $this->Madmin->query_sql_row("SELECT *  FROM category  WHERE id = {$blog['chuyenmuc']} ");
-            $data['cate'] = $cate;
-            if ($cate != null && $cate['parent'] > 0) {
-                $cate_parent = $this->Madmin->query_sql_row("SELECT id,alias,name,parent  FROM category  WHERE id = {$cate['parent']} ");
-                $data['cate_1'] = $cate_parent;
-            }
-            if ($blog['author_id'] > 0) {
-                $data['author'] = $this->Madmin->get_by(['id' => $blog['author_id']], 'admin');
-            }
             $data['blog'] = $blog;
             $data['content'] = 'detail_blog';
             $data['list_js'] = [
+                'jquery.toc.min.js',
                 'detail_blog.js',
             ];
             $data['list_css'] = [
@@ -132,6 +131,9 @@ class Home extends CI_Controller
             $data['meta_des'] = $blog['meta_des'];
             $data['meta_key'] = $blog['meta_key'];
             $data['meta_img'] = $blog['image'];
+            if($blog['id'] != 848 ){
+                $data['index'] = 1;
+            }
         } else if (isset($author) && $author != null) {
             return $this->author($alias);
         } else if (isset($page) && $page != null) {
@@ -140,42 +142,7 @@ class Home extends CI_Controller
             set_status_header(404);
             return $this->load->view('errors/html/error_404');
         }
-        $data['index'] = 1;
-        $this->load->view('index', $data);
-    }
-    public function detail_blog($alias)
-    {
-        $time = time();
-        $blog = $this->Madmin->query_sql_row("SELECT blogs.*,category.name as name_cate,category.alias as alias_cate,category.image as img_cate FROM blogs INNER JOIN category ON category.id = blogs.chuyenmuc WHERE blogs.alias = '$alias' ");
-        if ($blog != null) {
-            if (!admin() && $blog['time_post'] > $time) {
-                redirect('/');
-            }
-            $data['blog_same'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE type = 0 AND time_post <= $time AND chuyenmuc = {$blog['chuyenmuc']} AND id != {$blog['id']}  ORDER BY updated_at DESC LIMIT 3");
-            $cate = $this->Madmin->query_sql_row("SELECT *  FROM category  WHERE id = {$blog['chuyenmuc']} ");
-            $title_page = $cate['name'];
-            if ($cate['parent'] > 0) {
-                $cate_parent = $this->Madmin->query_sql_row("SELECT *  FROM category  WHERE id = {$cate['parent']} ");
-                $title_page = $cate_parent['name'] . ' - ' . $cate['name'];
-            }
-            $data['breadcrumb'] = $title_page;
-            $data['blog'] = $blog;
-            $data['content'] = 'detail_blog';
-            $data['list_js'] = [
-                'detail_blog.js',
-            ];
-            $data['list_css'] = [
-                'detail_blog.css',
-            ];
-            $data['meta_title'] = $blog['meta_title'];
-            $data['meta_des'] = $blog['meta_des'];
-            $data['meta_key'] = $blog['meta_key'];
-            $data['meta_img'] = $blog['image'];
-            $this->load->view('index', $data);
-        } else {
-            set_status_header(404);
-            return $this->load->view('errors/html/error_404');
-        }
+        return $this->load->view('index', $data);
     }
     public function author($alias)
     {
@@ -199,13 +166,14 @@ class Home extends CI_Controller
             $data['list_css'] = [
                 'author.css',
             ];
+            $data['canonical'] = base_url() . $alias . '/';
             $data['meta_title'] = $author['name'] . ' Tác giả tại Chontruong';
             $data['meta_des'] = $author['name'];
             $data['meta_key'] = $author['name'];
             $data['meta_img'] = $author['image'];
-            $data['index'] = 1;
             $data['content'] = 'author';
-            $this->load->view('index', $data);
+            $data['index'] = 2;
+            return $this->load->view('index', $data);
         }
     }
     function page($page)
@@ -223,150 +191,7 @@ class Home extends CI_Controller
         $data['meta_key'] = $page['meta_key'];
         $data['meta_img'] = $page['image'];
         $data['index'] = 1;
-        $this->load->view('index', $data);
+        $data['canonical'] = base_url() . $page['alias'] . '/';
+        return $this->load->view('index', $data);
     }
-    public function import_file()
-    {
-        $data['content'] = 'get_blog';
-        $this->load->view('index', $data);
-    }
-    public function test()
-    {
-        $url_post = $this->input->post('url_blog');
-        error_reporting(0);
-        $curl = curl_init();
-        curl_setopt_array($curl, array(
-            CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_URL =>  $url_post,
-            CURLOPT_USERAGENT => 'XuanThuLab test cURL Request',
-            CURLOPT_SSL_VERIFYPEER => false,
-        ));
-        $alias = str_replace('https://chontruong.edu.vn/', '', $url_post);
-        $resp = curl_exec($curl);
-        $data['data_content'] = $resp;
-        $data['alias_url'] = str_replace('/', '', $alias);
-        $data['content'] = 'get_content';
-        $this->load->view('index', $data);
-    }
-    public function add_blog()
-    {
-        $data['title'] = $this->input->post('h1');
-        $data['alias'] = $alias =  $this->input->post('alias');
-        $data['meta_title'] = $this->input->post('title');
-        $data['meta_des']     = $this->input->post('des');
-        $data['updated_at'] = strtotime($this->input->post('date'));
-        $data['created_at'] = strtotime($this->input->post('date'));
-        $content = $this->input->post('content');
-        $img = $this->input->post('img');
-        $list_img = explode(',', $this->input->post('list_img'));
-        $url_cate = $this->input->post('url_cate');
-        $url_cate_new = str_replace('https://chontruong.edu.vn/', '', $this->input->post('url_cate'));
-        $alias_cate = str_replace('/', '', $url_cate_new);
-        $text_cate = $this->input->post('text_cate');
-        $url_cate_child = str_replace($url_cate, '', $this->input->post('url_cate_child'));
-        $alias_cate_child = str_replace('/', '', $url_cate_child);
-        $text_cate_child = $this->input->post('text_cate_child');
-        $where_blog = [
-            'alias' =>  $alias
-        ];
-        $blog = $this->Madmin->get_by($where_blog, 'blogs');
-        if ($blog == null) {
-            $where_cate = [
-                'alias' => $alias_cate,
-                'parent' => 0
-            ];
-            $cate = $this->Madmin->get_by($where_cate, 'category');
-            if ($cate != null) {
-                $id_cate = $cate['id'];
-            } else {
-                $data_insert_cate = [
-                    'name' => $text_cate,
-                    'alias' => $alias_cate,
-                    'meta_title' => $text_cate . " - Chọn Trường"
-                ];
-                $id_cate = $this->Madmin->insert($data_insert_cate, 'category');
-            }
-            if ($alias_cate_child != '') {
-                $where_cate_child = [
-                    'alias' => $alias_cate_child,
-                    'parent' => $id_cate
-                ];
-                $cate_child = $this->Madmin->get_by($where_cate_child, 'category');
-                if ($cate_child != null) {
-                    $id_cate_child = $cate_child['id'];
-                } else {
-                    $data_insert_cate_child = [
-                        'name' => $text_cate_child,
-                        'alias' => $alias_cate_child,
-                        'parent' => $id_cate,
-                        'meta_title' => $text_cate_child . " - Chọn Trường"
-                    ];
-                    $id_cate_child = $this->Madmin->insert($data_insert_cate_child, 'category');
-                }
-            } else {
-                $id_cate_child =  $id_cate;
-                $id_cate = 0;
-            }
-            foreach ($list_img as $val) {
-                if ($val != '') {
-                    $this_val = explode('/', $val);
-                    $name_img =  array_pop($this_val);
-                    $new_name = 'assets/img_blog/images/' . $name_img;
-                    copy($val, $new_name);
-                    $content = str_replace($val, '/' . $new_name, $content);
-                }
-            }
-            $data['content'] = $content;
-            $data['chuyenmuc'] = $id_cate_child;
-            $data['cate_parent'] = $id_cate;
-            copy($img, 'upload/blog/' . $alias . '.jpg');
-            $data['image']     =  'upload/blog/' . $alias . '.jpg';
-
-            $insert_blog = $this->Madmin->insert($data, 'blogs');
-            $response = [
-                'status' => 1,
-            ];
-        } else {
-            $response = [
-                'status' => 0,
-            ];
-        }
-        echo json_encode($response);
-    }
-    public function file_excel()
-    {
-        error_reporting(0);
-        require_once(APPPATH . 'libraries/PHPExcel.php');
-        if (isset($_FILES["file"]["name"])) {
-            $path = $_FILES["file"]["tmp_name"];
-            $object = PHPExcel_IOFactory::load($path);
-            foreach ($object->getWorksheetIterator() as $worksheet) {
-                $highestRow = $worksheet->getHighestRow();
-                for ($row = 2; $row <= $highestRow; $row++) {
-                    $url_old = $worksheet->getCellByColumnAndRow(1, $row)->getValue();
-                    $url = str_replace('https://chontruong.edu.vn/', '', $url_old);
-                    $url = str_replace('/', '', $url);
-                    $where_blog = [
-                        'alias' =>  $url
-                    ];
-                    $blog = $this->Madmin->get_by($where_blog, 'blogs');
-                    // if ($blog = null) {
-                    echo $url_old . '---- ' . $blog['alias'] . '/ ,  ';
-                    // die;
-                    // }
-                }
-                //var_dump($re_cv);die();
-            }
-        }
-    }
-    // public function replace_blog()
-    // {
-    //     $blog =  $this->Madmin->get_list('', 'blogs');
-    //     $search = [' white-space-collapse: preserve;', ' background-color: transparent;', 'font-size: 11pt;', 'font-family: Arial, sans-serif;', 'color: rgb(0, 0, 0);', 'font-variant-position: normal;', 'text-align: justify;', 'font-variant-position: normal;', 'font-variant-alternates: normal;', 'font-variant-east-asian: normal;', 'font-variant-numeric: normal;', 'vertical-align: baseline;', ' font-family: Arial;', 'white-space: pre-wrap;', 'line-height:1.7999999999999998;', 'margin-top:10pt;', 'margin-bottom:10pt;', 'text-align:center;', 'line-height: 1.8;', 'margin-top: 10pt;', 'margin-bottom: 10pt;', 'text-align:center', 'list-style-type: disc;', 'white-space: pre;', 'style=""'];
-    //     $replace   = '';
-    //     foreach ($blog as $val) {
-    //         $result = str_replace($search, '', $val);
-    //         $update = $this->Madmin->update(['id' => $val['id']], $result, 'blogs');
-    //     }
-    // }
 }

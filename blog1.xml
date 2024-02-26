@@ -1,195 +1,1203 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://chontruong.edu.vn/cach-phoi-do-cho-nguoi-lun-bap-chan-to/</loc>
+    <loc>https://chontruong.edu.vn/cac-truong-trung-cap-o-thai-nguyen/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-12T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-26T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/cach-phoi-do-voi-ao-da-dai/</loc>
+    <loc>https://chontruong.edu.vn/cac-truong-trung-cap-o-hai-phong/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-12T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-26T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/cach-mac-quan-tay-dep-cho-nu/</loc>
+    <loc>https://chontruong.edu.vn/truong-trung-cap-nghe-nam-dinh/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-12T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-26T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/cach-phoi-do-di-sinh-nhat-don-gian-cho-nu/</loc>
+    <loc>https://chontruong.edu.vn/nganh-toan-hoc/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-12T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/uong-nuoc-ep-ca-chua-trang-da/</loc>
+    <loc>https://chontruong.edu.vn/nganh-vat-ly-hoc/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-13T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/tri-mun-bang-ca-chua/</loc>
+    <loc>https://chontruong.edu.vn/nganh-dia-ly-hoc/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-13T07:24:06+00:00</lastmod>
+    <lastmod>2023-07-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/tri-mun-dau-den-bang-kem-danh-rang/</loc>
+    <loc>https://chontruong.edu.vn/nganh-hoa-hoc/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-13T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/tri-nam-bang-ca-chua/</loc>
+    <loc>https://chontruong.edu.vn/nganh-sinh-hoc/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-13T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/cach-tri-mun-dau-den-bang-trung-ga/</loc>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-sinh-hoc/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-14T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/cach-tri-mun-dau-den-bang-chanh/</loc>
+    <loc>https://chontruong.edu.vn/nganh-co-ky-thuat/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-14T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/an-gi-de-giu-dang/</loc>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-ky-thuat-co-khi/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-14T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/cac-dang-nguoi/</loc>
+    <loc>https://chontruong.edu.vn/nganh-khi-tuong-hoc/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-14T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/mat-na-tri-mun-dau-den/</loc>
+    <loc>https://chontruong.edu.vn/nganh-vat-ly-tri-lieu/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-15T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/cach-lam-mat-na-dat-set/</loc>
+    <loc>https://chontruong.edu.vn/nganh-vat-ly-ky-thuat/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-15T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/cach-lam-mat-na-tra-xanh/</loc>
+    <loc>https://chontruong.edu.vn/nganh-vat-ly-y-khoa/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-15T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/cong-thuc-nuoc-ep-thai-doc-dep-da/</loc>
+    <loc>https://chontruong.edu.vn/nganh-vat-ly-hat-nhan/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-15T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/cac-loai-nuoc-ep-dep-da/</loc>
+    <loc>https://chontruong.edu.vn/nganh-dia-chat-hoc/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-16T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/nuoc-ep-dep-da-giam-can/</loc>
+    <loc>https://chontruong.edu.vn/nganh-khoa-hoc-moi-truong/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-16T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/cac-loai-nuoc-ep-giam-can/</loc>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-ky-thuat-dien-tu/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-16T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/uong-nuoc-dua-co-dep-da-khong/</loc>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-xay-dung-cau-duong/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-16T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/uong-nuoc-cam-co-dep-da-khong/</loc>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-cap-thoat-nuoc/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-06-26T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/uong-bao-nhieu-nuoc-moi-ngay-de-dep-da/</loc>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-che-tao-may/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-17T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/mot-ngay-nen-rua-mat-may-lan/</loc>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-dau-khi/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-17T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/mot-ngay-nen-dung-sua-rua-mat-may-lan/</loc>
+    <loc>https://chontruong.edu.vn/nganh-thien-van-hoc/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-17T07:24:06+00:00</lastmod>
+    <lastmod>2023-08-03T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/cach-nhan-biet-cac-loai-da/</loc>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-ky-thuat-dien-dien-tu/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-17T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/da-mat-kho-nen-dung-gi/</loc>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-ky-thuat-dien-tu-vien-thong/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-06-26T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/da-kho-la-nhu-the-nao/</loc>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-dieu-khien-va-tu-dong-hoa/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-18T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/dung-2-loai-sua-rua-mat-duoc-khong/</loc>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-ky-thuat-o-to/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-04-18T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/dfhdfh/</loc>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-co-so-ha-tang/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-06-26T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/gioi-thieu-phu-nu-plus/</loc>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-hang-hai/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-01-18T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/lien-he/</loc>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-hang-khong/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2023-01-18T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chontruong.edu.vn/chinh-sach-bao-mat/</loc>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-hat-nhan/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2022-09-14T07:24:06+00:00</lastmod>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-he-thong-cong-nghiep/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-khai-thac-thuy-san/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-nuoi-trong-thuy-san/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-luyen-kim/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-08-01T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-ky-thuat-may-tinh/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-khoa-hoc-may-tinh/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-xay-dung/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-dia-chat/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-ky-thuat-moi-truong/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-phan-mem/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-ky-thuat-nhiet/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-sinh-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-y-sinh/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-08-01T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-ky-thuat-hoa-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-tai-nguyen-nuoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-tau-thuy/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-trac-dia-ban-do/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-bao-chi/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-chinh-tri-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-hanh-chinh-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kinh-te-chinh-tri/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-luat/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-he-quoc-te/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-xa-hoi-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-xay-dung-dang-va-chinh-quyen-nha-nuoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-cong-tac-xa-hoi/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-triet-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ngon-ngu-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-lich-su/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-dong-phuong-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-van-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quoc-te-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-thu-y/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-viet-nam-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-ly-benh-vien/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-y-da-khoa/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-dieu-duong/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-hoa-duoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-duoc-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-y-hoc-co-truyen/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-y-hoc-du-phong/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-y-te-cong-cong/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-phuc-hoi-chuc-nang/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-hinh-anh-y-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-xet-nghiem-y-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-phuc-hinh-rang/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-rang-ham-mat/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-dinh-duong/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-ly-thuy-san/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-benh-hoc-thuy-san/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-phat-trien-nong-thon/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kinh-te-nong-nghiep/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kinh-doanh-nong-nghiep/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ho-sinh/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-da-giay/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-soi-det/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-che-bien-lam-san/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-dam-bao-chat-luong-va-an-toan-thuc-pham/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-sau-thu-hoach/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-thuc-pham/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-luat-quoc-te/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-luat-kinh-te/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-lam-sinh/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-rau-hoa-qua-va-canh-quan/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-bao-ve-thuc-vat/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-khoa-hoc-cay-trong/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-nong-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-chan-nuoi/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-khoa-hoc-dat/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-khuyen-nong/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-nong-nghiep/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-lam-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-ly-tai-nguyen-rung/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-lam-nghiep-do-thi/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ngon-ngu-khmer/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-tieng-viet-va-van-hoa-viet-nam/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-sang-tac-van-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-26T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-ly-van-hoa/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-09T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-bao-ho-lao-dong/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-09T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-ly-dat-dai/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-09T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kinh-te-tai-nguyen-thien-nhien/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-09T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-ly-tai-nguyen-va-moi-truong/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-09T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-mang-may-tinh-va-truyen-thong-du-lieu/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-08T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/cac-nganh-nghe-danh-cho-nu/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-08T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/kenh-phat-trien-ban-than/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-08T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/cau-noi-hay-ve-phat-trien-ban-than/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-08-08T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-an-toan-thong-tin/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-08T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-mo/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-08T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-khong-gian/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-08T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kinh-te-doi-ngoai/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-08T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kinh-te/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-08T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kinh-te-xay-dung/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-08T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kinh-te-dau-tu/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-08T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kinh-te-tai-chinh/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-08T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kinh-te-phat-trien/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-08T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kinh-te-van-tai/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-08-01T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kinh-te-so/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-08-01T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kinh-doanh-thuong-mai/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-08T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-he-thong-thong-tin/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-08T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-he-thong-thong-tin-quan-ly/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-08T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kiem-toan/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-11T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-bao-hiem/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-11T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-khoa-hoc-quan-ly/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-11T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-ly-du-an/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-11T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-he-lao-dong/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-11T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-ly-cong/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-11T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-ly-cong-nghiep/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-08-02T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-tri-nhan-luc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-12T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-tri-van-phong/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-12T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ke-toan/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-12T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-tai-chinh-ngan-hang/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-16T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kinh-doanh-quoc-te/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-16T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-marketing/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-16T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-bat-dong-san/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-16T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-thuong-mai-dien-tu/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-16T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-tri-kinh-doanh/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-16T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-ly-xay-dung/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-16T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-thiet-ke-noi-that/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-16T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kien-truc-canh-quan/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-16T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quy-hoach-vung-va-do-thi/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-08-03T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-do-thi-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-07-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-dia-ky-thuat-xay-dung/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-17T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-xay-dung-cong-trinh-giao-thong/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-16T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-xay-dung-cong-trinh-thuy/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-16T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-co-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-20T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-thuy-van-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-20T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-ly-the-duc-the-thao/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-20T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-tri-nha-hang-va-dich-vu-an-uong/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-20T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kinh-te-gia-dinh/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-20T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kien-truc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-20T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-dong-nam-a-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-20T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-toan-kinh-te/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-20T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-thong-ke-kinh-te/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-20T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-nhan-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-20T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-tam-ly-hoc-giao-duc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-20T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-tri-dich-vu-du-lich-va-lu-hanh/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-20T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-du-lich/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-20T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-cong-tac-thanh-thieu-nien/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-07-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-khoa-hoc-hang-hai/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-20T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-ly-hoat-dong-bay/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-08-02T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-tam-ly-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-08-03T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-han-quoc-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-23T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-nhat-ban-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-23T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-ly-nha-nuoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-08-02T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-khoa-hoc-vat-lieu/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-23T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-khai-thac-van-tai/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-24T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-in/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-24T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-ky-thuat-giao-thong/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-07-31T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-ky-thuat-kien-truc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-24T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-bao-duong-cong-nghiep/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-24T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kinh-doanh-xuat-ban-pham/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-24T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-kinh-te-cong-nghiep/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-24T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-xuat-ban/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-24T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-bao-tang-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-24T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-luu-tru-hoc/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-24T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-ly-thong-tin/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-08-02T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-thong-tin-thu-vien/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-26T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-he-cong-chung/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-26T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-truyen-thong-quoc-te/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-26T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-cong-nghe-truyen-thong/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-26T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-truyen-thong-dai-chung/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-26T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-truyen-thong-da-phuong-tien/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-26T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-su-co-so/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-08-02T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-phong-chay-chua-chay-va-cuu-nan-cuu-ho/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-26T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-quan-ly-nha-nuoc-ve-an-ninh-trat-tu/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-26T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-trinh-sat-canh-sat/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-08-03T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-ky-thuat-hinh-su/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-26T07:24:06+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chontruong.edu.vn/nganh-bien-phong/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2023-05-26T07:24:06+00:00</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>
