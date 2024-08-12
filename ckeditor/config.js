@@ -299,42 +299,42 @@ function get_format(format_type) {
 
 (function () {
 	/*/
-    CKEDITOR.on('instanceReady', function(ev) {
-    	var writer = ev.editor.dataProcessor.writer;
+	CKEDITOR.on('instanceReady', function(ev) {
+		var writer = ev.editor.dataProcessor.writer;
 
-    	// Tighten up the indentation a bit from the default of wide tabs.
-    	writer.indentationChars = ' ';
+		// Tighten up the indentation a bit from the default of wide tabs.
+		writer.indentationChars = ' ';
 
-    	// Configure this set of tags to open and close all on the same line, if
-    	// possible.
-    	var oneliner_tags = [
-    		'hgroup', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
-    		'p', 'th', 'td', 'li'
-    	];
-    	for (var i = 0, tag; tag = oneliner_tags[i]; i++) {
-    		writer.setRules(tag, {
-    			indent: true,
-    			breakBeforeOpen: true,
-    			breakAfterOpen: false,
-    			breakBeforeClose: false,
-    			breakAfterClose: true
-    		});
-    	}
+		// Configure this set of tags to open and close all on the same line, if
+		// possible.
+		var oneliner_tags = [
+			'hgroup', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+			'p', 'th', 'td', 'li'
+		];
+		for (var i = 0, tag; tag = oneliner_tags[i]; i++) {
+			writer.setRules(tag, {
+				indent: true,
+				breakBeforeOpen: true,
+				breakAfterOpen: false,
+				breakBeforeClose: false,
+				breakAfterClose: true
+			});
+		}
 
-    	// Retrieve nodes important to moving the path bar to the top
-    	var tbody = ev.editor._.cke_contents.$.parentNode.parentNode;
-    	var pathP = tbody.lastChild.childNodes[0].childNodes[1];
-    	var toolbox = tbody.childNodes[0].childNodes[0].childNodes[0];
+		// Retrieve nodes important to moving the path bar to the top
+		var tbody = ev.editor._.cke_contents.$.parentNode.parentNode;
+		var pathP = tbody.lastChild.childNodes[0].childNodes[1];
+		var toolbox = tbody.childNodes[0].childNodes[0].childNodes[0];
 
-    	if (toolbox && pathP) {
-    		toolbox.appendChild(pathP);
-    	}
+		if (toolbox && pathP) {
+			toolbox.appendChild(pathP);
+		}
 
-    	// Callback for inline, if necessary
-    	var callback = CKEDITOR.inlineCallback;
-    	callback && callback(ev);
-    });
-    //*/
+		// Callback for inline, if necessary
+		var callback = CKEDITOR.inlineCallback;
+		callback && callback(ev);
+	});
+	//*/
 	CKEDITOR.on("instanceReady", function (ev) {
 		var editor = ev.editor;
 		editor.dataProcessor.htmlFilter.addRules({
@@ -380,15 +380,15 @@ function get_format(format_type) {
 	(function () {
 		// Brick dialog "changed" prompts
 		/*/
-        var originalOn = CKEDITOR.dialog.prototype.on;
-        CKEDITOR.dialog.prototype.on = function(event, callback) {
-        	// If it's the cancel event that pops up the confirmation, just get out
-        	if (event == 'cancel' && callback.toString().indexOf('confirmCancel') != -1) {
-        		return true;
-        	}
-        	originalOn.apply(this, arguments);
-        };
-        //*/
+		var originalOn = CKEDITOR.dialog.prototype.on;
+		CKEDITOR.dialog.prototype.on = function(event, callback) {
+			// If it's the cancel event that pops up the confirmation, just get out
+			if (event == 'cancel' && callback.toString().indexOf('confirmCancel') != -1) {
+				return true;
+			}
+			originalOn.apply(this, arguments);
+		};
+		//*/
 
 		// <time> elements should be inline
 		CKEDITOR.dtd.$inline["time"] = 1;
@@ -445,26 +445,26 @@ function get_format(format_type) {
 	 */
 	CKEDITOR.editorConfig = function (config) {
 		/***
-         * CKeditor config
-         * Resize
-        		config.resize_enabled
-        		config.resize_minWidth and config.resize_maxWidth
-        		config.resize_minHeight and config.resize_maxHeight
-         * Filebrowser
-        		config.filebrowserBrowseUrl = "../../resource/ckeditor/ckfinder/ckfinder.html",
-        		config.filebrowserUploadUrl = "../../resource/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files",
-        		config.filebrowserImageUploadUrl = "../../resource/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images",
-        		config.filebrowserFlashUploadUrl = "../../resource/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash",
-        		config.filebrowserImageThumbsUploadUrl = 'upload.php?type=Images&makeThumb=true';
-        		config.filebrowserImageResizeUploadUrl = 'upload.php?type=Images&resize=true';
-        		config.doksoft_uploader_url = '';
-         * Basic Plugin
-        			config.plugins = 'dialogui,dialog,about,basicstyles,clipboard,button,toolbar,enterkey,entities,floatingspace,wysiwygarea,indent,indentlist,fakeobjects,link,list,undo';
-         * Standard Plugin
-        			config.plugins = 'dialogui,dialog,about,a11yhelp,basicstyles,blockquote,clipboard,panel,floatpanel,menu,contextmenu,resize,button,toolbar,elementspath,enterkey,entities,popup,filebrowser,floatingspace,listblock,richcombo,format,horizontalrule,htmlwriter,wysiwygarea,image,indent,indentlist,fakeobjects,link,list,magicline,maximize,pastetext,pastefromword,removeformat,showborders,sourcearea,specialchar,menubutton,scayt,stylescombo,tab,table,tabletools,undo,wsc';
-         * Full Plugin
-        			config.plugins = 'dialogui,dialog,about,a11yhelp,dialogadvtab,basicstyles,bidi,blockquote,clipboard,button,panelbutton,panel,floatpanel,colorbutton,colordialog,templates,menu,contextmenu,div,resize,toolbar,elementspath,enterkey,entities,popup,filebrowser,find,fakeobjects,flash,floatingspace,listblock,richcombo,font,forms,format,horizontalrule,htmlwriter,iframe,wysiwygarea,image,indent,indentblock,indentlist,smiley,justify,menubutton,language,link,list,liststyle,magicline,maximize,newpage,pagebreak,pastetext,pastefromword,preview,print,removeformat,save,selectall,showblocks,showborders,sourcearea,specialchar,scayt,stylescombo,tab,table,tabletools,undo,wsc';
-        ***/
+		 * CKeditor config
+		 * Resize
+				config.resize_enabled
+				config.resize_minWidth and config.resize_maxWidth
+				config.resize_minHeight and config.resize_maxHeight
+		 * Filebrowser
+				config.filebrowserBrowseUrl = "../../resource/ckeditor/ckfinder/ckfinder.html",
+				config.filebrowserUploadUrl = "../../resource/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files",
+				config.filebrowserImageUploadUrl = "../../resource/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images",
+				config.filebrowserFlashUploadUrl = "../../resource/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash",
+				config.filebrowserImageThumbsUploadUrl = 'upload.php?type=Images&makeThumb=true';
+				config.filebrowserImageResizeUploadUrl = 'upload.php?type=Images&resize=true';
+				config.doksoft_uploader_url = '';
+		 * Basic Plugin
+					config.plugins = 'dialogui,dialog,about,basicstyles,clipboard,button,toolbar,enterkey,entities,floatingspace,wysiwygarea,indent,indentlist,fakeobjects,link,list,undo';
+		 * Standard Plugin
+					config.plugins = 'dialogui,dialog,about,a11yhelp,basicstyles,blockquote,clipboard,panel,floatpanel,menu,contextmenu,resize,button,toolbar,elementspath,enterkey,entities,popup,filebrowser,floatingspace,listblock,richcombo,format,horizontalrule,htmlwriter,wysiwygarea,image,indent,indentlist,fakeobjects,link,list,magicline,maximize,pastetext,pastefromword,removeformat,showborders,sourcearea,specialchar,menubutton,scayt,stylescombo,tab,table,tabletools,undo,wsc';
+		 * Full Plugin
+					config.plugins = 'dialogui,dialog,about,a11yhelp,dialogadvtab,basicstyles,bidi,blockquote,clipboard,button,panelbutton,panel,floatpanel,colorbutton,colordialog,templates,menu,contextmenu,div,resize,toolbar,elementspath,enterkey,entities,popup,filebrowser,find,fakeobjects,flash,floatingspace,listblock,richcombo,font,forms,format,horizontalrule,htmlwriter,iframe,wysiwygarea,image,indent,indentblock,indentlist,smiley,justify,menubutton,language,link,list,liststyle,magicline,maximize,newpage,pagebreak,pastetext,pastefromword,preview,print,removeformat,save,selectall,showblocks,showborders,sourcearea,specialchar,scayt,stylescombo,tab,table,tabletools,undo,wsc';
+		***/
 
 		// Ngon ngu
 		config.language = "vi";
@@ -492,96 +492,92 @@ function get_format(format_type) {
 		config.disableNativeSpellChecker = true;
 
 		// File browser
-		(config.filebrowserBrowseUrl =
-			"https://chontruong.edu.vn/ckeditor/ckfinder/ckfinder.php"),
-			(config.filebrowserUploadUrl =
-				"https://chontruong.edu.vn/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files"),
-			(config.filebrowserImageUploadUrl =
-				"https://chontruong.edu.vn/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images"),
-			(config.filebrowserFlashUploadUrl =
-				"https://chontruong.edu.vn/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash"),
+		(config.filebrowserBrowseUrl = "https://lmssplus.net/ckeditor/ckfinder/ckfinder.php"),
+		(config.filebrowserUploadUrl = "https://lmssplus.net/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files"),
+		(config.filebrowserImageUploadUrl = "https://lmssplus.net/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images"),
+		(config.filebrowserFlashUploadUrl = "https://lmssplus.net/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash"),
 			// My Plugin
 			/*/		
-            config.plugins =
-            // Plugin
-            	'dialogui,' + // Core
-            	'dialog,' + // Core
-            	'dialogadvtab,' +	// Core - Dùng nâng cao cho dialog Link,Image,Flash,Table,IFrame,Div Container						
-            	'button,' + // Core
-            	'panelbutton,' + // Core - Nâng cao của button trình đơn thả xuống, vd: bảng điều khiển màu sắc, ...
-            	'panel,' + // Plugin này sử dụng cùng với các plugin floatpanel cung cấp cơ sở của tất cả các bảng giao diện người dùng biên tập - thả xuống, menu, vv
-            	'floatpanel,' + // Plugin này cùng với các plugin của bảng điều khiển là cung cấp cơ sở của tất cả các bảng giao diện người dùng biên tập - thả xuống, menu, vv	
-            	'menu,' + // Plugin chứa phương pháp để xây dựng thực đơn CKEditor (ví dụ như trình đơn ngữ cảnh hoặc menu thả xuống).
-            	'contextmenu,' + // menu ngữ cảnh sử dụng thay vì trình duyệt, manage menu item and group
-            	'resize,' + // thay đổi kích thước editor
-            	'elementspath,' + // Ở dưới cùng cho biết danh sách HTML và thẻ HTML hiện tại ở vị trí con trỏ
-            	'enterkey,' + // Điều chỉnh hành động khi nhấn enter, shift + enter, ...
-            	'entities,' + // entities code
-            	'popup,' + // thêm một chức năng công cụ để mở trang web trong cửa sổ popup.
-            	'filebrowser,' + // Liên kết ckeditor với bất kỳ trình quản lý file nào bên ngoài	
-            	'fakeobjects,' +
-            	'floatingspace,' + // Điều chỉnh vị trí tốt nhất cho ckeditor ở chế độ inline
-            	'listblock,' + // xây dựng một danh sách thả trong bảng biên tập. vd: thấy trong rich combo, list item with label 
-            	'richcombo,' + // sử dụng để xây dựng Dropdowns như Styles, Định dạng, cỡ chữ, vv
-            	'htmlwriter,' + // linh hoạt đầu ra định dạng HTML, với một số tùy chọn cấu hình để kiểm soát các định dạng đầu ra trình biên tập.
-            	'menubutton,' + // cung cấp một giao diện người dùng phần nút menu khi nhấp vào sẽ mở ra một trình đơn thả xuống với một danh sách các tùy chọn.
-            	'liststyle,' + // Thêm danh sách số
-            	'magicline,' + // làm dễ dàng hơn để đặt con trỏ và thêm nội dung tại thẻ như images, tables hoặc <div>
-            	'showborders,' + // hiển thị đường viền xung quanh bảng.
-            	'tab,' + // Hỗ trợ xử lý tab trên editor. vd: tab trên table
-            // Line 1
-            	'sourcearea,' + // Mã nhúng
-            	//'save,' + // Lưu
-            	//'newpage,' + // Trang mới
-            	'preview,' + // Xem trước
-            	'print,' + // In
-            	//'templates,' + // Mẫu
-            	'clipboard,' + // Cut, Copy, Paste
-            	'pastetext,' + // Copy như text
-            	'pastefromword,' + // Copy từ word - Gồm cả clipboard
-            	'undo,' + // Hoàn tác
-            	'find,' + // Tìm và thay thế
-            	//'selectall,' + // Chọn tất cả
-            	//'wsc,' + // Button kiểm tra chính tả
-            	//'scayt,' + // Kiểm tra chính tả
-            	//'forms,' + // Form
-            // Line 2		
-            	'basicstyles,' + // B, I, U ...
-            	'removeformat,' + // Loại bỏ style
-            	'list,' + // Ul,li
-            	'indent,' + // marginleft 40px
-            	'indentblock,' + // marginleft 40px
-            	'indentlist,' + // marginleft 40px
-            	'blockquote,' + // Quote
-            	//'div,' + // Div
-            	'justify,' + // Căn chỉnh
-            	//'bidi,' + // Trái sang phải, phải sáng trái
-            	//'language,' + // Chọn ngôn ngữ
-            	'link,' + // Đường dẫn
-            	'image,' + // Ảnh
-            	//'flash,' + // Flash
-            	'table,' + // Kẻ bảng
-            	'tabletools,' + // Kẻ bảng
-            	'horizontalrule,' + // Line <hr>
-            	//'smiley,' + // Mặt cười
-            	//'specialchar,' + // Ký tự đặc biệt
-            	//'pagebreak,' + // Ngắt trang
-            	'iframe,' + // Iframe
-            // Line 3
-            	'stylescombo,' + // Style
-            	'format,' + // Format
-            	'font,' + // Font + size	
-            	'colorbutton,' + // Color button
-            	'colordialog,' + // Color dialog
-            	'maximize,' + // Full width height ckeditor
-            	//'showblocks,' + // Show block
-            	//'about,' + // Giới thiệu
-            	//'a11yhelp,' + // Help - Dùng alt + 0 để bật hướng dẫn
-            // Toolbar create			
-            	'toolbar,' + // Thanh công cụ
-            	'wysiwygarea' // Khởi tạo
-            	;
-            //*/
+			config.plugins =
+			// Plugin
+				'dialogui,' + // Core
+				'dialog,' + // Core
+				'dialogadvtab,' +	// Core - Dùng nâng cao cho dialog Link,Image,Flash,Table,IFrame,Div Container						
+				'button,' + // Core
+				'panelbutton,' + // Core - Nâng cao của button trình đơn thả xuống, vd: bảng điều khiển màu sắc, ...
+				'panel,' + // Plugin này sử dụng cùng với các plugin floatpanel cung cấp cơ sở của tất cả các bảng giao diện người dùng biên tập - thả xuống, menu, vv
+				'floatpanel,' + // Plugin này cùng với các plugin của bảng điều khiển là cung cấp cơ sở của tất cả các bảng giao diện người dùng biên tập - thả xuống, menu, vv	
+				'menu,' + // Plugin chứa phương pháp để xây dựng thực đơn CKEditor (ví dụ như trình đơn ngữ cảnh hoặc menu thả xuống).
+				'contextmenu,' + // menu ngữ cảnh sử dụng thay vì trình duyệt, manage menu item and group
+				'resize,' + // thay đổi kích thước editor
+				'elementspath,' + // Ở dưới cùng cho biết danh sách HTML và thẻ HTML hiện tại ở vị trí con trỏ
+				'enterkey,' + // Điều chỉnh hành động khi nhấn enter, shift + enter, ...
+				'entities,' + // entities code
+				'popup,' + // thêm một chức năng công cụ để mở trang web trong cửa sổ popup.
+				'filebrowser,' + // Liên kết ckeditor với bất kỳ trình quản lý file nào bên ngoài	
+				'fakeobjects,' +
+				'floatingspace,' + // Điều chỉnh vị trí tốt nhất cho ckeditor ở chế độ inline
+				'listblock,' + // xây dựng một danh sách thả trong bảng biên tập. vd: thấy trong rich combo, list item with label 
+				'richcombo,' + // sử dụng để xây dựng Dropdowns như Styles, Định dạng, cỡ chữ, vv
+				'htmlwriter,' + // linh hoạt đầu ra định dạng HTML, với một số tùy chọn cấu hình để kiểm soát các định dạng đầu ra trình biên tập.
+				'menubutton,' + // cung cấp một giao diện người dùng phần nút menu khi nhấp vào sẽ mở ra một trình đơn thả xuống với một danh sách các tùy chọn.
+				'liststyle,' + // Thêm danh sách số
+				'magicline,' + // làm dễ dàng hơn để đặt con trỏ và thêm nội dung tại thẻ như images, tables hoặc <div>
+				'showborders,' + // hiển thị đường viền xung quanh bảng.
+				'tab,' + // Hỗ trợ xử lý tab trên editor. vd: tab trên table
+			// Line 1
+				'sourcearea,' + // Mã nhúng
+				//'save,' + // Lưu
+				//'newpage,' + // Trang mới
+				'preview,' + // Xem trước
+				'print,' + // In
+				//'templates,' + // Mẫu
+				'clipboard,' + // Cut, Copy, Paste
+				'pastetext,' + // Copy như text
+				'pastefromword,' + // Copy từ word - Gồm cả clipboard
+				'undo,' + // Hoàn tác
+				'find,' + // Tìm và thay thế
+				//'selectall,' + // Chọn tất cả
+				//'wsc,' + // Button kiểm tra chính tả
+				//'scayt,' + // Kiểm tra chính tả
+				//'forms,' + // Form
+			// Line 2		
+				'basicstyles,' + // B, I, U ...
+				'removeformat,' + // Loại bỏ style
+				'list,' + // Ul,li
+				'indent,' + // marginleft 40px
+				'indentblock,' + // marginleft 40px
+				'indentlist,' + // marginleft 40px
+				'blockquote,' + // Quote
+				//'div,' + // Div
+				'justify,' + // Căn chỉnh
+				//'bidi,' + // Trái sang phải, phải sáng trái
+				//'language,' + // Chọn ngôn ngữ
+				'link,' + // Đường dẫn
+				'image,' + // Ảnh
+				//'flash,' + // Flash
+				'table,' + // Kẻ bảng
+				'tabletools,' + // Kẻ bảng
+				'horizontalrule,' + // Line <hr>
+				//'smiley,' + // Mặt cười
+				//'specialchar,' + // Ký tự đặc biệt
+				//'pagebreak,' + // Ngắt trang
+				'iframe,' + // Iframe
+			// Line 3
+				'stylescombo,' + // Style
+				'format,' + // Format
+				'font,' + // Font + size	
+				'colorbutton,' + // Color button
+				'colordialog,' + // Color dialog
+				'maximize,' + // Full width height ckeditor
+				//'showblocks,' + // Show block
+				//'about,' + // Giới thiệu
+				//'a11yhelp,' + // Help - Dùng alt + 0 để bật hướng dẫn
+			// Toolbar create			
+				'toolbar,' + // Thanh công cụ
+				'wysiwygarea' // Khởi tạo
+				;
+			//*/
 
 			// Them Plugin
 			(config.extraPlugins =
@@ -591,28 +587,28 @@ function get_format(format_type) {
 		//config.removePlugins = 'forms, save, print, newpage, templates, bidi';
 
 		/***
-         * Toolbar
-         * config.toolbarCanCollapse = false;
-         * config.colorButton_enableMore = false;
-         * Full
-        		  config.toolbar = [
-        			{ name: 'document', items : [ 'Source','-','Save','NewPage','DocProps','Preview','Print','-','Templates' ] },
-        			{ name: 'clipboard', items : [ 'Cut','Copy','Paste','PasteText','PasteFromWord','-','Undo','Redo' ] },
-        			{ name: 'editing', items : [ 'Find','Replace','-','SelectAll','-','SpellChecker', 'Scayt' ] },
-        			{ name: 'forms', items : [ 'Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 
-        				'HiddenField' ] },
-        			'/',
-        			{ name: 'basicstyles', items : [ 'Bold','Italic','Underline','Strike','Subscript','Superscript','-','RemoveFormat' ] },
-        			{ name: 'paragraph', items : [ 'NumberedList','BulletedList','-','Outdent','Indent','-','Blockquote','CreateDiv',
-        			'-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','BidiLtr','BidiRtl' ] },
-        			{ name: 'links', items : [ 'Link','Unlink','Anchor' ] },
-        			{ name: 'insert', items : [ 'Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak','Iframe' ] },
-        			'/',
-        			{ name: 'styles', items : [ 'Styles','Format','Font','FontSize' ] },
-        			{ name: 'colors', items : [ 'TextColor','BGColor' ] },
-        			{ name: 'tools', items : [ 'Maximize', 'ShowBlocks','-','About' ] }
-        		];
-        ***/
+		 * Toolbar
+		 * config.toolbarCanCollapse = false;
+		 * config.colorButton_enableMore = false;
+		 * Full
+				  config.toolbar = [
+					{ name: 'document', items : [ 'Source','-','Save','NewPage','DocProps','Preview','Print','-','Templates' ] },
+					{ name: 'clipboard', items : [ 'Cut','Copy','Paste','PasteText','PasteFromWord','-','Undo','Redo' ] },
+					{ name: 'editing', items : [ 'Find','Replace','-','SelectAll','-','SpellChecker', 'Scayt' ] },
+					{ name: 'forms', items : [ 'Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 
+						'HiddenField' ] },
+					'/',
+					{ name: 'basicstyles', items : [ 'Bold','Italic','Underline','Strike','Subscript','Superscript','-','RemoveFormat' ] },
+					{ name: 'paragraph', items : [ 'NumberedList','BulletedList','-','Outdent','Indent','-','Blockquote','CreateDiv',
+					'-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','BidiLtr','BidiRtl' ] },
+					{ name: 'links', items : [ 'Link','Unlink','Anchor' ] },
+					{ name: 'insert', items : [ 'Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak','Iframe' ] },
+					'/',
+					{ name: 'styles', items : [ 'Styles','Format','Font','FontSize' ] },
+					{ name: 'colors', items : [ 'TextColor','BGColor' ] },
+					{ name: 'tools', items : [ 'Maximize', 'ShowBlocks','-','About' ] }
+				];
+		***/
 		config.toolbar = [
 			{
 				name: "document",

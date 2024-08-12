@@ -32,8 +32,8 @@ class Home extends CI_Controller
     {
         $time = time();
         $data['canonical'] = base_url();
-        $data['blog'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE type = 0 AND time_post <= $time ORDER BY created_at DESC LIMIT 20");
-        $data['blog_new'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time", 'blogs', 0, 5);
+        $data['blog'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE chuyenmuc != 24  AND type = 0 AND time_post <= $time ORDER BY created_at DESC LIMIT 20");
+        $data['blog_new'] = $this->Madmin->get_limit(" chuyenmuc != 24  AND type = 0 AND time_post <= $time", 'blogs', 0, 5);
         $data['meta_title'] = 'Web Review Trường Đại Học - Cao Đẳng - Trung Cấp';
         $data['meta_des'] = 'Nền tảng Web Review Trường ở thời điểm hiện tại và trong tương lai là một trong những nền tảng giúp cho Học sinh và sinh viên lựa chọn được ngành nghề phù hợp...';
         $data['meta_key'] = "Thông tin trường học";
@@ -94,8 +94,8 @@ class Home extends CI_Controller
                 $data['cate_1'] = $cate_parent;
                 $title_page = $chuyenmuc_parent['name'] . ' - ' . $chuyenmuc['name'];
             }
-            $data['blog'] = $this->Madmin->get_limit_or("time_post <= $time AND type = 0", $count_or, 'blogs', 0, 18);
-            $data['blog_new'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time", 'blogs', 0, 5);
+            $data['blog'] = $this->Madmin->get_limit_or("time_post <= $time AND type = 0 AND index_blog = 1", $count_or, 'blogs', 0, 18);
+            $data['blog_new'] = $this->Madmin->get_limit("type = 0 AND time_post <= $time AND index_blog = 1", 'blogs', 0, 5);
             $data['title_page'] = $title_page;
             $data['chuyenmuc'] = $chuyenmuc['id'];
             $data['meta_title'] = $chuyenmuc['meta_title'];
@@ -114,6 +114,9 @@ class Home extends CI_Controller
                 redirect('/' . $alias . '/', 'location', 301);
             }
             if (!admin() && $blog['time_post'] > $time) {
+                redirect('/');
+            }
+            if($blog['index_blog'] == 0){
                 redirect('/');
             }
             $data['blog_same'] = $this->Madmin->query_sql("SELECT * FROM blogs WHERE chuyenmuc = {$blog['chuyenmuc']} AND type = 0 AND time_post <= $time AND id != {$blog['id']}  ORDER BY updated_at DESC LIMIT 6");

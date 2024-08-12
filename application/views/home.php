@@ -11,7 +11,7 @@
                                 <?php foreach ($blog as $key => $val) {
                                     if ($key == 0) { ?>
                                         <a class="linl_all_detail" title="<?= $val['title'] ?>" href="/<?= $val['alias'] ?>/">
-                                            <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                            <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>" width="488px" height="282px">
                                             <p class="title_blog_top"><?= $val['title'] ?></p>
                                             <div class="fl_date">
                                                 <p class="date_post"><?= date('d-m-Y', $val['created_at']) ?></p>
@@ -40,7 +40,7 @@
                             if ($key >= 4) { ?>
                                 <div class="this_train">
                                     <a href="/<?= $val['alias'] ?>/">
-                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>">
+                                        <img src="/<?= $val['image'] ?>" alt="<?= $val['title'] ?>" width="247px" height="142px">
                                         <div class="box_right_data">
                                             <p class="title_blog"><?= $val['title'] ?></p>
                                             <p class="date_post"><span><?= date('d-m-Y', $val['created_at']) ?></span></p>

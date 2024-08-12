@@ -25,15 +25,15 @@
     <meta name="robots" content="noindex,nofollow">
   <?php } ?>
   <title><?= isset($meta_title) ? $meta_title : 'Web review trường ĐẠI HỌC - CAO ĐẲNG - TRUNG CẤP' ?></title>
-  <meta name="description" content="<?= isset($meta_des) ? $meta_des : '' ?>">
-  <meta name="keywords" content="<?= isset($meta_key) ? $meta_key : '' ?>">
+  <meta name="description" content="<?= isset($meta_des) ? $meta_des : 'Thông tin về trường ĐẠI HỌC - CAO ĐẲNG - TRUNG CẤP' ?>">
+  <meta name="keywords" content="<?= isset($meta_key) ? $meta_key : 'Thông tin về trường ĐẠI HỌC - CAO ĐẲNG - TRUNG CẤP' ?>">
   <link rel="canonical" href="<?= (isset($canonical)) ? $canonical : base_url() ?>">
   <meta property="og:locale" content="vi_VN" />
 <meta property="og:type" content="website" />
   <meta property="og:url" content="<?= (isset($canonical)) ? $canonical : base_url() ?>">
   <meta property="og:title" content="<?= isset($meta_title) ? $meta_title : 'Web review trường ĐẠI HỌC - CAO ĐẲNG - TRUNG CẤP' ?>">
   <meta property="og:site_name" content="Chontruong.edu.vn">
-  <meta property="og:description" content="<?= isset($meta_des) ? $meta_des : '' ?>">
+  <meta property="og:description" content="<?= isset($meta_des) ? $meta_des : 'Thông tin về trường ĐẠI HỌC - CAO ĐẲNG - TRUNG CẤP' ?>">
   <meta property="og:image:secure_url" content="<?= base_url() ?><?= (isset($meta_img) ? $meta_img : 'images/logo.png') ?>">
   <meta property="og:image" content="<?= base_url() ?><?= (isset($meta_img) ? $meta_img : 'images/logo.png') ?>">
   <link rel="shortcut icon" href="<?= base_url() ?>images/favicon.png">

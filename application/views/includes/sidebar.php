@@ -50,101 +50,40 @@
                         <a href="/hoc-tieng-nga/">Tiếng Nga</a>
                     </strong>
                 </li>
-                <li class="item_content_sidebar">
+                <li class="item_content_sidebar" style="color:#fff">
                     <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
                     <strong>
-                        <a rel="dofollow" target="_blank" href="https://collaboration-world.com/">xoilac tv trực
-                            tiếp</a>
+                        <a rel="dofollow" target="_blank" href="https://mitomtv.onl/" style="color:#fff;background:#fff">mì tôm tv</a>
                     </strong>
                 </li>
-                <li class="item_content_sidebar">
+                <li class="item_content_sidebar" style="color:#fff">
                     <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
                     <strong>
-                        <a rel="dofollow" target="_blank" href="https://phongkhamago.com/">bóng đá trực tuyến</a>
+                        <a rel="dofollow" target="_blank" href="https://good88.best" style="color:#fff;background:#fff">good88</a>
                     </strong>
                 </li>
-                <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">trực tiếp bóng đá hôm nay
-                    <strong>
-                        <a rel="dofollow" target="_blank" href="https://caheotv.li"> caheo tv</a>
-                    </strong>
-                </li>
-                <li class="item_content_sidebar">
+                <li class="item_content_sidebar" style="color:#fff">
                     <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
                     <strong>
-                        <a rel="dofollow" target="_blank" href="https://appalachiarising.org/">Xoilac </a>
-                    </strong>bóng đá trực tuyến
-                </li>
-                <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">Xem bóng đá
-                    <strong>
-                        <a rel="dofollow" target="_blank" href="https://www.visionwineandspirits.com/"> ra khoi tv </a>
+                        <a rel="dofollow" target="_blank" href="https://xoilactv.pe/"style="color:#fff;background:#fff" >xôi lạc tv</a>
                     </strong>
                 </li>
-                <li class="item_content_sidebar">
+                <li class="item_content_sidebar" style="color:#fff">
                     <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
                     <strong>
-                        <a rel="dofollow" target="_blank" href="https://sunwin23.in">tải sunwin</a>
+                        <a rel="dofollow" target="_blank" href="https://helo88.bet" style="color:#fff;background:#fff">hello88</a>
                     </strong>
                 </li>
-                <li class="item_content_sidebar">
+                <li class="item_content_sidebar" style="color:#fff">
                     <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
                     <strong>
-                        <a rel="dofollow" target="_blank" href="https://game.sunwin.gives/">sunwin</a>
+                        <a rel="dofollow" target="_blank" href="https://sunwinblu.net" style="color:#fff;background:#fff">Sunwin</a>
                     </strong>
                 </li>
-                <li class="item_content_sidebar">
+                <li class="item_content_sidebar" style="color:#fff">
                     <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
                     <strong>
-                        <a rel="dofollow" target="_blank" href="https://new888k.com/">new88</a>
-                    </strong>
-                </li>
-                <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
-                    <strong>
-                        <a rel="dofollow" target="_blank" href="https://www.2id.org/" >truc tiep bong da</a>
-                    </strong>
-                </li>
-                <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
-                    <strong>
-                        <a rel="dofollow" target="_blank" href="https://xoilac-tv.us/" >xem bóng đá xoilac tv</a>
-                    </strong>
-                </li>
-                <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
-                    <strong>
-                        <a rel="dofollow" target="_blank" href="https://mitomtv.bz/" >mì tôm tv</a>
-                    </strong>
-                </li>
-                <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
-                    <strong>
-                        <a rel="dofollow" target="_blank" href="https://nohu777.co/" >Nổ hủ đổi thưởng</a>
-                    </strong>
-                </li>
-                <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
-                    <strong>
-                        <a rel="dofollow" target="_blank" href="https://sodocasinoi.com/" >Sodo Casino</a>
-                    </strong>
-                </li>
-                <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
-                    <strong>
-                        <a rel="dofollow" target="_blank" href="https://socolive.art/" >trực tiếp bóng đá socolive</a>
-                    </strong>
-                </li>
-                <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
-                    <strong>
-                        <a rel="dofollow" target="_blank" href="https://TK88.mov" >TK88</a>
-                    </strong>
-                </li>
-                <li class="item_content_sidebar">
-                    <img class="icon_li" src="/images/icons8-star-30.png" alt="liên kết">
-                    <strong>
-                        <a rel="dofollow" target="_blank" href="https://152.42.176.91/" >Kubet</a>
+                        <a rel="dofollow" target="_blank" href="https://79king.co.com/" style="color:#fff;background:#fff">79king</a>
                     </strong>
                 </li>
             </ul>
